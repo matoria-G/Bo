@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="javax.activation.DataHandler"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.ListField"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.lang.Character.Subset"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="com.bo.utils.converters.jsonToDataholderConverter"/>
+<fullyQualifiedTypeName name="com.bo.utils.converters.DataHolderToJsonConverter"/>
+<fullyQualifiedTypeName name="com.bo.commons.constants.ExceptionConstants"/>
+<fullyQualifiedTypeName name="com.bo.web.core.BoApiController"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.DataHolder"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="javax.crypto.spec.PBEKeySpec"/>
+<fullyQualifiedTypeName name="java.security.spec.KeySpec"/>
+<fullyQualifiedTypeName name="javax.crypto.SecretKeyFactory"/>
+<fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+<fullyQualifiedTypeName name="java.security.spec.InvalidKeySpecException"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.utils.Base64"/>
+<fullyQualifiedTypeName name="org.jboss.resteasy.util.Base64"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.messaging.saaj.util.Base64"/>
+<fullyQualifiedTypeName name="org.picketbox.commons.cipher.Base64"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.util.Base64"/>
+<fullyQualifiedTypeName name="java.security.SecureRandom"/>
+<fullyQualifiedTypeName name="javax.crypto.spec.DESKeySpec"/>
+<fullyQualifiedTypeName name="javax.crypto.SecretKey"/>
+<fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+<fullyQualifiedTypeName name="net.iharder.Base64"/>
+<fullyQualifiedTypeName name="com.bo.database.utils.DBContext"/>
+<fullyQualifiedTypeName name="com.bo.database.utils.DBUtil"/>
+<fullyQualifiedTypeName name="com.bo.commons.core.BoAPI"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.ComplexField"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.bo.commons.core.Commons"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.MatrixField"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+<fullyQualifiedTypeName name="com.bo.commons.constants.BoConstants"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.Field"/>
+<fullyQualifiedTypeName name="com.bo.commons.holder.SimpleField"/>
+</qualifiedTypeNameHistroy>

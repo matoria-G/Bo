@@ -1,0 +1,69 @@
+VENDOR
+============
+Vendor_Id           Vendor_Name        Vendor_Type (?)    VENDOR_CURRENCY 
+123	                Mukesh Kirana       2                  INR
+
+VENDORSHIPPING
+==============
+VENDORSHIPPING_Id           VENDORSHIPPING_FixedLocation       VENDORSHIPPING_AREACOVERD   VENDORSHIPPING_MINORDERAMT      VENDORSHIPPING_SHPPINGCHRG       VENDORSHIPPING_CHRGALLORDER      
+123                         RAJU AGAR 1ST STREET                300M                        50                              5                                  0           
+
+
+ITEMS
+============================
+
+ITEM_CODE                ITEM_NAME             ITEM_CAT
+1                        RICE                  1
+2                        SOAP                  2
+
+
+
+ITEMSCATEGORY
+===================
+ITEM_CAT                  ITEAM_MEASUREMENTUNIT   
+1                          PER KG
+2                          PER PEICE
+3                          PER LITER
+4                          PER PACKET
+
+
+VENDORITEMS
+=================
+
+VENDOR_ID                   ITEM_CODE          ITEM_NAME              ITEM_COSTPERUNIT    AVAILABLE
+123                          1                 BASMATI RICE           100                 1
+123                          2                 PEARS SOAP             30                  1
+
+
+VENDORREQUST
+================================
+REQUEST_ID                  ORIGIN_ID          VENDOR_ID              ITEM_NAME          ACCEPT/REJECT
+456                         USER_1             123                    PERS SOAP          100
+
+ORDER
+==============================================
+ORDER_ID                    REQUEST_ID        ORIGIN_ID              VENDOR_ID        TOTAL_ITEMS          TOTAL_AMOUNT                    STAGE          STATUS        REJ_CODE       REJ_DESC
+ORDER_1                     456               USER_1                 123               2                    80                              1/2/3              S 
+
+ORDERDTl
+================================================
+ORDERID                     DTL_SL            ITEM_NAME                NO_OF_UNIT   UNIT_COST    
+ORDER_1                     1                 PEARS SOAP                1            30
+ORDER_1                     2                 BASMATI RICE              0.5          50
+
+ORDERSTATUS
+==========================
+ORDERID                    STAGE_CODE         STATUS                  REJ_CODE
+ORDER_1                    1                  S
+ORDER_1                    2                  P
+
+STAGEREPOSITORY
+=============================
+STAGEID                  DESCRIPTION
+1                        ORDER INITIATED
+2                        ORDER PACKED
+3                        DISPATCHED
+4                        DELIVERED
+5                        SETTLED
+
+

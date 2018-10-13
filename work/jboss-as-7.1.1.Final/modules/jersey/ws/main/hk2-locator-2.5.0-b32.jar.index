@@ -1,0 +1,13 @@
+
+org/jvnet/hk2/external/runtime
+META-INF/maven
+org/jvnet/hk2/internal
+org
+META-INF
+org/jvnet/hk2/external/generator
+META-INF/maven/org.glassfish.hk2/hk2-locator
+org/jvnet/hk2
+META-INF/maven/org.glassfish.hk2
+META-INF/services
+org/jvnet
+org/jvnet/hk2/external

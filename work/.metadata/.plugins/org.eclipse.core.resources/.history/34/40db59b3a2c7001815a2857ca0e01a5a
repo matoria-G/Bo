@@ -1,0 +1,8 @@
+package com.bo.request;
+
+import com.bo.commons.core.BoAPI;
+
+public class SignUp implements BoAPI {
+	
+
+}

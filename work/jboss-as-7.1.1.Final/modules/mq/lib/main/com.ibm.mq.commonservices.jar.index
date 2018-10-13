@@ -1,0 +1,13 @@
+
+com/ibm
+com
+com/ibm/mq/commonservices/internal/console
+com/ibm/mq/commonservices/internal/monitor
+com/ibm/mq
+com/ibm/mq/commonservices/internal/prefs
+com/ibm/mq/commonservices/internal/trace
+META-INF
+com/ibm/mq/commonservices/internal/utils
+com/ibm/mq/commonservices
+com/ibm/mq/commonservices/internal
+com/ibm/mq/commonservices/internal/command

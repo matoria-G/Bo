@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 version="2.0"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:annotation>
+		<xs:documentation>
+			Corporate Action Base XML Schema, version 2.0
+			by Frida Mörtsell (frida.mortsell@metamatrix.se).
+			
+			Defines basic terms for corporate actions
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+	<xs:complexType name="CorporateActionBaseType">
+		<xs:sequence>
+			<xs:element name="Action" type="xs:string"/>
+			<xs:element name="OrderNo" type="CabIntType"/>
+			<xs:element name="RecordDate" type="xs:date" nillable="true"/>
+			<xs:element name="ExDate" type="xs:date" nillable="true"/>
+			<xs:element name="TypeOfCA" type="xs:string"/>
+			<xs:element name="DateOfRegistration" type="xs:date"/>
+			<xs:element name="DateOfChange" type="xs:date" minOccurs="0"/>
+			<xs:element name="CumDate" type="xs:date" nillable="true"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IssuingAgentType">
+		<xs:sequence>
+			<xs:element name="Contact" type="xs:string" minOccurs="0"/>
+			<xs:element name="PhoneNo" type="xs:string" minOccurs="0"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="ID" type="xs:string"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CabIntType">
+		<xs:restriction base="xs:int">
+			<xs:totalDigits value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

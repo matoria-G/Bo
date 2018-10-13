@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:isr="http://ns.vpc.se/Issuer"
+	elementFormDefault="qualified"
+	version="2.2">
+
+	<xs:annotation>
+		<xs:documentation>
+			Security Base XML Schema, version 2.2
+			by NCSD.
+			
+			Defines basic terms for securities
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:include schemaLocation="ProductBase.xsd"/>
+
+	<xs:complexType name="AffiliatedSecurityBaseType">
+		<xs:sequence>
+			<xs:element name="Action" type="xs:string"/>
+			<xs:element name="ISIN" type="xs:string"/>
+			<xs:element name="SecuritySort" type="xs:string" minOccurs="0"/>
+			<xs:element name="DateOfAffiliation" type="xs:date"/>
+			<xs:element name="DateOfResignation" type="xs:date" minOccurs="0"/>
+			<xs:element name="IssuingCSD" type="xs:string" minOccurs="0"/>
+			<xs:element name="SettlementCurrency" type="xs:string"/>
+			<xs:element name="SettlementCurrencyFrom" type="xs:date"/>
+			<xs:element name="AdditionalText" type="xs:string" minOccurs="0"/>
+			<xs:element name="IssuedQuantityOrAmount" type="SbQuantityOrAmountType" nillable="true"/>
+			<xs:element name="BookedQuantityOrAmount" type="SbQuantityOrAmountType" nillable="true"/>
+			<xs:element name="ValidForTradeFrom" type="xs:date"/>
+			<xs:element name="ValidForTradeTo" type="xs:date" minOccurs="0"/>
+			<xs:element name="ValidForIssueFrom" type="xs:date"/>
+			<xs:element name="ValidForIssueTo" type="xs:date" minOccurs="0"/>
+			<xs:element name="YearEndValue" type="xs:string" minOccurs="0"/>
+			<xs:element name="CountryCode" type="xs:string"/>
+			<xs:element name="DateOfChange" type="xs:date" minOccurs="0"/>
+			<xs:element name="DateOfRegistration" type="xs:date"/>
+			<xs:element name="ComplexityIndicator" type="IndicatorType"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NonAffiliatedSecurityBaseType">
+		<xs:sequence>
+			<xs:element name="Action" type="xs:string"/>
+			<xs:element name="ComplexityIndicator" type="IndicatorType"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="TypeOfSecurityType">
+		<xs:sequence>
+			<xs:element name="SwedishName" type="xs:string"/>
+			<xs:element name="EnglishName" type="xs:string" minOccurs="0"/>
+			<xs:element name="SecurityUnit" type="xs:string" minOccurs="0"/>
+			<xs:element name="TypeOfSecurity" type="xs:string"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="SbQuantityOrAmountType">
+		<xs:restriction base="SbDecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="SbDecimalType">
+				<xs:restriction base="xs:decimal">
+				    <xs:totalDigits value="15"/>
+				    <xs:fractionDigits value="2"/>
+				</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="IndicatorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NCO" />
+			<xs:enumeration value="NCA" />
+			<xs:enumeration value="CPX" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,461 @@
+Calling "D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\bin\standalone.conf.bat"
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final
+
+  JAVA: C:\Program Files (x86)\Java\jdk1.6.0_14\bin\java
+
+  JAVA_OPTS: -XX:+TieredCompilation -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.default.config=standalone.xml
+
+===============================================================================
+
+10:20:17,062 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
+10:20:17,225 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
+10:20:17,260 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final "Brontes" starting
+10:20:18,038 INFO  [org.xnio] XNIO Version 3.0.3.GA
+10:20:18,038 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+10:20:18,051 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.3.GA
+10:20:18,063 INFO  [org.jboss.remoting] JBoss Remoting version 3.2.3.GA
+10:20:18,073 INFO  [org.jboss.as.logging] JBAS011502: Removing bootstrap log handlers
+10:20:18,131 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) JBAS010280: Activating Infinispan subsystem.
+10:20:18,146 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 43) JBAS013101: Activating Security Subsystem
+10:20:18,153 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 47) JBAS015537: Activating WebServices Extension
+10:20:18,161 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 38) JBAS011940: Activating OSGi Subsystem
+10:20:18,166 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 25) JBAS016200: Activating ConfigAdmin Subsystem
+10:20:18,168 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 37) JBAS011800: Activating Naming Subsystem
+10:20:18,213 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013100: Current PicketBox version=4.0.7.Final
+10:20:18,306 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+10:20:18,326 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+10:20:18,333 INFO  [org.jboss.as.connector] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.9.Final)
+10:20:18,436 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) JBAS010403: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
+10:20:18,493 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+10:20:18,618 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-2) JBoss Web Services - Stack CXF Server 4.0.2.GA
+10:20:18,711 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\standalone\deployments
+10:20:18,718 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment SILAdmin.ear
+10:20:18,813 INFO  [org.jboss.as.remoting] (MSC service thread 1-2) JBAS017100: Listening on /127.0.0.1:4447
+10:20:18,818 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on /127.0.0.1:9999
+10:20:18,831 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) Starting Coyote HTTP/1.1 on http--127.0.0.1-28080
+10:20:19,011 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/jbpmDS]
+10:20:19,011 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+10:20:19,011 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:/jdbc/portal/ANXDB]
+10:20:19,011 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:/jdbc/portal/TBADS]
+10:20:19,023 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "SILAdmin.ear"
+10:20:25,492 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelValidations.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:25,492 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkCommon.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:25,494 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkBO.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:25,497 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/serializer-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:25,504 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "SelFrameworkEJB.jar"
+10:20:25,504 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "SelWeb.war"
+10:20:26,242 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry xercesImpl.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:26,244 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:26,249 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry serializer.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:20:26,417 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC00001: Failed to start service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:91) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: org.jboss.modules.ModuleNotFoundException: Module com.oracle.driver:main is not found in local module loader @94884d (roots: D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\modules)
+	at org.jboss.modules.LocalModuleLoader.findModule(LocalModuleLoader.java:126) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ModuleLoader.loadModuleLocal(ModuleLoader.java:275) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:222) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.LocalModuleLoader.preloadModule(LocalModuleLoader.java:94) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ModuleLoader.preloadExportedModule(ModuleLoader.java:233) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:246) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.as.server.moduleservice.ServiceModuleLoader.preloadModule(ServiceModuleLoader.java:160) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.modules.Module.addPaths(Module.java:841) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.Module.link(Module.java:1181) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.Module.relinkIfNecessary(Module.java:1207) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:208) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:70) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	... 5 more
+
+10:20:26,437 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015951: Admin console listening on http://127.0.0.1:9990
+10:20:26,439 ERROR [org.jboss.as] (MSC service thread 1-3) JBAS015875: JBoss AS 7.1.1.Final "Brontes" started (with errors) in 9585ms - Started 163 of 249 services (3 services failed or missing dependencies, 79 services are passive or on-demand)
+10:20:26,649 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015870: Deploy of deployment "SILAdmin.ear" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}
+10:20:26,679 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment SelFrameworkEJB.jar in 24ms
+10:20:30,042 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment SelWeb.war in 3386ms
+10:20:30,102 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment SILAdmin.ear in 3451ms
+10:20:30,104 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+
+10:20:30,107 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) {"JBAS014653: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-2" => {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}}}
+10:23:20,302 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "SILAdmin.ear"
+10:23:27,339 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelValidations.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:27,342 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkCommon.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:27,342 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkBO.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:27,344 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/serializer-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:27,352 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "SelWeb.war"
+10:23:27,352 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "SelFrameworkEJB.jar"
+10:23:28,094 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry xercesImpl.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:28,097 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:28,099 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry serializer.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:23:28,184 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC00001: Failed to start service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:91) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: org.jboss.modules.ModuleNotFoundException: Module org.apache.cxf.impl:main is not found in local module loader @94884d (roots: D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\modules)
+	at org.jboss.modules.LocalModuleLoader.findModule(LocalModuleLoader.java:126)
+	at org.jboss.modules.ModuleLoader.loadModuleLocal(ModuleLoader.java:275)
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:222)
+	at org.jboss.modules.LocalModuleLoader.preloadModule(LocalModuleLoader.java:94)
+	at org.jboss.modules.ModuleLoader.preloadExportedModule(ModuleLoader.java:233)
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:246)
+	at org.jboss.as.server.moduleservice.ServiceModuleLoader.preloadModule(ServiceModuleLoader.java:160) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.modules.Module.addPaths(Module.java:841)
+	at org.jboss.modules.Module.link(Module.java:1181)
+	at org.jboss.modules.Module.relinkIfNecessary(Module.java:1207)
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:208)
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:70) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	... 5 more
+
+10:23:28,412 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015870: Deploy of deployment "SILAdmin.ear" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}
+10:23:28,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment SelFrameworkEJB.jar in 19ms
+10:23:31,215 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment SelWeb.war in 2807ms
+10:23:31,265 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment SILAdmin.ear in 2856ms
+10:23:31,268 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+
+10:23:31,270 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) {"JBAS014653: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-2" => {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}}}
+10:26:21,451 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "SILAdmin.ear"
+10:26:27,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelValidations.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:27,526 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkCommon.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:27,529 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkBO.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:27,531 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/serializer-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:27,536 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "SelWeb.war"
+10:26:27,536 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "SelFrameworkEJB.jar"
+10:26:28,274 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry xercesImpl.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:28,276 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:28,279 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) Class Path entry serializer.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:26:28,361 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC00001: Failed to start service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:91) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: org.jboss.modules.ModuleNotFoundException: Module org.apache.cxf.impl:main is not found in local module loader @94884d (roots: D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\modules)
+	at org.jboss.modules.LocalModuleLoader.findModule(LocalModuleLoader.java:126)
+	at org.jboss.modules.ModuleLoader.loadModuleLocal(ModuleLoader.java:275)
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:222)
+	at org.jboss.modules.LocalModuleLoader.preloadModule(LocalModuleLoader.java:94)
+	at org.jboss.modules.ModuleLoader.preloadExportedModule(ModuleLoader.java:233)
+	at org.jboss.modules.ModuleLoader.preloadModule(ModuleLoader.java:246)
+	at org.jboss.as.server.moduleservice.ServiceModuleLoader.preloadModule(ServiceModuleLoader.java:160) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.modules.Module.addPaths(Module.java:841)
+	at org.jboss.modules.Module.link(Module.java:1181)
+	at org.jboss.modules.Module.relinkIfNecessary(Module.java:1207)
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:208)
+	at org.jboss.as.server.moduleservice.ModuleLoadService.start(ModuleLoadService.java:70) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	... 5 more
+
+10:26:28,589 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015870: Deploy of deployment "SILAdmin.ear" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}
+10:26:28,609 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment SelFrameworkEJB.jar in 19ms
+10:26:32,472 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment SelWeb.war in 3883ms
+10:26:32,524 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment SILAdmin.ear in 3935ms
+10:26:32,527 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.module.service."deployment.SILAdmin.ear".main: org.jboss.msc.service.StartException in service jboss.module.service."deployment.SILAdmin.ear".main: Failed to load module: deployment.SILAdmin.ear:main
+
+10:26:32,529 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) {"JBAS014653: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-2" => {"JBAS014671: Failed services" => {"jboss.module.service.\"deployment.SILAdmin.ear\".main" => "org.jboss.msc.service.StartException in service jboss.module.service.\"deployment.SILAdmin.ear\".main: Failed to load module: deployment.SILAdmin.ear:main"}}}}
+10:26:57,570 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "SILAdmin.ear"
+10:27:04,613 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelValidations.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:04,615 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkCommon.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:04,618 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkBO.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:04,618 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/serializer-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:04,625 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "SelFrameworkEJB.jar"
+10:27:04,625 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "SelWeb.war"
+10:27:05,443 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry xercesImpl.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:05,443 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:05,446 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) Class Path entry serializer.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+10:27:05,528 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.jboss.ironjacamar.jdbcadapters:main") which may be changed or removed in future versions without notice.
+10:27:05,531 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.jboss.ironjacamar.jdbcadapters:main") which may be changed or removed in future versions without notice.
+10:27:05,531 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.ws.xmlschema:main") which may be changed or removed in future versions without notice.
+10:27:05,533 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.ws.xmlschema:main") which may be changed or removed in future versions without notice.
+10:27:05,536 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.cxf:main") which may be changed or removed in future versions without notice.
+10:27:05,536 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.cxf:main") which may be changed or removed in future versions without notice.
+10:27:05,538 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.neethi:main") which may be changed or removed in future versions without notice.
+10:27:05,541 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.neethi:main") which may be changed or removed in future versions without notice.
+10:27:05,696 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named TBACommonDispatcher in deployment unit subdeployment "SelFrameworkEJB.jar" of deployment "SILAdmin.ear" are as follows:
+
+	java:global/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:app/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:module/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:jboss/exported/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:global/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:app/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:module/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:jboss/exported/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+
+10:27:06,316 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.DefinitionTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.DefinitionTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,338 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.template.InsertTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.InsertTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,361 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.PutTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.PutTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,391 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.AddTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.AddTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,416 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.UseAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.UseAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,431 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.template.GetTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.GetTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,448 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.GetTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.GetTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,463 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.PutListTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.PutListTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,488 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.GetAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.GetAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,503 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.InitDefinitionsTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.InitDefinitionsTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,521 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.ImportAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.ImportAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,536 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.InsertTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.InsertTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:06,551 WARN  [org.jboss.as.ee] (MSC service thread 1-8) JBAS011006: Not installing optional component org.apache.struts.taglib.template.PutTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.PutTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+10:27:07,043 INFO  [portallog] (MSC service thread 1-7) [ApplicationContextListener] #()
+10:27:07,048 INFO  [portallog] (MSC service thread 1-7) [ApplicationContextListener] #contextInitialized() Begin
+10:27:07,056 INFO  [portallog] (MSC service thread 1-7) [ApplicationWatch] #
+10:27:07,058 INFO  [portallog] (MSC service thread 1-7) [ApplicationWatch] start()
+10:27:12,737 INFO  [org.quartz.simpl.SimpleThreadPool] (MSC service thread 1-7) Job execution threads will use class loader of thread: MSC service thread 1-7
+10:27:12,747 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-7) Quartz Scheduler v.1.5.2 created.
+10:27:12,749 INFO  [org.quartz.simpl.RAMJobStore] (MSC service thread 1-7) RAMJobStore initialized.
+10:27:12,749 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-7) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:27:12,752 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-7) Quartz scheduler version: 1.5.2
+10:27:12,752 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-7) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:27:12,777 INFO  [portallog] (MSC service thread 1-7) [ApplicationContextListener] #contextInitialized() End
+10:27:12,952 INFO  [org.apache.struts.action.ActionServlet] (MSC service thread 1-7) Loading chain catalog from vfs:/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/struts-core-1.3.8.jar/org/apache/struts/chain/chain-config.xml
+10:27:13,389 WARN  [org.apache.struts.config.impl.ModuleConfigImpl] (MSC service thread 1-7) Overriding ActionForm of name msyssetup
+10:27:13,579 INFO  [org.jboss.web] (MSC service thread 1-7) JBAS018210: Registering web context: /SelWeb
+10:27:13,857 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "SILAdmin.ear"

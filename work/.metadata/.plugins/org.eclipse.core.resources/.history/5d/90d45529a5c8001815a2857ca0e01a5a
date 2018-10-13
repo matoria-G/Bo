@@ -1,0 +1,63 @@
+package com.bo.request;
+
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+
+import java.util.LinkedList;
+
+import com.bo.commons.constants.BoConstants;
+import com.bo.commons.core.BoAPI;
+import com.bo.commons.holder.DataHolder;
+import com.bo.commons.holder.ListField;
+import com.bo.database.utils.DBContext;
+import com.bo.database.utils.DBUtil;
+
+public class ProcessRequest implements BoAPI {
+	@Override
+	public DataHolder Invoke(DataHolder indataholder) throws Exception{
+		DBContext dbcontext=new DBContext();
+		DBUtil dbutil=dbcontext.createUtilInstance();
+		String query;
+		StringBuffer items=new StringBuffer();
+		String iteminput;
+		ListField vendors=new ListField();
+		DataHolder outdataholder = new DataHolder();
+		outdataholder.setValue(BoConstants.Status, BoConstants.Success);
+		try{
+		ListField itemslist=(ListField) indataholder.getValue("items");
+		//itemslist.getValues()
+		for(String itm:itemslist.getValues()){
+			items.append("'"+itm+"',");
+		}
+		iteminput=items.substring(0,items.length()-1);
+	      // query ="SELECT DISTINCT(P.VENDOR_ID), COUNT(P.ITEM_CODE) FROM VENDORITEMS P WHERE P.ITEM_CODE IN ("+iteminput+") GROUP BY P.VENDOR_ID";
+	       query="SELECT DISTINCT (P.VENDOR_ID), COUNT(P.ITEM_CODE) FROM VENDORITEMS P,vendor K WHERE P.ITEM_CODE IN ("+iteminput+")"
+           +"AND P.VENDOR_ID=K.VENDOR_I AND K.CITY='CH' GROUP BY P.VENDOR_ID ";
+	        dbutil.setSql(query);
+	       // dbutil.setString(1, requestItem);
+	        ResultSet rs=dbutil.executeQuery();
+	        while(rs.next()){
+	        	vendors.addValue(rs.getString(1));
+	        	//vendors.add(rs.getString(1));
+	        }
+	        outdataholder.setField("Vendors", vendors);	        
+		}
+		
+		
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		return outdataholder;
+		
+	}
+
+	/*@Override
+	public DataHolder Invoke(DataHolder inDataHolder) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}*/
+	
+
+}

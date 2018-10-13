@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>XDoclet: Attribute-Oriented Programming - Tag Reference</title><style type="text/css" media="all">
+          @import url("../style/maven-base.css");
+          
+			    @import url("../style/maven-theme.css");</style><link rel="stylesheet" href="../style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><link href="../favicon.ico" rel="shortcut icon"></link><link href="../favicon.ico" rel="icon"></link></head><body class="composite"><div id="banner"><a href="http://xdoclet.sourceforge.net/" id="organizationLogo"><img alt="XDoclet Team" src="../images/logo.gif"></img></a><a href="http://xdoclet.sourceforge.net/xdoclet/" id="projectLogo"><img alt="XDoclet" src="http://sflogo.sourceforge.net/sflogo.php?group_id=31602&amp;type=5"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">
+                	Last published: 16 April 2005
+                  | Doc for 1.2.3</div><div class="xright">
+        
+        <a href="http://xdoclet.sourceforge.net/xdoclet/" class="externalLink" title="External Link">Home</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://sourceforge.net/projects/xdoclet/" class="externalLink" title="External Link">SourceForge Project</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://xdoclet.sourceforge.net/wiki/" class="externalLink" title="External Link">Wiki</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xdoclet/" class="externalLink" title="External Link">Browse CVS</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://opensource.atlassian.com/projects/xdoclet/secure/CreateIssue!default.jspa" class="externalLink" title="External Link">Create an Issue</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuXDoclet"><h5>XDoclet</h5><ul><li class="none"><a href="../index.html">Overview</a></li><li class="none"><a href="../status.html">News and Status</a></li><li class="none"><a href="../install.html">Download/Installation</a></li><li class="none"><a href="../using.html">Using XDoclet</a></li><li class="none"><a href="../bp.html">Best Practices</a></li><li class="none"><a href="../faq.html">FAQ</a></li><li class="none"><a href="../licenses/xdoclet-license.html">License</a></li></ul></div><div id="menuAnt_Task_Reference"><h5>Ant Task Reference</h5><ul><li class="none"><a href="../ant/xdoclet/DocletTask.html">&lt;doclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/ejb/EjbDocletTask.html">&lt;ejbdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/hibernate/HibernateDocletTask.html">&lt;hibernatedoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/jdo/JdoDocletTask.html">&lt;jdodoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/jmx/JMXDocletTask.html">&lt;jmxdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/mockobjects/MockObjectDocletTask.html">&lt;mockdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/portlet/PortletDocletTask.html">&lt;portletdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/spring/SpringDocletTask.html">&lt;springdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/apache/tapestry/TapestryDocletTask.html">&lt;tapestrydoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/web/WebDocletTask.html">&lt;webdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/wsee/WseeDocletTask.html">&lt;wseedoclet .. /&gt;</a></li></ul></div><div id="menuTag_Reference"><h5>Tag Reference</h5><ul><li class="none"><a href="../tags/apache-tags.html">apache (@soap @struts @axis @tapestry)</a></li><li class="none"><a href="../tags/bea-tags.html">bea (@weblogic)</a></li><li class="none"><a href="../tags/borland-tags.html">borland (@bes)</a></li><li class="none"><a href="../tags/caucho-tags.html">caucho (@resin)</a></li><li class="none"><a href="../tags/ejb-tags.html">ejb (@ejb @dao)</a></li><li class="none"><a href="../tags/exolab-tags.html">exolab (@castor)</a></li><li class="none"><a href="../tags/hp-tags.html">hp (@hpas)</a></li><li class="none"><a href="../tags/hibernate-tags.html">hibernate (@hibernate)</a></li><li class="none"><a href="../tags/ibm-tags.html">ibm (@websphere)</a></li><li class="none"><a href="../tags/java-tags.html">java (@javabean)</a></li><li class="none"><strong><a href="../tags/jboss-tags.html">jboss (@jboss)</a></strong></li><li class="none"><a href="../tags/jdo-tags.html">jdo (@jdo)</a></li><li class="none"><a href="../tags/jmx-tags.html">jmx (@jmx)</a></li><li class="none"><a href="../tags/jsf-tags.html">jsf (@jsf)</a></li><li class="none"><a href="../tags/macromedia-tags.html">macromedia (@jrun)</a></li><li class="none"><a href="../tags/mockobjects-tags.html">mockobjects (@mock)</a></li><li class="none"><a href="../tags/mvcsoft-tags.html">mvcsoft (@mvcsoft)</a></li><li class="none"><a href="../tags/mx4j-tags.html">mx4j (@mx4j)</a></li><li class="none"><a href="../tags/objectweb-tags.html">objectweb (@jonas)</a></li><li class="none"><a href="../tags/oracle-tags.html">oracle (@oc4j)</a></li><li class="none"><a href="../tags/orion-tags.html">orion (@orion)</a></li><li class="none"><a href="../tags/portlet-tags.html">portlet (@portlet)</a></li><li class="none"><a href="../tags/pramati-tags.html">pramati (@pramati)</a></li><li class="none"><a href="../tags/spring-tags.html">spring (@spring)</a></li><li class="none"><a href="../tags/sun-tags.html">sun (@sunone)</a></li><li class="none"><a href="../tags/sybase-tags.html">sybase (@easerver)</a></li><li class="none"><a href="../tags/tjdo-tags.html">tjdo (@tjdo)</a></li><li class="none"><a href="../tags/web-tags.html">web (@web @jsp)</a></li><li class="none"><a href="../tags/webwork-tags.html">webwork (@webwork)</a></li><li class="none"><a href="../tags/wsee-tags.html">wsee (@wsee)</a></li><li class="none"><a href="../tags/xdoclet-tags.html">xdoclet (@xdoclet @doc @msg)</a></li></ul></div><div id="menuFeature_Documentation"><h5>Feature Documentation</h5><ul><li class="none"><a href="../valueobjects.html">Using Value Objects</a></li><li class="none"><a href="../envhandling.html">EJB Environment Handling</a></li></ul></div><div id="menuAdvanced"><h5>Advanced</h5><ul><li class="none"><a href="../maven-plugin.html">Maven Plug-in</a></li><li class="none"><a href="../merge.html">Merge Points</a></li><li class="none"><a href="../ide/index.html">IDE Integration</a></li><li class="none"><a href="../migration.html">Migration from EJBDoclet</a></li><li class="none"><a href="../ant15.html">Ant 1.5 Troubleshooting</a></li></ul></div><div id="menuCommunity"><h5>Community</h5><ul><li class="none"><a href="../feedback.html">Feedback</a></li><li class="none"><a href="../resources.html">Resources</a></li><li class="none"><a href="../tools.html">Tools</a></li></ul></div><div id="menuDevelopment"><h5>Development</h5><ul><li class="none"><a href="../development/index.html">Developer Guide</a></li><li class="none"><a href="../api/index.html">Javadoc (API)</a></li><li class="none"><a href="../templates/index.html">Template Language (*.xdt)</a></li><li class="none"><a href="http://xdoclet.sourceforge.net/xjavadoc/" class="externalLink" title="External Link">XJavaDoc Site</a></li></ul></div><div id="search"><h5>Search XDoclet</h5><form action="http://www.google.com/search" method="get"><a href="http://www.google.com" class="navlink"><img height="32" width="75" alt="Google" src="http://www.google.com/logos/Logo_25wht.gif"></img></a><input name="q" maxlength="255" size="15" type="text" value="" id="q"></input><input name="btnG" type="submit" value="Go" id="btnG"></input><input name="domains" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet"></input><input name="sitesearch" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet" id="search"></input></form></div><div id="menuProject_Documentation"><h5>Project Documentation</h5><ul><li class="none"><a href="../index.html">About XDoclet</a></li><li class="collapsed"><a href="../project-info.html">Project Info</a></li><li class="collapsed"><a href="../maven-reports.html">Project Reports</a></li><li class="none"><a href="http://maven.apache.org/development-process.html" class="externalLink" title="External Link">Development Process</a></li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="../images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="@jboss_Tag_Reference"></a><h2>@jboss Tag Reference</h2><p>Tags for creation of jboss specific resources</p><p>Applies to: all EJB types on class and method level</p><div id="source"><div class="subsection"><a name="@jboss_Class_Level_Tags"></a><h3>@jboss Class Level Tags</h3><a href="#@jboss_audit__0__1_" title="Indicate that all audit information (created-by, created-time, updated-by, update-time) should be saved in the entity with columns provided by the container. This tag is mutually exclusive with the other jboss.audit-* tags">@jboss.audit</a><br></br><a href="#@jboss_audit-created-by__0__1_" title="Store the created-by info for this entity bean. This tag is mutually exclusive with the jboss.audit tag.">@jboss.audit-created-by</a><br></br><a href="#@jboss_audit-created-time__0__1_" title="Store the created-time info for this entity bean. This tag is mutually exclusive with the jboss.audit tag.">@jboss.audit-created-time</a><br></br><a href="#@jboss_audit-updated-by__0__1_" title="Store the updated-by info for this entity bean. This tag is mutually exclusive with the jboss.audit tag.">@jboss.audit-updated-by</a><br></br><a href="#@jboss_audit-updated-time__0__1_" title="Store the updated-time info for this entity bean. This tag is mutually exclusive with the jboss.audit tag.">@jboss.audit-updated-time</a><br></br><a href="#@jboss_cache-invalidation__0__1_" title="Tells the container to emit cache invalidation messages when these entities are changed. NOTE! You must ensure the entity is deployed in a container configured or in validation. (i.e. has org.jboss.cache.invalidation.triggers.EntityBeanCacheBatchInvalidatorInterceptor configured in its interceptor stack.)">@jboss.cache-invalidation</a><br></br><a href="#@jboss_cache-invalidation-config__0__1_" title="Configure the behaviour of jboss cache invalidation. NOTE! The defaults mentioned are not manifested in the output, they are JBoss&apos;s behaviour cited here for convenience.">@jboss.cache-invalidation-config</a><br></br><a href="#@jboss_cluster-config__0__1_" title="Sets JBoss clustering configuration, overriding the default container on a per-EJB basis. The defaults mentioned here are not actual XDoclet behavior but rather JBoss defaults cited here for convenience.">@jboss.cluster-config</a><br></br><a href="#@jboss_clustered__0__1_" title="Marks the EJB as clustered in jboss.xml deployment descriptor">@jboss.clustered</a><br></br><a href="#@jboss_cmp-field__0__1_" title="Will define a &lt;cmp-field&gt; element for a field of a cmp-field of ejb-jar.xml. This is used for dependant objects fields mapping, see @jboss.not-persisted-field. Example: ">@jboss.cmp-field</a><br></br><a href="#@jboss_container-configuration__0__1_" title="The name of the container configuration to use for the bean. Applicable to all types of EJBs.">@jboss.container-configuration</a><br></br><a href="#@jboss_declared-sql__0____" title="Configures a custom query (defined by @ejb.finder) by defining explicitly declared sql fragments to be added to the SQL generated by JBossCMP engine (Requires JBoss 3+).">@jboss.declared-sql</a><br></br><a href="#@jboss_depends__0____" title="The name of an JMX ObjectName on which the bean depends. Applicable to all types of EJBs. Also applicable to servlets where the dependency is on WAR-level. (JBoss 3.2+).">@jboss.depends</a><br></br><a href="#@jboss_destination-jndi-name__0__1_" title="Defines JNDI name of the Queue/Topic used my the MDB.">@jboss.destination-jndi-name</a><br></br><a href="#@jboss_ejb-local-ref__0____" title="Sets the JNDI name of a locally referenced bean that is not contained in the same application.">@jboss.ejb-local-ref</a><br></br><a href="#@jboss_ejb-ref-jndi__0____" title="Sets the JNDI name of a referenced bean. There must be an @ejb.ejb-ref tag too which points to the referenced bean.">@jboss.ejb-ref-jndi</a><br></br><a href="#@jboss_entity-command__0__1_" title="Supplies information about an entity-command used to create the entity bean.">@jboss.entity-command</a><br></br><a href="#@jboss_entity-command-attribute__0____" title="Supplies information about an entity-command used to create the entity bean.">@jboss.entity-command-attribute</a><br></br><a href="#@jboss_finder-query__0____" title="Assign custom query to finder named &quot;findFoo&quot;. An @ejb.finder tag for the named finder must also be present">@jboss.finder-query</a><br></br><a href="#@jboss_method-attributes__0____" title="Allows for the specification of non-standard attributes for the named method(s). For JBoss 3.0 this tag can only appear once, for 3.2 and later there can be multiple occurrences.">@jboss.method-attributes</a><br></br><a href="#@jboss_persistence__0__1_" title="The @jboss.persistence tag provides information about the persistence of a CMP Entity bean.">@jboss.persistence</a><br></br><a href="#@jboss_port-component__0____" title="Specify webservices port-components">@jboss.port-component</a><br></br><a href="#@jboss_query__0____" title="Configures a custom query (defined by @ejb.finder) for the JBossCMP engine (Requires JBoss 3+). Note that you still need the @ejb.finder with signature and query attributes. If they are not present, then container will complain at deploy time.">@jboss.query</a><br></br><a href="#@jboss_read-ahead__0__1_" title="Specifies the read ahead strategy for this Entity bean. Applicable to Entity beans using JBossCMP persistence engine.">@jboss.read-ahead</a><br></br><a href="#@jboss_read-only__0__1_" title="Mark bean as read-only. This will avoid ejbStore calls.">@jboss.read-only</a><br></br><a href="#@jboss_resource-adapter__0__1_" title="sets the rar used in JCA 1.5 message inflow">@jboss.resource-adapter</a><br></br><a href="#@jboss_resource-env-ref__0____" title="The resource-env-ref element gives a mapping between the &quot;code name&quot; of a env resource (res-ref-name, provided by the Bean Developer) and its deployed JNDI name.">@jboss.resource-env-ref</a><br></br><a href="#@jboss_resource-manager__0____" title="">@jboss.resource-manager</a><br></br><a href="#@jboss_resource-ref__0____" title="The resource-ref element gives a mapping between the &quot;code name&quot; of a resource (res-ref-name, provided by the Bean Developer) and its &quot;xml name&quot; (resource-name, provided by the Application Assembler). If no resource-ref is provided, jboss will assume that &quot;xml-name&quot; = &quot;code name&quot;.">@jboss.resource-ref</a><br></br><a href="#@jboss_security-proxy__0__1_" title="The security-proxy gives the class name of the security proxy implementation. This may be an instance of org.jboss.security.SecurityProxy, or an just an object that implements methods in the home or remote interface of an EJB without implementating any common interface.">@jboss.security-proxy</a><br></br><a href="#@jboss_service__0____" title="Configures the generation of -service.xml files for JBoss">@jboss.service</a><br></br><a href="#@jboss_subscriber__0__1_" title="Provide information about accessing the Message Provider">@jboss.subscriber</a><br></br><a href="#@jboss_unknown-pk__0__1_" title="Supplies information about the unkown primary key. At least the class should be supplied, with optional column name, JDBC and SQL types.">@jboss.unknown-pk</a><br></br></div></div><div id="source"><div class="subsection"><a name="@jboss_Method_Level_Tags"></a><h3>@jboss Method Level Tags</h3><a href="#@jboss_column-name__0__1_" title="Declares the column name to which the CMP field will be mapped.">@jboss.column-name</a><br></br><a href="#@jboss_dvc-property__0__1_" title="Declare field as dependent value class.">@jboss.dvc-property</a><br></br><a href="#@jboss_jdbc-type__0__1_" title="Declare the JDBC Type. Its value must be one of the fields of java.sql.Types (e.g. BIT, CHAR...). This jdbc type will be used by the CMP provider to determine which method to call on PreparedStatement and ResultSet for INSERT / UPDATE / SELECT queries.">@jboss.jdbc-type</a><br></br><a href="#@jboss_method-attributes__0__1_" title="Allows for the specification of non-standard attributes for the method. Can only be used with JBoss 3.2 and later, for 3.0 use the class-level tag.">@jboss.method-attributes</a><br></br><a href="#@jboss_not-persisted-field__0__1_" title="">@jboss.not-persisted-field</a><br></br><a href="#@jboss_persistence__0__1_" title="The @jboss.persistence tag provides information about the persistence of a CMP field.">@jboss.persistence</a><br></br><a href="#@jboss_query__0____" title="Configures a custom query for a select method for the JBossCMP engine (Requires JBoss 3+). Note that you still need an empty @ejb.select tag. If it is not present, then container will complain at deploy time.">@jboss.query</a><br></br><a href="#@jboss_relation__0____" title="Used to customize the relationships via jbosscmp-jdbc.xml for JBoss 3.0. NOTE: If you replace jboss.relation with jboss.target-relation, you can modify the blind side of a unidirectional relationship (someone fix this wording)">@jboss.relation</a><br></br><a href="#@jboss_relation-mapping__0__1_" title="Use jboss.relation-mapping=&quot;relation-table&quot; to force the use of a relation table mapping in a relationship even when the relation is not M-N.">@jboss.relation-mapping</a><br></br><a href="#@jboss_relation-read-ahead__0____" title="Used to customize the read-ahead component of relationships via jbosscmp-jdbc.xml for JBoss 3.0. NOTE: If you replace jboss.relation-read-ahead with jboss.target-relation-read-ahead, you can modify the blind side of a unidirectional relationship.">@jboss.relation-read-ahead</a><br></br><a href="#@jboss_relation-table__0__1_" title="Tells the JBoss persistence manager to use a relation table for managing entity relationships.">@jboss.relation-table</a><br></br><a href="#@jboss_sql-type__0__1_" title="Declare the actual type of the field in the database. This value will only be used when the CMP container creates your table (if possible).">@jboss.sql-type</a><br></br><a href="#@jboss_target-relation__0____" title="Used to customize the relationships via jbosscmp-jdbc.xml for JBoss 3.0. This tag should be used to modify the blind side of the relation in an unidirectional relationship. Aside from this, it&apos;s exactly the same as @jboss.relation.">@jboss.target-relation</a><br></br></div></div><div id="source"><div class="subsection"><a name="@jboss_Field_Level_Tags"></a><h3>@jboss Field Level Tags</h3></div></div></div><div class="section"><a name="@jboss_Class_Level_Tag_Usage"></a><h2>@jboss Class Level Tag Usage</h2><div class="subsection"><a name="@jboss_audit__0__1_"></a><h3>@jboss.audit (0..1)</h3><p>
+			Indicate that all audit information (created-by, created-time, updated-by, update-time)
+			should be saved in the entity with columns provided by the container.
+			This tag is mutually exclusive with the other jboss.audit-* tags
+		</p></div><div class="subsection"><a name="@jboss_audit-created-by__0__1_"></a><h3>@jboss.audit-created-by (0..1)</h3><p>
+			Store the created-by info for this entity bean.
+			This tag is mutually exclusive with the jboss.audit tag.
+		</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>field-name</td><td>text</td><td></td><td>
+				The field, the created-by information should be stored in.
+			</td><td>false</td></tr><tr class="a" valign="top"><td>column-name</td><td>text</td><td></td><td>
+				The column, the created-by information should be stored in.
+			</td><td>false</td></tr><tr class="b" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The jdbc type. Needs to be given together with the sql-type</td><td>false</td></tr><tr class="a" valign="top"><td>sql-type</td><td>text</td><td></td><td>The sql type. Needs to be given together with the jdbc type</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_audit-created-time__0__1_"></a><h3>@jboss.audit-created-time (0..1)</h3><p>
+			Store the created-time info for this entity bean.
+			This tag is mutually exclusive with the jboss.audit tag.
+		</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>field-name</td><td>text</td><td></td><td>
+				The field, the created-time information should be stored in.
+			</td><td>false</td></tr><tr class="b" valign="top"><td>column-name</td><td>text</td><td></td><td>
+				The column, the created-time information should be stored in.
+			</td><td>false</td></tr><tr class="a" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The jdbc type. Needs to be given together with the sql-type</td><td>false</td></tr><tr class="b" valign="top"><td>sql-type</td><td>text</td><td></td><td>The sql type. Needs to be given together with the jdbc type</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_audit-updated-by__0__1_"></a><h3>@jboss.audit-updated-by (0..1)</h3><p>
+			Store the updated-by info for this entity bean.
+			This tag is mutually exclusive with the jboss.audit tag.
+		</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>field-name</td><td>text</td><td></td><td>
+				The field, the updated-by information should be stored in.
+			</td><td>false</td></tr><tr class="a" valign="top"><td>column-name</td><td>text</td><td></td><td>
+				The column, the updated-by information should be stored in.
+			</td><td>false</td></tr><tr class="b" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The jdbc type. Needs to be given together with the sql-type</td><td>false</td></tr><tr class="a" valign="top"><td>sql-type</td><td>text</td><td></td><td>The sql type. Needs to be given together with the jdbc type</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_audit-updated-time__0__1_"></a><h3>@jboss.audit-updated-time (0..1)</h3><p>
+			Store the updated-time info for this entity bean.
+			This tag is mutually exclusive with the jboss.audit tag.
+		</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>field-name</td><td>text</td><td></td><td>
+				The field, the updated-time information should be stored in.
+			</td><td>false</td></tr><tr class="b" valign="top"><td>column-name</td><td>text</td><td></td><td>
+				The column, the updated-time information should be stored in.
+			</td><td>false</td></tr><tr class="a" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The jdbc type. Needs to be given together with the sql-type</td><td>false</td></tr><tr class="b" valign="top"><td>sql-type</td><td>text</td><td></td><td>The sql type. Needs to be given together with the jdbc type</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_cache-invalidation__0__1_"></a><h3>@jboss.cache-invalidation (0..1)</h3><p>
+                Tells the container to emit cache invalidation messages when these entities are changed.
+                NOTE! You must ensure the entity is deployed in a container configured or in validation.
+                (i.e. has org.jboss.cache.invalidation.triggers.EntityBeanCacheBatchInvalidatorInterceptor
+                configured in its interceptor stack.)
+            </p><p>Applies to: Only valid for CMP 2.x Beans</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>value</td><td>text</td><td></td><td>
+                    Defines the behaviour of the invalidator:
+                    true enables it for commit options A and D,
+                    True forces invalidation on all commit options.
+                <br></br>Default value(s):
+                                                  <br></br>true</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_cache-invalidation-config__0__1_"></a><h3>@jboss.cache-invalidation-config (0..1)</h3><p>
+                Configure the behaviour of jboss cache invalidation.
+                NOTE! The defaults mentioned are not manifested in the output,
+                they are JBoss's behaviour cited here for convenience.
+            </p><p>Applies to: Only valid for CMP 2.x Beans</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>invalidation-manager-name</td><td>text</td><td></td><td>
+                    The JMX ObjectName of the InvalidationManager to use.
+                <br></br>Default value(s):
+                                                  <br></br>jboss.cache:service=InvalidationManager</td><td>false</td></tr><tr class="a" valign="top"><td>invalidation-group-name</td><td>text</td><td></td><td>
+                    The name of an invalidationgroup to which this entity belongs.
+                <br></br>Default value(s):
+                                                  <br></br>The EntityBean's name</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_cluster-config__0__1_"></a><h3>@jboss.cluster-config (0..1)</h3><p>
+                 Sets JBoss clustering configuration, overriding the default
+                 container on a per-EJB basis. The defaults mentioned here are
+                 not actual XDoclet behavior but rather JBoss defaults cited
+                 here for convenience.
+             </p><p>Applies to: 
+                 Only valid for EJB's marked as clustered.
+             </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>partition-name</td><td>text</td><td></td><td>
+                     Sets the name of the JBoss Cluster Partition in which this
+                     EJB is to be deployed.
+                 </td><td>false</td></tr><tr class="b" valign="top"><td>home-policy</td><td>text</td><td></td><td>
+                     Sets the algorithm used for home load balancing policy,
+                     i.e. &lt;code&gt;&amp;lt;home-load-balance-policy&amp;gt;&lt;/code&gt; in jboss.xml.
+                     More in JBoss clustering docs...
+                 <br></br>Default value(s):
+                                                  <br></br>org.jboss.ha.framework.interfaces.RoundRobin</td><td>false</td></tr><tr class="a" valign="top"><td>bean-policy</td><td>text</td><td></td><td>
+                     Sets the algorithm used for bean load balancing policy,
+                     i.e. &lt;code&gt;&amp;lt;bean-load-balance-policy&amp;gt;&lt;/code&gt; in jboss.xml.
+                     More in JBoss clustering docs...
+                 <br></br>Default value(s):
+                                                  <br></br>org.jboss.ha.framework.interfaces.RoundRobin</td><td>false</td></tr><tr class="b" valign="top"><td>state-manager</td><td>text</td><td>Only relevant for Stateful SessionBeans</td><td>
+                     Sets the JNDI name used for looking up the clustered
+                     session state manager.
+                     i.e. &lt;code&gt;&amp;lt;session-state-manager-jndi-name&amp;gt;&lt;/code&gt; in jboss.xml.
+                     More in JBoss clustering docs...
+                 <br></br>Default value(s):
+                                                  <br></br>/HASessionState/Default</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_clustered__0__1_"></a><h3>@jboss.clustered (0..1)</h3><p>Marks the EJB as clustered in jboss.xml deployment descriptor</p><p>Applies to: Only valid for Session- and Entity- EJB's</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>cluster</td><td>bool</td><td></td><td>
+               Used to turn on/off clustering.
+             <br></br>Default value(s):
+                                                  <br></br>true</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_cmp-field__0__1_"></a><h3>@jboss.cmp-field (0..1)</h3><p>
+           Will define a &lt;cmp-field&gt; element for a field of a cmp-field of
+           ejb-jar.xml. This is used for dependant objects fields mapping, see
+           @jboss.not-persisted-field. Example:
+        </p><p>Applies to: Applicable to EJBs using JAWS CMP.</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>field-name</td><td>text</td><td></td><td>The name of the field</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>column-name</td><td>text</td><td></td><td>The name of the column.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_container-configuration__0__1_"></a><h3>@jboss.container-configuration (0..1)</h3><p>
+         The name of the container configuration to use for the bean. Applicable to
+         all types of EJBs.
+        </p><p>Applies to: All EJB types</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>Defines the container configuration for the bean.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_declared-sql__0____"></a><h3>@jboss.declared-sql (0..*)</h3><p>
+          Configures a custom query (defined by @ejb.finder) by defining explicitly declared sql fragments to be
+          added to the SQL generated by JBossCMP engine (Requires JBoss 3+).
+        </p><p>Applies to: Applicable to Entity beans with at least one custom finder.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>signature</td><td>text</td><td></td><td>
+            Defines the signature of the
+            method. E.g.. "java.util.Collection
+            findAll()". The return type in the
+            signature must be fully qualified.
+          </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>description</td><td>text</td><td></td><td>Description of this custom query.</td><td>false</td></tr><tr class="a" valign="top"><td>distinct</td><td>bool</td><td></td><td>
+            If true JBossCMP will add the DISTINCT keyword to the generated
+            select clause.  The default is to use DISTINCT if method returns a
+            java.util.Set.
+          <br></br>Default value(s):
+                                                  <br></br>false</td><td>false</td></tr><tr class="b" valign="top"><td>ejb-name</td><td>text</td><td></td><td>
+            The ejb-name of the entity that will be selected.  Required if
+            ejbSelect method.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>field-name</td><td>text</td><td>field-name can only be present if 'ejb-name' is</td><td>
+            The name of the cmp-field that will be selected from the specified
+            entity.  Default is to select the entire entity.
+          </td><td>false</td></tr><tr class="b" valign="top"><td>alias</td><td>text</td><td></td><td>
+            The alias that will be used for the main select table.  Default is
+            ejb-name.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>from</td><td>text</td><td></td><td>
+          Declares additional SQL to append to the generated from clause.
+          Example:  &amp;lt;from&amp;gt;, FullAddressEJB as a&amp;lt;/from&amp;gt;
+          </td><td>false</td></tr><tr class="b" valign="top"><td>where</td><td>text</td><td></td><td>
+          Declares the where clause for the query.
+          Example: &amp;lt;where&amp;gt;TITLE={0} OR ARTIST={0} OR TYPE={0} OR NOTES={0}&amp;lt;/where&amp;gt;
+          </td><td>false</td></tr><tr class="a" valign="top"><td>order</td><td>text</td><td></td><td>
+          Declares the order clause for the query.
+          Example: &amp;lt;order&amp;gt;TITLE&amp;lt;/order&amp;gt;
+          </td><td>false</td></tr><tr class="b" valign="top"><td>other</td><td>text</td><td></td><td>
+          Declares the other sql that is appended to the end of a query.
+          Example: &amp;lt;other&amp;gt;LIMIT 100 OFFSET 200&amp;lt;/other&amp;gt;
+          </td><td>false</td></tr><tr class="a" valign="top"><td>strategy</td><td>text</td><td></td><td>Specifies the strategy used to read-ahead data in queries.<br>Valid options are:</br><br>none</br><br>on-load</br><br>on-find</br></td><td>false</td></tr><tr class="b" valign="top"><td>page-size</td><td>int</td><td></td><td>Specifies the number of entities that will be read in a single read-ahead load query.</td><td>false</td></tr><tr class="a" valign="top"><td>eager-load-group</td><td>text</td><td></td><td>Contains the name of the load group that will eager loaded for this entity.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_depends__0____"></a><h3>@jboss.depends (0..*)</h3><p>
+          The name of an JMX ObjectName on which the bean depends. Applicable to all types of EJBs.
+		  Also applicable to servlets where the dependency is on WAR-level. (JBoss 3.2+).
+        </p><p>Applies to: All EJB types.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>Defines the JMX ObjectName to which the bean depends on. In the servlet
+			case, this dependency is on WAR-level.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_destination-jndi-name__0__1_"></a><h3>@jboss.destination-jndi-name (0..1)</h3><p>
+          Defines JNDI name of the Queue/Topic used my the MDB.
+        </p><p>Applies to: Applicable to MDB</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>The name of the destination.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_ejb-local-ref__0____"></a><h3>@jboss.ejb-local-ref (0..*)</h3><p>
+         Sets the JNDI name of a locally referenced bean that is
+         not contained in the same application.
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>ref-name</td><td>text</td><td></td><td>
+            The name that the referenced bean will be referred to
+            by. For example, to refer to the bean Customer as
+            java:comp/env/ejb/Customer name should be
+            ejb/Customer. Defaults to ejb/[ejb-name], where
+            [ejb-name] is the named of the referenced bean
+            (Customer) prefixed by "ejb/".
+          </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>jndi-name</td><td>text</td><td></td><td>The JNDI name of the bean.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_ejb-ref-jndi__0____"></a><h3>@jboss.ejb-ref-jndi (0..*)</h3><p>
+         Sets the JNDI name of a referenced bean.
+         There must be an @ejb.ejb-ref tag too which points to the referenced
+         bean.
+        </p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>ref-name</td><td>text</td><td></td><td>Define the name of the bean reference.</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>jndi-name</td><td>text</td><td></td><td></td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_entity-command__0__1_"></a><h3>@jboss.entity-command (0..1)</h3><p>
+         Supplies information about an entity-command used to create the
+         entity bean.
+        </p><p>Applies to: CMP entity bean.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>
+          The command name.
+          </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>class</td><td>text</td><td></td><td>
+          The command class.
+          </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_entity-command-attribute__0____"></a><h3>@jboss.entity-command-attribute (0..*)</h3><p>
+         Supplies information about an entity-command used to create the
+         entity bean.
+        </p><p>Applies to: 
+        CMP entity bean with a @jboss.entity-command tag.
+        </p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>name</td><td>text</td><td></td><td>
+          The attribute name.
+          </td><td><b>true</b></td></tr><tr class="a" valign="top"><td>value</td><td>text</td><td></td><td>
+          The attribute value.
+          </td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_finder-query__0____"></a><h3>@jboss.finder-query (0..*)</h3><p>
+          Assign custom query to finder named "findFoo". An @ejb.finder tag
+          for the named finder must also be present
+        </p><p>Applies to: Applicable to Entity beans using JAWS CMP.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>The name of the finder.</td><td><b>true</b></td></tr><tr class="b" valign="top"><td>query</td><td>text</td><td></td><td>The query for the finder. See JAWS documentation for finder query syntax.</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>order</td><td>text</td><td></td><td>The order for the finder results.</td><td>false</td></tr><tr class="b" valign="top"><td>read-ahead</td><td>bool</td><td></td><td>Indicate if the query should have read-ahead.<br></br>Default value(s):
+                                                  <br></br>true</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_method-attributes__0____"></a><h3>@jboss.method-attributes (0..*)</h3><p>
+          Allows for the specification of non-standard attributes for the named
+          method(s).  For JBoss 3.0 this tag can only appear once, for 3.2 and
+          later there can be multiple occurrences.
+        </p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>pattern</td><td>text</td><td></td><td>A complete method name or a pattern consisting of an
+            initial match followed by '*'.</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>read-only</td><td>bool</td><td></td><td>Flags method(s) as read only. The named method(s) will
+            never trigger a store.<br></br>Default value(s):
+                                                  <br></br>false</td><td>false</td></tr><tr class="b" valign="top"><td>transaction-timeout</td><td>text</td><td></td><td>
+	    The transaction timeout in seconds (overriding the default timeout).
+	    This will only work for Required (where the method starts the transaction) and RequiresNew.
+	    The special value of 0 (zero) uses the default timeout configured on jboss:service=TransactionManager
+	    NOTE: any subsequent use of RequiresNew that is not explicitly overridden will use this value.
+	  </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_persistence__0__1_"></a><h3>@jboss.persistence (0..1)</h3><p>
+          The @jboss.persistence tag provides information about the persistence
+          of a CMP Entity bean.
+        </p><p>Applies to: CMP entity bean</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>datasource</td><td>text</td><td></td><td>
+          The jndi-name used to lookup the datasource.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>datasource-mapping</td><td>text</td><td></td><td>
+          The name of the type mapping that will be used for this datasource.
+          </td><td>false</td></tr><tr class="b" valign="top"><td>create-table</td><td>bool</td><td></td><td>
+          Should the persistence manager attempt to create tables if they are
+          not present?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>alter-table</td><td>bool</td><td></td><td>
+          Should the persistence manager attempt to alter tables if they have
+          changed?
+          </td><td>false</td></tr><tr class="b" valign="top"><td>remove-table</td><td>bool</td><td></td><td>
+          Should the persistence manager attempt to remove tables during
+          shutdown?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>post-table-create</td><td>text</td><td>Only used for JBoss 3.2</td><td>
+          Arbitrary SQL code to execute directly after the database table is created.
+          The code is only executed if create-table is true and the table
+          did not previously exist.	
+          </td><td>false</td></tr><tr class="b" valign="top"><td>read-only</td><td>bool</td><td></td><td>
+          Is the entity read-only?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>read-time-out</td><td>int</td><td></td><td>
+          Specifies the amount of time that a read-only entity is considered
+          valid (milliseconds).
+          </td><td>false</td></tr><tr class="b" valign="top"><td>row-locking</td><td>bool</td><td></td><td>
+          Should select statements the SELECT ... FOR UPDATE syntax?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>pk-constraint</td><td>bool</td><td></td><td>
+          Should a primary key constraint be added when creating tables?
+          </td><td>false</td></tr><tr class="b" valign="top"><td>list-cache-max</td><td>int</td><td></td><td>
+          Specifies the number of simultaneous queries that can be tracked by
+          the cache for an entity.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>fetch-size</td><td>int</td><td></td><td>
+          Specifies the number of entities to read in one round-trip to
+          the underlying datastore.
+          </td><td>false</td></tr><tr class="b" valign="top"><td>table-name</td><td>text</td><td></td><td>
+          Specifies the name of the table this entity should be persisted to.
+          </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_port-component__0____"></a><h3>@jboss.port-component (0..*)</h3><p>Specify webservices port-components</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>name</td><td>text</td><td></td><td>The name of the port</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>uri</td><td>text</td><td></td><td>The uri of the port in the form /web-context-root/port</td><td>false</td></tr><tr class="b" valign="top"><td>auth-method</td><td>text</td><td></td><td>The auth mechanism of the webservice<br>Valid options are:</br><br>BASIC</br><br>CLIENT-CERT</br></td><td>false</td></tr><tr class="a" valign="top"><td>transport-guarantee</td><td>text</td><td></td><td>Specification of the transport security between client and server<br>Valid options are:</br><br>NONE</br><br>INTEGRAL</br><br>CONFIDENTIAL</br></td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_query__0____"></a><h3>@jboss.query (0..*)</h3><p>
+          Configures a custom query (defined by @ejb.finder) for the JBossCMP engine (Requires JBoss 3+).
+		  Note that you still need the @ejb.finder with signature and query attributes. If they are
+		  not present, then container will complain at deploy time.
+        </p><p>Applies to: Applicable to Entity beans with at least one custom finder.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>signature</td><td>text</td><td></td><td>
+            Defines the signature of the
+            method. E.g.. "java.util.Collection
+            findAll()". The return type in the
+            signature must be fully qualified.
+          </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>description</td><td>text</td><td></td><td>Description of this custom query.</td><td>false</td></tr><tr class="a" valign="top"><td>query</td><td>text</td><td></td><td>
+          JBossQL query which overrides the EJB-QL specified in the EJB deployment descriptor.  JBossQL is a superset of EJB-QL.
+          </td><td>false</td></tr><tr class="b" valign="top"><td>dynamic</td><td>bool</td><td></td><td>
+          Dynamic JBossQL query.  The JBossQL is passed to the query and compiled on the fly.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>strategy</td><td>text</td><td></td><td>Specifies the strategy used to read-ahead data in queries.<br>Valid options are:</br><br>none</br><br>on-load</br><br>on-find</br></td><td>false</td></tr><tr class="b" valign="top"><td>page-size</td><td>int</td><td></td><td>Specifies the number of entities that will be read in a single read-ahead load query.</td><td>false</td></tr><tr class="a" valign="top"><td>eager-load-group</td><td>text</td><td></td><td>Contains the name of the load group that will eager loaded for this entity.</td><td>false</td></tr><tr class="b" valign="top"><td>ql-compiler</td><td>text</td><td></td><td>Fully qualified name of QL compiler implementation class.</td><td>false</td></tr><tr class="a" valign="top"><td>lazy-resultset-loading</td><td>bool</td><td></td><td>
+          Is relevant only for multi-object queries. Allowed values are true and false.
+          If true, ResultSet will be read on demand, i.e. when user iterates through the collection.
+          If false, user is given completely initialized result, i.e. when user got the result
+          ResultSet is read till the end and closed.
+          </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_read-ahead__0__1_"></a><h3>@jboss.read-ahead (0..1)</h3><p>
+          Specifies the read ahead strategy for this Entity bean.  Applicable to Entity beans using JBossCMP persistence engine.
+        </p><p>Applies to: Applicable to Entity beans using JBossCMP persistence engine.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>strategy</td><td>text</td><td></td><td>Specifies the strategy used to read-ahead data in queries.<br>Valid options are:</br><br>none</br><br>on-load</br><br>on-find</br></td><td><b>true</b></td></tr><tr class="b" valign="top"><td>page-size</td><td>int</td><td></td><td>Specifies the number of entities that will be read in a single read-ahead load query.</td><td>false</td></tr><tr class="a" valign="top"><td>eager-load-group</td><td>text</td><td></td><td>Contains the name of the load group that will eager loaded for this entity.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_read-only__0__1_"></a><h3>@jboss.read-only (0..1)</h3><p>Mark bean as read-only. This will avoid ejbStore calls.</p><p>Applies to: Entity beans</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>read-only</td><td>bool</td><td></td><td>Declare the bean as read only.<br></br>Default value(s):
+                                                  <br></br>true</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_resource-adapter__0__1_"></a><h3>@jboss.resource-adapter (0..1)</h3><p>
+      		sets the rar used in JCA 1.5 message inflow 
+      	</p><p>Applies to: Applicable for JBoss 4.0 message-driven beans</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>
+                The name of the rar used in JCA 1.5 message inflow 
+                (i.e."jms-ra.rar" or "myapp.ear#myconnector.rar" for embedded rars)
+            </td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_resource-env-ref__0____"></a><h3>@jboss.resource-env-ref (0..*)</h3><p>
+          The resource-env-ref element gives a mapping between the "code name"
+          of a env resource (res-ref-name, provided by the Bean Developer) and
+          its deployed JNDI name.
+        </p><p>Applies to: 
+          Used in Entity, MessageDriven, and Session beans.
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>resource-env-ref-name</td><td>text</td><td></td><td>The resource-env-ref-name element gives the "code name" of a resource.
+          It is provided by the Bean Developer.</td><td><b>true</b></td></tr><tr class="b" valign="top"><td>jndi-name</td><td>text</td><td></td><td>The jndi name to which the reference should link.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_resource-manager__0____"></a><h3>@jboss.resource-manager (0..*)</h3><p></p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>res-man-name</td><td>text</td><td></td><td>Define the name of the resource manager.</td><td><b>true</b></td></tr><tr class="a" valign="top"><td>res-man-jndi-name</td><td>text</td><td></td><td>Define the jndi name of the resource manager.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_resource-ref__0____"></a><h3>@jboss.resource-ref (0..*)</h3><p>
+          The resource-ref element gives a mapping between the "code name"
+          of a resource (res-ref-name, provided by the Bean Developer) and
+          its "xml name" (resource-name, provided by the Application Assembler).
+          If no resource-ref is provided, jboss will assume that
+          "xml-name" = "code name".
+        </p><p>Applies to: 
+          Used in Entity, MessageDriven, and Session beans.
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>res-ref-name</td><td>text</td><td></td><td>The res-ref-name element gives the "code name" of a resource. It is
+          provided by the Bean Developer. See resource-managers for the actual
+          configuration of the resource.</td><td><b>true</b></td></tr><tr class="b" valign="top"><td>resource-name</td><td>text</td><td></td><td>The resource-name element gives the "xml name" of the resource. It is
+          provided by the Application Assembler. See resource-managers for the
+          actual configuration of the resource.</td><td>false</td></tr><tr class="a" valign="top"><td>jndi-name</td><td>text</td><td></td><td>The jndi name to which the reference should link.</td><td>false</td></tr><tr class="b" valign="top"><td>res-url</td><td>text</td><td></td><td>The res-url element is the "runtime jndi name" as a url of the resource.
+          It is provided by the Deployer.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_security-proxy__0__1_"></a><h3>@jboss.security-proxy (0..1)</h3><p>The security-proxy gives the class name of the security proxy implementation.
+        This may be an instance of org.jboss.security.SecurityProxy, or an
+        just an object that implements methods in the home or remote interface
+        of an EJB without implementating any common interface.
+        </p><p>Applies to: All EJB types</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>name</td><td>text</td><td></td><td>Defines the security-proxy for the bean.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_service__0____"></a><h3>@jboss.service (0..*)</h3><p>
+                Configures the generation of -service.xml files for JBoss
+            </p><p>Applies to: Valid only for JMX MBeans</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>servicefile</td><td>text</td><td></td><td>
+                    The prefix that will be prepended to the generated -service.xml file
+                    name. For example, if servicefile="test", the generated file will be
+                    called test-service.xml. Please note that you must include at least
+                    one @jboss.service servicefile="xxx" in your MBean, or generation will
+                    fail.
+                <br></br>Default value(s):
+                                                  <br></br>none</td><td>false</td></tr><tr class="a" valign="top"><td>classpath</td><td>text</td><td></td><td>
+                    A directory to use as codebase for this service classpath. This parameter
+                    may be used in conjunction with the 'archives' parameter to form the service
+                    classpath.
+                <br></br>Default value(s):
+                                                  <br></br>none</td><td>false</td></tr><tr class="b" valign="top"><td>archives</td><td>text</td><td></td><td>
+                    Individual filenames that should be used to construct the service classpath.
+                    This parameter should nevercome alone in a '@jboss.service' tag, but should
+                    always come together with the 'classpath' attribute.
+                <br></br>Default value(s):
+                                                  <br></br>*</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_subscriber__0__1_"></a><h3>@jboss.subscriber (0..1)</h3><p>
+      		Provide information about accessing the Message Provider
+      	</p><p>Applies to: Applicable to MDB</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>name</td><td>text</td><td></td><td>User for the jms connection that delivers messages.</td><td>false</td></tr><tr class="a" valign="top"><td>password</td><td>text</td><td></td><td>Password for the jms connection.</td><td>false</td></tr><tr class="b" valign="top"><td>client-id</td><td>text</td><td></td><td>Identifies the Client.</td><td>false</td></tr><tr class="a" valign="top"><td>subscription-id</td><td>text</td><td></td><td>Identifies the (durable) subscripition for the topic that will be used.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_unknown-pk__0__1_"></a><h3>@jboss.unknown-pk (0..1)</h3><p>
+            Supplies information about the unkown primary key. At least
+            the class should be supplied, with optional column name,
+            JDBC and SQL types.
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>class</td><td>text</td><td></td><td>The unknown PK class</td><td><b>true</b></td></tr><tr class="b" valign="top"><td>readonly</td><td>bool</td><td></td><td>Hint to treat the PK as read-only</td><td>false</td></tr><tr class="a" valign="top"><td>read-time-out</td><td>int</td><td></td><td>The read timeout value for the PK field</td><td>false</td></tr><tr class="b" valign="top"><td>column-name</td><td>text</td><td></td><td>The name of the PK column in the DB table</td><td>false</td></tr><tr class="a" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The JDBC type for the PK column. Should be specified together with sql-type</td><td>false</td></tr><tr class="b" valign="top"><td>sql-type</td><td>text</td><td></td><td>The SQL type for the PK column. Should be specified together with jdbc-type</td><td>false</td></tr><tr class="a" valign="top"><td>auto-increment</td><td>bool</td><td></td><td>Set if the PK field is autoincremented by the database</td><td>false</td></tr></table></div></div><div class="section"><a name="@jboss_Method_Level_Tag_Usage"></a><h2>@jboss Method Level Tag Usage</h2><div class="subsection"><a name="@jboss_column-name__0__1_"></a><h3>@jboss.column-name (0..1)</h3><p>Declares the column name to which the CMP field will be mapped.</p><p>Applies to: 
+          EJB entity bean fields. On the persistent fields getter methods
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>The column name.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_dvc-property__0__1_"></a><h3>@jboss.dvc-property (0..1)</h3><p>Declare field as dependent value class.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>name</td><td>text</td><td></td><td>
+        			Name of the property being configured. In a dependent-value-class
+element this must match a JavaBean property of the class. In a
+cmp-field element this must match a flattened propety of the
+dependent-value-class field type.
+				</td><td><b>true</b></td></tr><tr class="b" valign="top"><td>column-name</td><td>text</td><td></td><td>
+        			The name of the column that will hold the data for this field.
+        		</td><td>false</td></tr><tr class="a" valign="top"><td>not-null</td><td>bool</td><td></td><td></td><td>false</td></tr><tr class="b" valign="top"><td>sql-type</td><td>text</td><td></td><td>SQL-Type of this field. Must be used together with jdbc-type.</td><td>false</td></tr><tr class="a" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>JDBC-Type of this field. Must be used together with sql-type.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_jdbc-type__0__1_"></a><h3>@jboss.jdbc-type (0..1)</h3><p>
+              Declare the JDBC Type. Its value must be one
+              of the fields of java.sql.Types (e.g. BIT,
+              CHAR...). This jdbc type will be used by the
+              CMP provider to determine which method to
+              call on PreparedStatement and ResultSet for
+              INSERT / UPDATE / SELECT queries.
+        </p><p>Applies to: 
+          EJB entity bean fields. On the persistent fields getter methods
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>type</td><td>text</td><td></td><td>A valid JDBC type.<br>Valid options are:</br><br>ARRAY</br><br>BIGINT</br><br>BINARY</br><br>BIT</br><br>BLOB</br><br>BOOLEAN</br><br>CHAR</br><br>CLOB</br><br>DATALINK</br><br>DATE</br><br>DECIMAL</br><br>DISTINCT</br><br>DOUBLE</br><br>FLOAT</br><br>INTEGER</br><br>JAVA_OBJECT</br><br>LONGVARBINARY</br><br>LONGVARCHAR</br><br>NULL</br><br>NUMERIC</br><br>OTHER</br><br>REAL</br><br>REF</br><br>SMALLINT</br><br>STRUCT</br><br>TIME</br><br>TIMESTAMP</br><br>TINYINT</br><br>VARBINARY</br><br>VARCHAR</br><br>Default value(s):</br><br>VARCHAR</br></td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_method-attributes__0__1_"></a><h3>@jboss.method-attributes (0..1)</h3><p>
+          Allows for the specification of non-standard attributes for the method.
+          Can only be used with JBoss 3.2 and later, for 3.0 use the class-level tag.
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>read-only</td><td>bool</td><td></td><td>Flags the method as read only. Such a method will
+          never trigger a store.<br></br>Default value(s):
+                                                      <br></br>false</td><td>false</td></tr><tr class="b" valign="top"><td>transaction-timeout</td><td>text</td><td></td><td>
+	    The transaction timeout in seconds (overriding the default timeout).
+	    This will only work for Required (where the method starts the transaction) and RequiresNew.
+	    The special value of 0 (zero) uses the default timeout configured on jboss:service=TransactionManager
+	    NOTE: any subsequent use of RequiresNew that is not explicitly overridden will use this value.
+	  </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_not-persisted-field__0__1_"></a><h3>@jboss.not-persisted-field (0..1)</h3><p></p><p>Applies to: Applicable to Entity beans using JAWS CMP on method level</p></div><div class="subsection"><a name="@jboss_persistence__0__1_"></a><h3>@jboss.persistence (0..1)</h3><p>
+          The @jboss.persistence tag provides information about the persistence
+          of a CMP field.
+        </p><p>Applies to: 
+          CMP entity bean fields. On the persistent fields getter methods.
+        </p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>read-only</td><td>bool</td><td></td><td>
+          Is the field read-only?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>read-time-out</td><td>int</td><td></td><td>
+          Specifies the amount of time that a read-only field is considered
+          valid (milliseconds).
+          </td><td>false</td></tr><tr class="b" valign="top"><td>not-null</td><td>bool</td><td></td><td>
+          Should null values be allowed?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>auto-increment</td><td>bool</td><td>Only used in 3.2 and later</td><td>
+          Should the field be auto-incremented by the database?
+          </td><td>false</td></tr><tr class="b" valign="top"><td>dbindex</td><td>bool</td><td>Only used in 3.2</td><td>
+          Should a DB-index be created for this field?
+          </td><td>false</td></tr><tr class="a" valign="top"><td>check-dirty-after-get</td><td>bool</td><td>Only used from 3.2.3 on</td><td>
+        		Whether an SQL update should be performed after this field has been retrieved via a get* method.
+        	</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_query__0____"></a><h3>@jboss.query (0..*)</h3><p>
+          Configures a custom query for a select method for the JBossCMP engine (Requires JBoss 3+).
+		  Note that you still need an empty @ejb.select tag. If it is not present, then container 
+          will complain at deploy time.
+        </p><p>Applies to: Applicable to Entity beans with at least one custom finder.</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>description</td><td>text</td><td></td><td>Description of this custom query.</td><td>false</td></tr><tr class="b" valign="top"><td>query</td><td>text</td><td></td><td>
+          JBossQL query which overrides the EJB-QL specified in the EJB deployment descriptor.  JBossQL is a superset of EJB-QL.
+          </td><td>false</td></tr><tr class="a" valign="top"><td>dynamic</td><td>bool</td><td></td><td>
+          Dynamic JBossQL query.  The JBossQL is passed to the query and compiled on the fly.
+          </td><td>false</td></tr><tr class="b" valign="top"><td>strategy</td><td>text</td><td></td><td>Specifies the strategy used to read-ahead data in queries.<br>Valid options are:</br><br>none</br><br>on-load</br><br>on-find</br></td><td>false</td></tr><tr class="a" valign="top"><td>page-size</td><td>int</td><td></td><td>Specifies the number of entities that will be read in a single read-ahead load query.</td><td>false</td></tr><tr class="b" valign="top"><td>eager-load-group</td><td>text</td><td></td><td>Contains the name of the load group that will eager loaded for this entity.</td><td>false</td></tr><tr class="a" valign="top"><td>ql-compiler</td><td>text</td><td></td><td>Fully qualified name of QL compiler implementation class.</td><td>false</td></tr><tr class="b" valign="top"><td>lazy-resultset-loading</td><td>bool</td><td></td><td>
+          Is relevant only for multi-object queries. Allowed values are true and false.
+          If true, ResultSet will be read on demand, i.e. when user iterates through the collection.
+          If false, user is given completely initialized result, i.e. when user got the result
+          ResultSet is read till the end and closed.
+          </td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_relation__0____"></a><h3>@jboss.relation (0..*)</h3><p>
+         Used to customize the relationships via jbosscmp-jdbc.xml for JBoss 3.0.
+         NOTE: If you replace jboss.relation with jboss.target-relation, you can
+         modify the blind side of a unidirectional relationship (someone fix this
+         wording)
+        </p><p>Applies to: CMR field</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>fk-constraint</td><td>bool</td><td></td><td>Flag to indicate if a foreign key constraint should be placed on the relation column.<br></br>Default value(s):
+                                                      <br></br>true</td><td>false</td></tr><tr class="a" valign="top"><td>related-pk-field</td><td>text</td><td></td><td>
+           Name of the pk field of the 1- end of the
+           relationship that this foreign key constraint
+           applies to. Required for support of
+           complex primary keys in the 1- end of the
+           relation. (Corresponds to field-name in
+           jbosscmp-jdbc.xml)
+          </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>fk-column</td><td>text</td><td></td><td>
+           Name of the column that should be used
+           for foreign key mapping. (Corresponds to
+           column-name in jbosscmp-jdbc.xml)
+          </td><td><b>true</b></td></tr><tr class="a" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>The jdbc type of the related pk-field. Must be used together with sql-type.</td><td>false</td></tr><tr class="b" valign="top"><td>sql-type</td><td>text</td><td></td><td>The sql type of the related pk-field. Must be used together with jdbc-type.</td><td>false</td></tr><tr class="a" valign="top"><td>dbindex</td><td>bool</td><td>Only used in 3.2 and later</td><td>
+          Should a DB-index be created for this field?
+          </td><td>false</td></tr><tr class="b" valign="top"><td>batch-cascade-delete</td><td>bool</td><td></td><td>
+				The batch-cascade-delete element specifies that, this side of the relationship
+should be batch deleted with one SQL statement of the form
+DELETE FROM &lt;related-table&gt; WHERE &lt;foreign-key&gt; = ?
+The presense of cascade-delete element in ejb-jar.xml for the matching
+ejb-relationship-role is mandatory (see @ejb.relation).
+			<br></br>Default value(s):
+                                                      <br></br>false</td><td>false</td></tr><tr class="a" valign="top"><td>read-only</td><td>bool</td><td></td><td>
+                Is the relation read-only?
+			<br></br>Default value(s):
+                                                      <br></br>false</td><td>false</td></tr><tr class="b" valign="top"><td>read-time-out</td><td>text</td><td></td><td>
+                Specifies the ammount of time that a read-only field is considered
+valid (milliseconds).
+			</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_relation-mapping__0__1_"></a><h3>@jboss.relation-mapping (0..1)</h3><p>
+          Use jboss.relation-mapping="relation-table" to force
+          the use of a relation table mapping in a relationship
+          even when the relation is not M-N.
+        </p><p>Applies to: CMR field</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>style</td><td>text</td><td></td><td>relation-table to be of any use<br>Valid options are:</br><br>relation-table</br></td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_relation-read-ahead__0____"></a><h3>@jboss.relation-read-ahead (0..*)</h3><p>
+         Used to customize the read-ahead component of relationships via jbosscmp-jdbc.xml for JBoss 3.0.
+         NOTE: If you replace jboss.relation-read-ahead with jboss.target-relation-read-ahead, you can modify the blind side of a unidirectional relationship.
+        </p><p>Applies to: CMR field</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>strategy</td><td>text</td><td></td><td>Specifies the strategy used to read-ahead data in queries.<br>Valid options are:</br><br>none</br><br>on-load</br><br>on-find</br></td><td><b>true</b></td></tr><tr class="a" valign="top"><td>page-size</td><td>int</td><td></td><td>Specifies the number of entities that will be read in a single read-ahead load query.</td><td>false</td></tr><tr class="b" valign="top"><td>eager-load-group</td><td>text</td><td></td><td>Contains the name of the load group that will eager loaded for this entity.</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_relation-table__0__1_"></a><h3>@jboss.relation-table (0..1)</h3><p>Tells the JBoss persistence manager to use a relation table for managing entity relationships.</p><p>Applies to: CMR field</p><table class="bodyTable"><tr class="a"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="b" valign="top"><td>table-name</td><td>text</td><td></td><td>The name of the relation table.</td><td>false</td></tr><tr class="a" valign="top"><td>datasource</td><td>text</td><td></td><td>The datasource to place the relation table in.</td><td>false</td></tr><tr class="b" valign="top"><td>datasource-mapping</td><td>text</td><td></td><td>The name of the type mapping that will be used for this datasource.</td><td>false</td></tr><tr class="a" valign="top"><td>create-table</td><td>bool</td><td></td><td>Should the persistence manager attempt to create tables if they are not present?</td><td>false</td></tr><tr class="b" valign="top"><td>alter-table</td><td>bool</td><td></td><td>Should the persistence manager attempt to alter tables if they have changed?</td><td>false</td></tr><tr class="a" valign="top"><td>remove-table</td><td>bool</td><td></td><td>Should the persistence manager attempt to remove tables during shutdown?</td><td>false</td></tr><tr class="b" valign="top"><td>row-locking</td><td>bool</td><td></td><td>Should select statements the SELECT ... FOR UPDATE syntax?</td><td>false</td></tr><tr class="a" valign="top"><td>pk-constraint</td><td>bool</td><td></td><td>Should a primary key constraint be added when creating tables?</td><td>false</td></tr></table></div><div class="subsection"><a name="@jboss_sql-type__0__1_"></a><h3>@jboss.sql-type (0..1)</h3><p>
+           Declare the actual type of the field in the
+           database. This value will only be used when the
+           CMP container creates your table (if possible).
+        </p><p>Applies to: 
+          EJB entity bean fields. On the persistent fields getter methods
+        </p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>type</td><td>text</td><td></td><td>The database-specific SQL type.</td><td><b>true</b></td></tr></table></div><div class="subsection"><a name="@jboss_target-relation__0____"></a><h3>@jboss.target-relation (0..*)</h3><p>
+           Used to customize the relationships via jbosscmp-jdbc.xml for JBoss 3.0.
+           This tag should be used to modify the blind side of the relation in an
+           unidirectional relationship. Aside from this, it's exactly the same as
+           @jboss.relation.
+          </p><p>Applies to: CMR field</p><table class="bodyTable"><tr class="b"><th>Parameter</th><th>Type</th><th>Applicability</th><th>Description</th><th>Mandatory</th></tr><tr class="a" valign="top"><td>fk-constraint</td><td>bool</td><td></td><td>Flag to indicate if a foreign key constraint should be placed on the relation column.<br></br>Default value(s):
+                                                      <br></br>true</td><td>false</td></tr><tr class="b" valign="top"><td>related-pk-field</td><td>text</td><td></td><td>
+             Name of the pk field of the 1- end of the
+             relationship that this foreign key constraint
+             applies to. Required for support of
+             complex primary keys in the 1- end of the
+             relation. (Corresponds to field-name in
+             jbosscmp-jdbc.xml)
+            </td><td><b>true</b></td></tr><tr class="a" valign="top"><td>fk-column</td><td>text</td><td></td><td>
+             Name of the column that should be used
+             for foreign key mapping. (Corresponds to
+             column-name in jbosscmp-jdbc.xml)
+            </td><td><b>true</b></td></tr><tr class="b" valign="top"><td>jdbc-type</td><td>text</td><td></td><td>
+            The jdbc type. Needs to be given together with the sql-type
+            </td><td>false</td></tr><tr class="a" valign="top"><td>sql-type</td><td>text</td><td></td><td>
+            The sql type. Needs to be given together with the jdbc type
+            </td><td>false</td></tr></table></div></div><div class="section"><a name="@jboss_Field_Level_Tag_Usage"></a><h2>@jboss Field Level Tag Usage</h2></div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, XDoclet Team</div><div class="clear"><hr></hr></div></div></body></html>

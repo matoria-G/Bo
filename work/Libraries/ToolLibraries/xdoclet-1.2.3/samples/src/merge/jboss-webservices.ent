@@ -1,0 +1,5 @@
+
+      <webservice-description>
+         <webservice-description-name>MyWebService</webservice-description-name>
+         <wsdl-publish-location>file:/opt/webservices</wsdl-publish-location>
+      </webservice-description>

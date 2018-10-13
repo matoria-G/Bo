@@ -1,0 +1,38 @@
+package com.bo.request;
+
+import java.io.IOException;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import com.bo.database.utils.DBContext;
+import com.bo.database.utils.DBUtil;
+
+public class ProcessRequest {
+	
+	public ArrayList<String> process(String requestItem){
+		DBContext dbcontext=new DBContext();
+		DBUtil dbutil=dbcontext.createUtilInstance();
+		String query;
+		ArrayList<String> vendors=new ArrayList<String>();
+		try{
+	       query ="SELECT DISTINCT(P.VENDOR_ID), COUNT(P.ITEM_CODE) FROM VENDORITEMS P WHERE P.ITEM_CODE IN (?) GROUP BY P.VENDOR_ID";
+	        dbutil.setSql(query);
+	        dbutil.setString(1, requestItem);
+	        ResultSet rs=dbutil.executeQuery();
+	        while(rs.next()){
+	        	vendors.add(rs.getString(1));
+	        }
+		
+		}
+		
+		
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		return vendors;
+		
+	}
+	
+
+}

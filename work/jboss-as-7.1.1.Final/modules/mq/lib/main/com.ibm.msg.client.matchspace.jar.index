@@ -1,0 +1,12 @@
+com/ibm/msg/client/matchspace/selector
+
+com/ibm/msg/client/matchspace
+com/ibm/msg/client/matchspace/internal
+com/ibm
+com
+com/ibm/msg
+META-INF
+com/ibm/msg/client/matchspace/tools
+com/ibm/msg/client/matchspace/api
+com/ibm/msg/client
+com/ibm/msg/client/matchspace/selector/internal

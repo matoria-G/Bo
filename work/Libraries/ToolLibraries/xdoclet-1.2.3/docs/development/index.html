@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>XDoclet: Attribute-Oriented Programming - Developer Guide</title><style type="text/css" media="all">
+          @import url("../style/maven-base.css");
+          
+			    @import url("../style/maven-theme.css");</style><link rel="stylesheet" href="../style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><link rel="shortcut icon" href="../favicon.ico"></link><link rel="icon" href="../favicon.ico"></link></head><body class="composite"><div id="banner"><a href="http://xdoclet.sourceforge.net/" id="organizationLogo"><img alt="XDoclet Team" src="../images/logo.gif"></img></a><a href="http://xdoclet.sourceforge.net/xdoclet/" id="projectLogo"><img alt="XDoclet" src="http://sflogo.sourceforge.net/sflogo.php?group_id=31602&amp;type=5"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">
+                	Last published: 16 April 2005
+                  | Doc for 1.2.3</div><div class="xright">
+        
+        <a href="http://xdoclet.sourceforge.net/xdoclet/" class="externalLink" title="External Link">Home</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://sourceforge.net/projects/xdoclet/" class="externalLink" title="External Link">SourceForge Project</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://xdoclet.sourceforge.net/wiki/" class="externalLink" title="External Link">Wiki</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xdoclet/" class="externalLink" title="External Link">Browse CVS</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://opensource.atlassian.com/projects/xdoclet/secure/CreateIssue!default.jspa" class="externalLink" title="External Link">Create an Issue</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuXDoclet"><h5>XDoclet</h5><ul><li class="none"><a href="../index.html">Overview</a></li><li class="none"><a href="../status.html">News and Status</a></li><li class="none"><a href="../install.html">Download/Installation</a></li><li class="none"><a href="../using.html">Using XDoclet</a></li><li class="none"><a href="../bp.html">Best Practices</a></li><li class="none"><a href="../faq.html">FAQ</a></li><li class="none"><a href="../licenses/xdoclet-license.html">License</a></li></ul></div><div id="menuAnt_Task_Reference"><h5>Ant Task Reference</h5><ul><li class="none"><a href="../ant/xdoclet/DocletTask.html">&lt;doclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/ejb/EjbDocletTask.html">&lt;ejbdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/hibernate/HibernateDocletTask.html">&lt;hibernatedoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/jdo/JdoDocletTask.html">&lt;jdodoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/jmx/JMXDocletTask.html">&lt;jmxdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/mockobjects/MockObjectDocletTask.html">&lt;mockdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/portlet/PortletDocletTask.html">&lt;portletdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/spring/SpringDocletTask.html">&lt;springdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/apache/tapestry/TapestryDocletTask.html">&lt;tapestrydoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/web/WebDocletTask.html">&lt;webdoclet .. /&gt;</a></li><li class="none"><a href="../ant/xdoclet/modules/wsee/WseeDocletTask.html">&lt;wseedoclet .. /&gt;</a></li></ul></div><div id="menuTag_Reference"><h5>Tag Reference</h5><ul><li class="none"><a href="../tags/apache-tags.html">apache (@soap @struts @axis @tapestry)</a></li><li class="none"><a href="../tags/bea-tags.html">bea (@weblogic)</a></li><li class="none"><a href="../tags/borland-tags.html">borland (@bes)</a></li><li class="none"><a href="../tags/caucho-tags.html">caucho (@resin)</a></li><li class="none"><a href="../tags/ejb-tags.html">ejb (@ejb @dao)</a></li><li class="none"><a href="../tags/exolab-tags.html">exolab (@castor)</a></li><li class="none"><a href="../tags/hp-tags.html">hp (@hpas)</a></li><li class="none"><a href="../tags/hibernate-tags.html">hibernate (@hibernate)</a></li><li class="none"><a href="../tags/ibm-tags.html">ibm (@websphere)</a></li><li class="none"><a href="../tags/java-tags.html">java (@javabean)</a></li><li class="none"><a href="../tags/jboss-tags.html">jboss (@jboss)</a></li><li class="none"><a href="../tags/jdo-tags.html">jdo (@jdo)</a></li><li class="none"><a href="../tags/jmx-tags.html">jmx (@jmx)</a></li><li class="none"><a href="../tags/jsf-tags.html">jsf (@jsf)</a></li><li class="none"><a href="../tags/macromedia-tags.html">macromedia (@jrun)</a></li><li class="none"><a href="../tags/mockobjects-tags.html">mockobjects (@mock)</a></li><li class="none"><a href="../tags/mvcsoft-tags.html">mvcsoft (@mvcsoft)</a></li><li class="none"><a href="../tags/mx4j-tags.html">mx4j (@mx4j)</a></li><li class="none"><a href="../tags/objectweb-tags.html">objectweb (@jonas)</a></li><li class="none"><a href="../tags/oracle-tags.html">oracle (@oc4j)</a></li><li class="none"><a href="../tags/orion-tags.html">orion (@orion)</a></li><li class="none"><a href="../tags/portlet-tags.html">portlet (@portlet)</a></li><li class="none"><a href="../tags/pramati-tags.html">pramati (@pramati)</a></li><li class="none"><a href="../tags/spring-tags.html">spring (@spring)</a></li><li class="none"><a href="../tags/sun-tags.html">sun (@sunone)</a></li><li class="none"><a href="../tags/sybase-tags.html">sybase (@easerver)</a></li><li class="none"><a href="../tags/tjdo-tags.html">tjdo (@tjdo)</a></li><li class="none"><a href="../tags/web-tags.html">web (@web @jsp)</a></li><li class="none"><a href="../tags/webwork-tags.html">webwork (@webwork)</a></li><li class="none"><a href="../tags/wsee-tags.html">wsee (@wsee)</a></li><li class="none"><a href="../tags/xdoclet-tags.html">xdoclet (@xdoclet @doc @msg)</a></li></ul></div><div id="menuFeature_Documentation"><h5>Feature Documentation</h5><ul><li class="none"><a href="../valueobjects.html">Using Value Objects</a></li><li class="none"><a href="../envhandling.html">EJB Environment Handling</a></li></ul></div><div id="menuAdvanced"><h5>Advanced</h5><ul><li class="none"><a href="../maven-plugin.html">Maven Plug-in</a></li><li class="none"><a href="../merge.html">Merge Points</a></li><li class="none"><a href="../ide/index.html">IDE Integration</a></li><li class="none"><a href="../migration.html">Migration from EJBDoclet</a></li><li class="none"><a href="../ant15.html">Ant 1.5 Troubleshooting</a></li></ul></div><div id="menuCommunity"><h5>Community</h5><ul><li class="none"><a href="../feedback.html">Feedback</a></li><li class="none"><a href="../resources.html">Resources</a></li><li class="none"><a href="../tools.html">Tools</a></li></ul></div><div id="menuDevelopment"><h5>Development</h5><ul><li class="none"><strong><a href="../development/index.html">Developer Guide</a></strong></li><li class="none"><a href="../api/index.html">Javadoc (API)</a></li><li class="none"><a href="../templates/index.html">Template Language (*.xdt)</a></li><li class="none"><a href="http://xdoclet.sourceforge.net/xjavadoc/" class="externalLink" title="External Link">XJavaDoc Site</a></li></ul></div><div id="search"><h5>Search XDoclet</h5><form action="http://www.google.com/search" method="get"><a href="http://www.google.com" class="navlink"><img height="32" width="75" alt="Google" src="http://www.google.com/logos/Logo_25wht.gif"></img></a><input name="q" maxlength="255" size="15" type="text" value="" id="q"></input><input name="btnG" type="submit" value="Go" id="btnG"></input><input name="domains" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet"></input><input name="sitesearch" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet" id="search"></input></form></div><div id="menuProject_Documentation"><h5>Project Documentation</h5><ul><li class="none"><a href="../index.html">About XDoclet</a></li><li class="collapsed"><a href="../project-info.html">Project Info</a></li><li class="collapsed"><a href="../maven-reports.html">Project Reports</a></li><li class="none"><a href="http://maven.apache.org/development-process.html" class="externalLink" title="External Link">Development Process</a></li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="../images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="Developer_Guide"></a><h2>Developer Guide</h2><div class="subsection"><a name="New_XDoclet_Developer__Welcome_"></a><h3>New XDoclet Developer? Welcome!</h3><p>
+		    		There are a variety of ways to participate. Regardless of how you choose to
+		    		participate, we suggest you to <a href="../mail-lists.html">join the mailing list</a>
+		    		first.
+				</p><p>
+					A first step in praticipating is usually to provide patches or other contributions to entries
+					in the issue tracking system. 
+				</p><p>
+					Feel the irresistible urge to write quality code? Then <a href="../mail-lists.html">join</a> the XDoclet
+					<a href="../team-list.html">project team</a> today (send an email to the xdoclet-devel mailing list)!
+				</p></div><div class="subsection"><a name="Coding_Conventions"></a><h3>Coding Conventions</h3><p>
+                    Below is a list of coding conventions that are specific to XDoclet, everything
+                    else not specifically mentioned here should follow the official
+                    <a href="http://java.sun.com/docs/codeconv/html/CodeConvTOC.doc.html" class="externalLink" title="External Link">Sun Java Coding Conventions</a>.
+                </p><p>
+                    1. Brackets that begin and end classes and methods should begin and end on a new line and should exist even for one line statements.
+                </p><p>
+                    2. 4 space indent. <b>NO tabs</b>. Period. We understand that many developers like to use tabs, but
+                    the fact of the matter is that in a distributed development environment where diffs are sent to the
+                    mailing lists by both developers and the version control system (which sends commit log messages),
+                    the use tabs makes it impossible to preserve legibility.
+                </p><p>
+                    3. JavaDoc <b>MUST</b> exist on all methods. If your code modifications use an existing
+                    class/method/variable which lacks JavaDoc, it is required that you add it. This will improve the
+                    project as a whole.
+                </p><p>
+                    4. If you contribute to a file (code or documentation), add yourself to the authors list at the top
+                    of the file. Your sourceforge email address is preferred. Do not include the @ sign, as email spiders
+                    will put your email in spam lists. For java files the preferred Javadoc format is:
+                </p>
+    <div class="source"><pre>@author &lt;a href="mailto:user at domain.com"&gt;John Doe&lt;/a&gt;</pre></div>
+  <p>
+                    Thanks for your cooperation.
+                </p></div><div class="subsection"><a name="Commits"></a><h3>Commits</h3><p>
+					Before commiting at least rebuild xdoclet to see if the changes at least compile.
+					<br></br>
+					This will also run a beautifier over your java files. Sync your IDE after the build was run
+					to grab those format changes and only commit afterwards.
+				</p><p>
+					If possible, run the build in the samples directory over your changes and see if this passes. 
+					This is no real testsuite, but the build run should not stop. If possible add some tags for what 
+					you are testing to the samples and see if it behavs as desired.
+				</p></div><div class="subsection"><a name="JIRA"></a><h3>JIRA</h3><p>As you already know, 
+					<a href="http://opensource.atlassian.com/projects/xdoclet/secure/BrowseProject.jspa?id=10000" class="externalLink" title="External Link">JIRA</a>
+					is used as issue tracking system. As there is a link between JIRA and sourceforge, you should do two things:
+					<ul>
+						<li>Set your sourceforge email address (xxx@users.sourceforge.net) as email address in JIRA</li>
+						<li>For commits that link to items in JIRA, add the issue number (e.g. XDT-399) to the commit message.</li>
+					</ul>
+				</p><p>
+					When you plan to work on an issue, assign the issue to yourself, so other developers won't grab it as
+					well and duplicate work is done. 
+					If you see that you won't solve the problem, then assign the issue back to xdoclet-devel general user.
+				</p><p>
+					If there is an issue assigned to another developer for a long time without any notion of activity
+					<b>and</b> you have a solution to the issue, you can take over the issue and apply your fix.
+				</p><p>
+					If you plan to do bigger changes (more severe than e.g. fixing a typo, throwing out unused imports etc.) 
+					and there is no JIRA for it, create one. This is generally a good idea, as the change log is built from
+					the closed JIRA issues.
+				</p><p>
+					As the changelog for a release is created from the JIRA issues, set the release an issue was fixed
+					when closing a successful fix and select no release when rejecting an issue (e.g. incomplete).
+				</p><p>
+					The resolved state in JIRA should only be used to signal that the problem itself is solved (and the
+					fix applied), but there is some feedback from the submitter needed. If an issue is solved, then
+					close it completely.
+				</p></div><div class="subsection"><a name="Further_Reading"></a><h3>Further Reading</h3><ul>
+                    <li><a href="architecture.html">Architecture</a></li>
+                    <li><a href="branches.html">Branches and Tags</a></li>
+					<li><a href="planning.html">Planning</a></li>
+				</ul></div></div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, XDoclet Team</div><div class="clear"><hr></hr></div></div></body></html>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jboss PUBLIC "-//JBoss//DTD JBOSS 4.0//EN" "http://www.jboss.org/j2ee/dtd/jboss_4_0.dtd">
+
+<jboss>
+
+   <unauthenticated-principal>nobody</unauthenticated-principal>
+
+   <enterprise-beans>
+
+     <!--
+       To add beans that you have deployment descriptor info for, add
+       a file to your XDoclet merge directory called jboss-beans.xml that contains
+       the <session></session>, <entity></entity> and <message-driven></message-driven>
+       markup for those beans.
+     -->
+
+      <entity>
+         <ejb-name>Customer</ejb-name>
+         <jndi-name>blah/bank/Customer</jndi-name>
+         <ejb-ref>
+            <ejb-ref-name>ejb/bank/Account</ejb-ref-name>
+            <jndi-name>ejb/bank/Account</jndi-name>
+         </ejb-ref>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Subscriber</ejb-name>
+         <local-jndi-name>de.razeman.xdoclet.test.weblogic.ejb.relation.local.SubscriberLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>LanguageCode</ejb-name>
+         <local-jndi-name>airline.LanguageCodeLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Magazine</ejb-name>
+         <local-jndi-name>de.razeman.xdoclet.test.weblogic.ejb.relation.local.MagazineLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Account</ejb-name>
+         <jndi-name>ejb/bank/Account</jndi-name>
+         <local-jndi-name>AccountLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>City</ejb-name>
+         <local-jndi-name>airline.CityLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Country</ejb-name>
+         <local-jndi-name>airline.CountryLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>AllTypesEntity</ejb-name>
+         <jndi-name>test/AllTypesEntity</jndi-name>
+         <local-jndi-name>test/LocalAllTypesEntity</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Address</ejb-name>
+         <local-jndi-name>AddressLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Employee</ejb-name>
+         <local-jndi-name>EmployeeLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>CustomerBMP</ejb-name>
+         <jndi-name>ejb/bank/CustomerBMP</jndi-name>
+         <ejb-ref>
+            <ejb-ref-name>ejb/bank/Account</ejb-ref-name>
+            <jndi-name>ejb/bank/Account</jndi-name>
+         </ejb-ref>
+         <ejb-ref>
+            <ejb-ref-name>ejb/bank/Account</ejb-ref-name>
+            <jndi-name>ejb/bank/Account</jndi-name>
+         </ejb-ref>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>Language</ejb-name>
+         <local-jndi-name>airline.LanguageLocalHome</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>File</ejb-name>
+         <local-jndi-name>blah/File</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+      <entity>
+         <ejb-name>EmployeeAddress</ejb-name>
+         <local-jndi-name>EmployeeAddressLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+
+      </entity>
+
+      <session>
+         <ejb-name>Stateful</ejb-name>
+         <jndi-name>Stateful</jndi-name>
+         <local-jndi-name>StatefulLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>Teller</ejb-name>
+         <jndi-name>ejb/bank/Teller</jndi-name>
+         <local-jndi-name>TellerLocal</local-jndi-name>
+         <configuration-name>Standard Stateless SessionBean</configuration-name>
+         <ejb-ref>
+            <ejb-ref-name>ejb/bank/Account</ejb-ref-name>
+            <jndi-name>ejb/bank/Account</jndi-name>
+         </ejb-ref>
+          <ejb-local-ref>
+            <ejb-ref-name>ejb/File</ejb-ref-name>
+            <local-jndi-name>blah/File</local-jndi-name>
+          </ejb-local-ref>
+
+         <resource-ref>
+            <res-ref-name>jdbc/DBPool</res-ref-name>
+            <resource-name>MyDataSourceManager</resource-name>
+         </resource-ref>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+
+      <message-driven>
+         <ejb-name>QueueBean</ejb-name>                       
+         <destination-jndi-name>queue/testQueue</destination-jndi-name>
+
+      </message-driven>
+      <webservice-description>
+         <webservice-description-name>MyWebService</webservice-description-name>
+         <wsdl-publish-location>file:/opt/webservices</wsdl-publish-location>
+      </webservice-description>
+
+   </enterprise-beans>
+
+     <!--
+       To specify your own assembly descriptor info here, add a file to your
+       XDoclet merge directory called jboss-assembly-descriptor.xml that contains
+       the <assembly-descriptor></assembly-descriptor> markup.
+     -->
+   <assembly-descriptor>
+    <!-- message destinations -->
+     <!--
+       To specify additional message-destination elements, add a file in the merge
+       directory called jboss-message-destinations.ent that contains them.
+     -->
+   </assembly-descriptor>
+
+   <resource-managers>
+   </resource-managers>
+
+  <!--
+    | for container settings, you can merge in jboss-container.xml
+    | this can contain <invoker-proxy-bindings/> and <container-configurations/>
+  -->
+
+</jboss>

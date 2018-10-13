@@ -1,0 +1,139 @@
+<ejbext:EJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Ext">
+
+    <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_1"/>
+
+    <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="Session_ext_1">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Session_Stateful"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="Session_ext_2">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Session_Teller"/>
+        <timeout>239</timeout>
+
+        <resourceRefExtensions xmi:id="ResourceRef_ext_1"
+        >
+            <resourceRef href="META-INF/ejb-jar.xml#ResRef_1"/>
+        </resourceRefExtensions>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_1">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Customer"/>
+        <structure xmi:id="Customer_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_1" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_2">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Subscriber"/>
+        <structure xmi:id="Subscriber_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_2" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_3">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_LanguageCode"/>
+        <structure xmi:id="LanguageCode_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_3" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_4">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Magazine"/>
+        <structure xmi:id="Magazine_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_4" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_5">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Account"/>
+        <structure xmi:id="Account_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_5" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_6">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_City"/>
+        <structure xmi:id="City_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_6" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_7">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Country"/>
+        <structure xmi:id="Country_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_7" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_8">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_AllTypesEntity"/>
+        <structure xmi:id="AllTypesEntity_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_8" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_9">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Address"/>
+        <structure xmi:id="Address_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_9" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_10">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Employee"/>
+        <structure xmi:id="Employee_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_10" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:EntityExtension" xmi:id="BeanManagedEntity_ext_1">
+        <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#BeanManagedEntity_CustomerBMP"/>
+        <structure xmi:id="CustomerBMP_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="BeanManagedEntity_BeanInternationalization_1" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_11">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Language"/>
+        <structure xmi:id="Language_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_11" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_12">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_File"/>
+        <structure xmi:id="File_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_12" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions 
+        xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntity_ext_13">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_EmployeeAddress"/>
+        <structure xmi:id="EmployeeAddress_BeanStructure" inheritenceRoot="false"/>
+        <internationalization xmi:id="ContainerManagedEntity_BeanInternationalization_13" invocationLocale="CALLER"/>
+
+    </ejbExtensions>
+
+    <ejbExtensions xmi:type="ejbext:MessageDrivenExtension" xmi:id="MessageDriven_ext_1">
+        <enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#MessageDriven_1" />
+        <!-- ML FIX. enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#MessageDriven_QueueBean"/-->
+
+    </ejbExtensions>
+
+</ejbext:EJBJarExtension>

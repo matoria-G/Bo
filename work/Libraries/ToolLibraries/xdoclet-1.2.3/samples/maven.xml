@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<project default="jar">
+
+    <preGoal name="java:compile">
+        <attainGoal name="xdoclet:ejbdoclet"/>
+        <attainGoal name="xdoclet:jmxdoclet"/>
+        <attainGoal name="xdoclet:webdoclet"/>
+        <attainGoal name="xdoclet:hibernatedoclet"/>
+    </preGoal>
+
+</project>

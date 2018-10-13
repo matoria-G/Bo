@@ -1,0 +1,4 @@
+1.txt
+main
+
+jboss.as1:subsystem=resource-adapters,resource-adapter=wmq.jmsra.rar,admin-objects=MQ.QUEUE.NAME1

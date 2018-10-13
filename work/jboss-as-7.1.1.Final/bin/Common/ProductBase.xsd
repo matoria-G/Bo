@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	version="2.0">
+
+	<xs:annotation>
+		<xs:documentation> 
+			Product Base XML Schema, version 2.0
+			by Frida Mörtsell (frida.mortsell@metamatrix.se).
+			
+			Defines basic attributes and types for products
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:attributeGroup name="ProductBaseAttributes">
+		<xs:attribute name="productId" type="xs:string" use="required"/>
+		<xs:attribute name="productType" type="ProductTypeType" use="required"/>
+		<xs:attribute name="date" type="xs:date" use="required"/>
+		<xs:attribute name="timestamp" type="xs:string" use="required"/>
+		<xs:attribute name="sequenceNumber" type="IntType" use="required"/>
+		<xs:attribute name="version" type="xs:string" use="required"/>
+	</xs:attributeGroup>
+
+	<xs:simpleType name="ProductTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="start" />
+			<xs:enumeration value="daily" />
+			<xs:enumeration value="intraday" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="YesNoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="J" /> <!-- For swedish content -->
+			<xs:enumeration value="Y" /> <!-- For english content -->
+			<xs:enumeration value="N" /> <!-- For both sv and en -->
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="SwedishDecimal"> <!-- Only non-negative numbers -->
+	    <xs:restriction base="xs:string">
+	        <xs:pattern value="\d+(,\d{3})*(.\d*)?"></xs:pattern>
+	    </xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="AmountType">
+		<xs:simpleContent>
+			<xs:extension base="restrictedAmountType">
+				<xs:attribute name="currency" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="restrictedAmountType">
+		<xs:restriction base="DecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="AmountMaxType">
+		<xs:simpleContent>
+			<xs:extension base="restrictedAmountMaxType">
+				<xs:attribute name="currency" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="restrictedAmountMaxType">
+		<xs:restriction base="MaxDecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="QuantityType">
+			<xs:restriction base="LongType">
+			</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="QuantityDecimalType">
+		<xs:restriction base="DecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="QuantityOrAmountType">
+		<xs:restriction base="DecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PerCentType">
+		<xs:restriction base="PerCentDecimalType">
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="IntType">
+			<xs:restriction base="xs:int">
+			    <xs:totalDigits value="9"/>
+			</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="LongType">
+			<xs:restriction base="xs:long">
+			    <xs:totalDigits value="15"/>
+			</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="DecimalType">
+				<xs:restriction base="xs:decimal">
+				    <xs:totalDigits value="15"/>
+				    <xs:fractionDigits value="2"/>
+				</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="MaxDecimalType">
+				<xs:restriction base="xs:decimal">
+				    <xs:totalDigits value="15"/>
+				    <xs:fractionDigits value="5"/>
+				</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="PerCentDecimalType">
+		<xs:restriction base="xs:decimal">
+		    <xs:totalDigits value="15"/>
+		    <xs:fractionDigits value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

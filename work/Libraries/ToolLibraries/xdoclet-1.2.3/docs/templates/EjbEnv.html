@@ -1,0 +1,309 @@
+
+<html>
+<head>
+</head>
+<body bgcolor="#ffffff">
+
+<h2>EjbEnv</h2>
+
+<p>Implemented in class <a href="../api/xdoclet/modules/ejb/env/EnvTagsHandler.html">xdoclet.modules.ejb.env.EnvTagsHandler</a>.</p>
+<ul>
+  <li><a href="#block">Block Tags</a>
+  <li><a href="#content">Content Tags</a>
+</ul>
+
+<h3><a name="block">Block Tags:</a></h3>
+
+<h4><a name="forAllTags">forAllTags</a> (block template)</h4>
+<p>Executes the template for all class-, method- and field-level tags with the passed name</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           tagName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the tag name<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramName]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the required parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramValue]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the value for the required parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="forAllMemberTags">forAllMemberTags</a> (block template)</h4>
+<p>Executes the template for all method- and field-level tags with the passed name</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           tagName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the tag name<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramName]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the required parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramValue]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the value for the required parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="forAllMethodTags">forAllMethodTags</a> (block template)</h4>
+<p>Executes the template for all method-level tags with the passed name</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           tagName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the tag name<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramName]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the required parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramValue]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the value for the required parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="ifHasType">ifHasType</a> (block template)</h4>
+<p>Executes the body only if the current tag is either a method- or fiel-level tag or has a type parameter.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the name of the name parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="ifPrimitiveMember">ifPrimitiveMember</a> (block template)</h4>
+<p>Executes the body only if the current field type or method return type is primitive.</p>
+
+<h4><a name="ifNotPrimitiveMember">ifNotPrimitiveMember</a> (block template)</h4>
+<p>Executes the body only if the current field type or method return type is not a primitive.</p>
+
+<h4><a name="ifHasTag">ifHasTag</a> (block template)</h4>
+<p>Executes the body only if the current class has at least one ot the passed tags at field- or method-level</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           tagName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the tag names (comma separated)<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramName]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       tags must have this parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [paramValue]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       tags must have this value for the parameter with 'paramName'<br></br>
+    </td>
+  </tr>
+</table>
+
+<h3><a name="content">Content templates:</a></h3>
+
+<h4><a name="name">name</a> (content template)</h4>
+<p>Returns the name parameter value for the current tag. If the name parameter is not specified for a method- or field-level tag, the member's name is returned. If the name parameter is not specified for a class level tag, an error is generated.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the name of the name parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="type">type</a> (content template)</h4>
+<p>Returns the type parameter value for the current tag. Returns the field type for field-level tags and the return value for method-level tags. For class-level tags, the value of the type parameter is returned. The wrapper class is returned for primitive fields an methods with primitive return values.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the name of the type parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [values]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The valid values for the parameter, comma separated. An error message is printed if the parameter value is not one of the values.<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [default]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The default value is returned if parameter not specified by user for the tag.<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [mandatory]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       <br></br>
+        Valid Values = {true,false}
+    </td>
+  </tr>
+</table>
+
+<h4><a name="memberName">memberName</a> (content template)</h4>
+<p>Returns the method or field name. Can only be used inside <code>forAllMemberTags</code> or <code>forAllMethodTags</code> .</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [prefix]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the prefix for the name<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="memberType">memberType</a> (content template)</h4>
+<p>Returns the method's return type or the field's type. Can only be used inside <code>forAllMemberTags</code> or <code>forAllMethodTags</code>.</p>
+
+<h4><a name="methodSignature">methodSignature</a> (content template)</h4>
+<p>Returns the method signature for the current method. Can only be used inside <code>forAllMethodTags</code>.</p>
+
+<h4><a name="paramValue">paramValue</a> (content template)</h4>
+<p>Returns the value of a parameter.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       the name of the parameter<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [values]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The valid values for the parameter, comma separated. An error message is printed if the parameter value is not one of the values.<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [default]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The default value is returned if parameter not specified by user for the tag.<br></br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+          [mandatory]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       <br></br>
+        Valid Values = {true,false}
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

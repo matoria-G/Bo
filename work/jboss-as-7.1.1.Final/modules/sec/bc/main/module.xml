@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="sec.bc">
+<resources>
+<resource-root path="bcmail-jdk15on-156.jar"/>
+<resource-root path="bcpkix-jdk15on-156.jar"/>
+<resource-root path="bcprov-jdk15on-156.jar"/>
+<resource-root path="LunaProvider.jar"/>
+<resource-root path="PKIUtility.jar"/>
+</resources>
+<dependencies>
+        <module name="javax.api" slot="main" export="true"/>
+</dependencies>
+</module>

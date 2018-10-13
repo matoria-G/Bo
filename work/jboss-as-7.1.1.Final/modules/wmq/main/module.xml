@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="wmq">
+<resources>
+<resource-root path="wmq.jmsra.rar"/>
+</resources>
+<dependencies>
+        <module name="javax.api" slot="main" export="true"/>
+</dependencies>
+</module>

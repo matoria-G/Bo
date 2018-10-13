@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>XDoclet: Attribute-Oriented Programming - EJB Environment Handling</title><style type="text/css" media="all">
+          @import url("./style/maven-base.css");
+          
+			    @import url("./style/maven-theme.css");</style><link rel="stylesheet" href="./style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><meta name="author" content="Matthias Germann"></meta><meta name="email" content="germm@users.sourceforge.net"></meta><link rel="shortcut icon" href="favicon.ico"></link><link rel="icon" href="favicon.ico"></link></head><body class="composite"><div id="banner"><a href="http://xdoclet.sourceforge.net/" id="organizationLogo"><img alt="XDoclet Team" src="./images/logo.gif"></img></a><a href="http://xdoclet.sourceforge.net/xdoclet/" id="projectLogo"><img alt="XDoclet" src="http://sflogo.sourceforge.net/sflogo.php?group_id=31602&amp;type=5"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">
+                	Last published: 16 April 2005
+                  | Doc for 1.2.3</div><div class="xright">
+        
+        <a href="http://xdoclet.sourceforge.net/xdoclet/" class="externalLink" title="External Link">Home</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://sourceforge.net/projects/xdoclet/" class="externalLink" title="External Link">SourceForge Project</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://xdoclet.sourceforge.net/wiki/" class="externalLink" title="External Link">Wiki</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xdoclet/" class="externalLink" title="External Link">Browse CVS</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://opensource.atlassian.com/projects/xdoclet/secure/CreateIssue!default.jspa" class="externalLink" title="External Link">Create an Issue</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuXDoclet"><h5>XDoclet</h5><ul><li class="none"><a href="index.html">Overview</a></li><li class="none"><a href="status.html">News and Status</a></li><li class="none"><a href="install.html">Download/Installation</a></li><li class="none"><a href="using.html">Using XDoclet</a></li><li class="none"><a href="bp.html">Best Practices</a></li><li class="none"><a href="faq.html">FAQ</a></li><li class="none"><a href="licenses/xdoclet-license.html">License</a></li></ul></div><div id="menuAnt_Task_Reference"><h5>Ant Task Reference</h5><ul><li class="none"><a href="ant/xdoclet/DocletTask.html">&lt;doclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/ejb/EjbDocletTask.html">&lt;ejbdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/hibernate/HibernateDocletTask.html">&lt;hibernatedoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/jdo/JdoDocletTask.html">&lt;jdodoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/jmx/JMXDocletTask.html">&lt;jmxdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/mockobjects/MockObjectDocletTask.html">&lt;mockdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/portlet/PortletDocletTask.html">&lt;portletdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/spring/SpringDocletTask.html">&lt;springdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/apache/tapestry/TapestryDocletTask.html">&lt;tapestrydoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/web/WebDocletTask.html">&lt;webdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/wsee/WseeDocletTask.html">&lt;wseedoclet .. /&gt;</a></li></ul></div><div id="menuTag_Reference"><h5>Tag Reference</h5><ul><li class="none"><a href="tags/apache-tags.html">apache (@soap @struts @axis @tapestry)</a></li><li class="none"><a href="tags/bea-tags.html">bea (@weblogic)</a></li><li class="none"><a href="tags/borland-tags.html">borland (@bes)</a></li><li class="none"><a href="tags/caucho-tags.html">caucho (@resin)</a></li><li class="none"><a href="tags/ejb-tags.html">ejb (@ejb @dao)</a></li><li class="none"><a href="tags/exolab-tags.html">exolab (@castor)</a></li><li class="none"><a href="tags/hp-tags.html">hp (@hpas)</a></li><li class="none"><a href="tags/hibernate-tags.html">hibernate (@hibernate)</a></li><li class="none"><a href="tags/ibm-tags.html">ibm (@websphere)</a></li><li class="none"><a href="tags/java-tags.html">java (@javabean)</a></li><li class="none"><a href="tags/jboss-tags.html">jboss (@jboss)</a></li><li class="none"><a href="tags/jdo-tags.html">jdo (@jdo)</a></li><li class="none"><a href="tags/jmx-tags.html">jmx (@jmx)</a></li><li class="none"><a href="tags/jsf-tags.html">jsf (@jsf)</a></li><li class="none"><a href="tags/macromedia-tags.html">macromedia (@jrun)</a></li><li class="none"><a href="tags/mockobjects-tags.html">mockobjects (@mock)</a></li><li class="none"><a href="tags/mvcsoft-tags.html">mvcsoft (@mvcsoft)</a></li><li class="none"><a href="tags/mx4j-tags.html">mx4j (@mx4j)</a></li><li class="none"><a href="tags/objectweb-tags.html">objectweb (@jonas)</a></li><li class="none"><a href="tags/oracle-tags.html">oracle (@oc4j)</a></li><li class="none"><a href="tags/orion-tags.html">orion (@orion)</a></li><li class="none"><a href="tags/portlet-tags.html">portlet (@portlet)</a></li><li class="none"><a href="tags/pramati-tags.html">pramati (@pramati)</a></li><li class="none"><a href="tags/spring-tags.html">spring (@spring)</a></li><li class="none"><a href="tags/sun-tags.html">sun (@sunone)</a></li><li class="none"><a href="tags/sybase-tags.html">sybase (@easerver)</a></li><li class="none"><a href="tags/tjdo-tags.html">tjdo (@tjdo)</a></li><li class="none"><a href="tags/web-tags.html">web (@web @jsp)</a></li><li class="none"><a href="tags/webwork-tags.html">webwork (@webwork)</a></li><li class="none"><a href="tags/wsee-tags.html">wsee (@wsee)</a></li><li class="none"><a href="tags/xdoclet-tags.html">xdoclet (@xdoclet @doc @msg)</a></li></ul></div><div id="menuFeature_Documentation"><h5>Feature Documentation</h5><ul><li class="none"><a href="valueobjects.html">Using Value Objects</a></li><li class="none"><strong><a href="envhandling.html">EJB Environment Handling</a></strong></li></ul></div><div id="menuAdvanced"><h5>Advanced</h5><ul><li class="none"><a href="maven-plugin.html">Maven Plug-in</a></li><li class="none"><a href="merge.html">Merge Points</a></li><li class="none"><a href="ide/index.html">IDE Integration</a></li><li class="none"><a href="migration.html">Migration from EJBDoclet</a></li><li class="none"><a href="ant15.html">Ant 1.5 Troubleshooting</a></li></ul></div><div id="menuCommunity"><h5>Community</h5><ul><li class="none"><a href="feedback.html">Feedback</a></li><li class="none"><a href="resources.html">Resources</a></li><li class="none"><a href="tools.html">Tools</a></li></ul></div><div id="menuDevelopment"><h5>Development</h5><ul><li class="none"><a href="development/index.html">Developer Guide</a></li><li class="none"><a href="api/index.html">Javadoc (API)</a></li><li class="none"><a href="templates/index.html">Template Language (*.xdt)</a></li><li class="none"><a href="http://xdoclet.sourceforge.net/xjavadoc/" class="externalLink" title="External Link">XJavaDoc Site</a></li></ul></div><div id="search"><h5>Search XDoclet</h5><form action="http://www.google.com/search" method="get"><a href="http://www.google.com" class="navlink"><img height="32" width="75" alt="Google" src="http://www.google.com/logos/Logo_25wht.gif"></img></a><input name="q" maxlength="255" size="15" type="text" value="" id="q"></input><input name="btnG" type="submit" value="Go" id="btnG"></input><input name="domains" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet"></input><input name="sitesearch" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet" id="search"></input></form></div><div id="menuProject_Documentation"><h5>Project Documentation</h5><ul><li class="none"><a href="index.html">About XDoclet</a></li><li class="collapsed"><a href="project-info.html">Project Info</a></li><li class="collapsed"><a href="maven-reports.html">Project Reports</a></li><li class="none"><a href="http://maven.apache.org/development-process.html" class="externalLink" title="External Link">Development Process</a></li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="./images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="EJB_Environment_Handling"></a><h2>EJB Environment Handling</h2><p>
+                Declaring and accessing a Enterprise Java Bean's component environment 
+                properties (i.e. environment entries, ejb references, resource references)
+                is complicated and error-prone. It's a source for typo's 
+                which remain undiscovered until the EJB is deployed and run in the 
+                EJB Container. Moreover, the EJB Bean Provider has to write the same lookup code
+                over and over again.
+            </p><p>
+                The Service Locator Pattern tries to solve the problem with a central object 
+                for the lookups which does also some caching. A disadvantage of this pattern is 
+                that each bean must use the same naming for it's environment properties. This may
+                be the source of very strange behaviour when two bean's use the same name
+                for different things. A possible solution is to use the physical JNDI names
+                instead of the names inside the <code>java:comp/env</code> namespace. It works
+                but it's at the border of the EJB specification because the beans do no longer
+                declare proper ejb and resource references.
+            </p><p>
+                XDoclet makes it now a lot easier to declare and access environment properties
+                and it's fully compliant to the ejb spec!. It's still possible that each bean 
+                uses it's own naming. This is done by expanding the current tags for declaring 
+                environment properties (i.e. <code>@ejb.env-entry</code>, <code>@ejb.ejb-ref</code>) 
+                to field and method level. The lookup of the properties is delegated to the technical 
+                bean class generated with the <code>session</code>, <code>mdb</code>, 
+                <code>entitybmp</code> or <code>entitycmp</code> subtask. 
+                This means that the only thing you have to do is to declare a field or 
+                a abstract method with a XDoclet tag. The deploymentdescriptor entries and
+                the lookup from the JNDI tree is generated by XDoclet! Your bean class has 
+                not a single line of JNDI lookup code.                
+            </p><div class="subsection"><a name="A_simple_example"></a><h3>A simple example</h3><p>
+                Let's have a look at a simple example. This example declares a field-level
+                environment entry and a method-level ejb reference. <b>Please note that this 
+                is not a complete example:</b> there are many tags missing, only the ones 
+                related to the new environment handling are presented here.
+            </p>
+    <div class="source"><pre>
+package example.ejb;
+
+import javax.ejb.SessionBean;
+
+/**
+ * This is a environment handling example for XDoclet.
+ *
+ * @ejb.bean
+ *   type="Stateless"
+ *   name="Customer"
+ *   view-type="local"
+ *
+ */
+public abstract class MySessionEJB implements SessionBean {
+
+    /**
+     * @ejb.env-entry
+     *   value="1234"
+     */
+    protected int aFieldLevelEnvEntry();
+    
+    /**
+     * @ejb.ejb-ref
+     *   ejb-name="Customer"
+     */
+    protected abstract CustomerLocal aMethodLevelEjbRef();
+
+}
+</pre></div>
+  <p>
+                The field-level property must be declared protected to ensure that it
+                can be set from the XDoclet-generated subclass. For the method-level
+                property, the method must be declared protected and abstract so that
+                it can be implemented by the XDoclet-generated subclass.
+            </p><p>
+                Let's see what the <code>deploymentdescriptor</code> subtask generated. Here is a snipplet
+                of the generated ejb-jar.xml. 
+            </p>
+    <div class="source"><pre>
+
+         &lt;env-entry&gt;
+            &lt;env-entry-name&gt;aFieldLevelEnvEntry&lt;/env-entry-name&gt;
+            &lt;env-entry-type&gt;java.lang.Integer&lt;/env-entry-type&gt;
+            &lt;env-entry-value&gt;1234&lt;/env-entry-value&gt;
+         &lt;/env-entry&gt;
+         &lt;ejb-local-ref&gt;
+            &lt;ejb-ref-name&gt;aMethodLevelEjbRef&lt;/ejb-ref-name&gt;
+            &lt;ejb-ref-type&gt;Session&lt;/ejb-ref-type&gt;
+            &lt;local-home&gt;example.ejb.CustomerLocalHome&lt;/local-home&gt;
+            &lt;local&gt;example.ejb.CustomerLocal&lt;/local&gt;
+         &lt;/ejb-local-ref&gt;                
+         
+            </pre></div>
+  <p>
+                A env-entry element and a ejb-local-ref element are generated for the 
+                declared environment properties. The names are set to the field- and 
+                method-name. It is possible to customize the names with the 
+                <code>name</code> and <code>ref-name</code> parameters of the 
+                <code>@ejb.env-entry</code> resp. <code>@ejb.ejb-ref</code>
+                tag.
+            </p><p>
+                Now comes the intersting part. The XDoclet-generated technical bean class. 
+                This class is generated with the <code>session</code> subtask.
+            </p>
+    <div class="source"><pre>
+/*
+ * Generated by XDoclet - Do not edit!
+ */
+package example.ejb;
+
+/**
+ * Session layer for MySession.
+ */
+public class MySessionSession
+   extends ejb.env.MySessionEJB
+   implements javax.ejb.SessionBean
+{
+   public void setSessionContext(javax.ejb.SessionContext ctx) 
+   {
+      javax.naming.Context namingCtx = null;
+      try 
+      {
+         namingCtx = new javax.naming.InitialContext();
+         aFieldLevelEnvEntry = ((java.lang.Integer) namingCtx.lookup("java:comp/env/aFieldLevelEnvEntry")).intValue();       
+         aMethodLevelEjbRef = (example.ejb.CustomerLocalHome) namingCtx.lookup("java:comp/env/aMethodLevelEjbRef");       
+      } 
+      catch(javax.naming.NamingException e) 
+      {
+	     throw new javax.ejb.EJBException("lookup failed", e);
+      }
+      finally {
+         if (namingCtx != null) 
+         {
+            try 
+            {
+               namingCtx.close(); 
+            }
+            catch(javax.naming.NamingException e) 
+            {
+               e.printStackTrace();
+            }			
+         }
+      }
+   }
+
+   private  example.ejb.CustomerLocalHome aMethodLevelEjbRef;
+   protected example.ejb.CustomerLocal aMethodLevelEjbRef()
+   {
+      try 
+      {
+          return aMethodLevelEjbRef.create();
+      } 
+      catch(javax.ejb.CreateException e) 
+      {
+          throw new javax.ejb.EJBException("create failed", e);
+      }
+   }
+
+}
+</pre></div>
+  <p>
+                    The XDoclet-generated class performs the lookup of the declared environment properties. 
+                    The value is directly assigned to field-level properties and cached for method-level 
+                    properties. For the method-level ejb-reference which has the component interface as 
+                    return-type, a call to the <code>create()</code> method of the home interface was generated! 
+                </p></div><div class="subsection"><a name="EJB_references"></a><h3>EJB references</h3><p>
+                    As you could see in the previous example, it's very easy to make a reference to another
+                    EJB by adding a abstract method which returns the referenced EJB's component interface.
+                    The XDoclet-generated technical bean class will do the lookup and call the <code>create()</code>
+                    method.
+                </p><p>
+                    This makes it very easy to have a reference to a stateless session bean. And it's also the recommended
+                    way for this because the home interface of a stateless session bean is most of the time only used 
+                    for calling the <code>create()</code> method. But it's not a good idea to use this feature for 
+                    references to entity beans where the home-interface plays a bigger role. For those beans, it's 
+                    recommended that the abstract method returns the home interface instead of the component interface.
+                </p></div><div class="subsection"><a name="Caching"></a><h3>Caching</h3><p>
+                    For method-level properties, the values are cached in a private memeber of the XDoclet-generated 
+                    technical bean class. Therefore, the developer is not required to care about caching. 
+                </p></div><div class="subsection"><a name="Stateful_Session_Bean_Passivation"></a><h3>Stateful Session Bean Passivation</h3><p>
+                    When a stateful session bean is passivated, the environment properties of the following 
+                    types are not passivated. They are set to <code>null</code> in <code>ejbPassivate()</code>
+                    and re-fetched from the JNDI tree in <code>ejbActivate()</code>.
+                    <ul>
+                        <li><code>@ejb.resource-ref</code></li>
+                        <li><code>@ejb.resource-env-ref</code></li>
+                        <li><code>@ejb.destination-ref</code></li>
+                        <li><code>@ejb.ejb-service-ref</code></li>
+                    </ul>
+                </p><p>
+                    Environment properties of the follwing types are passivated.
+                    <ul>
+                        <li><code>@ejb.env-entry</code></li>
+                        <li><code>@ejb.ejb-ref</code></li>
+                        <li><code>@ejb.ejb-external-ref</code></li>
+                    </ul>
+                </p></div></div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, XDoclet Team</div><div class="clear"><hr></hr></div></div></body></html>

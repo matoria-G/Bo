@@ -1,0 +1,17 @@
+
+org/glassfish/hk2/utilities
+org/glassfish/hk2/extension
+META-INF/maven
+org/jvnet/hk2/annotations
+org
+META-INF
+META-INF/maven/org.glassfish.hk2/hk2-api
+org/glassfish/hk2/internal
+org/glassfish/hk2/utilities/binding
+META-INF/maven/org.glassfish.hk2
+org/jvnet/hk2
+org/glassfish
+org/glassfish/hk2/api
+org/jvnet
+org/glassfish/hk2/api/messaging
+org/glassfish/hk2

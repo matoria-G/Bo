@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="jsonschema.lib">
+<resources>
+<resource-root path="activation-1.1.jar"/>
+<resource-root path="btf-1.2.jar"/>
+<resource-root path="guava-16.0.1.jar"/>
+<resource-root path="jackson-annotations-2.2.3.jar"/>
+<resource-root path="jackson-core-2.2.3.jar"/>
+<resource-root path="jackson-coreutils-1.8.jar"/>
+<resource-root path="jackson-databind-2.2.3.jar"/>
+<resource-root path="joda-time-2.3.jar"/>
+<resource-root path="jopt-simple-4.6.jar"/>
+<resource-root path="json-schema-core-1.2.5.jar"/>
+<resource-root path="json-schema-validator-2.2.6.jar"/>
+<resource-root path="jsr305-3.0.0.jar"/>
+<resource-root path="libphonenumber-6.2.jar"/>
+<resource-root path="mailapi-1.4.3.jar"/>
+<resource-root path="msg-simple-1.1.jar"/>
+<resource-root path="rhino-1.7R4.jar"/>
+<resource-root path="uri-template-0.9.jar"/>
+</resources>
+<dependencies>
+<module name="javax.api"/>
+<module name="javax.transaction.api"/>
+<module name="javax.resource.api"/>
+<module name="javax.jms.api"/>
+</dependencies>
+</module>

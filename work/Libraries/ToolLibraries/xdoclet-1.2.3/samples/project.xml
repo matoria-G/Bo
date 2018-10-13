@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+
+  <pomVersion>3</pomVersion>
+  <id>xdoclet-sample</id>
+  <currentVersion>1.2.2</currentVersion>
+
+  <dependencies>
+    <dependency>
+        <groupId>jboss</groupId>
+        <artifactId>jboss-j2ee</artifactId>
+        <version>3.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>jmxri</groupId>
+        <artifactId>jmxri</artifactId>
+        <jar>jmxri.jar</jar>
+        <url>See enclosed lib directory</url>
+    </dependency>
+    
+    <dependency>
+        <groupId>jsf-api</groupId>
+        <artifactId>jsf-api</artifactId>
+        <jar>jsf-api.jar</jar>
+        <url>See enclosed lib directory</url>
+    </dependency>   
+    
+    <dependency>
+        <groupId>struts</groupId>
+        <artifactId>struts</artifactId>
+        <version>1.1-beta-2</version>
+    </dependency>    
+    <dependency>
+        <groupId>velocity</groupId>
+        <artifactId>velocity</artifactId>
+        <version>1.4</version>
+    </dependency>     
+    
+    <dependency>
+        <groupId>opensymphony</groupId>
+        <artifactId>webwork</artifactId>
+        <version>1.4</version>
+    </dependency>      
+        
+    <dependency>
+        <id>servletapi</id>
+        <version>2.3</version>
+    </dependency>
+
+    <dependency>
+        <id>ejb</id>
+        <jar>ejb.jar</jar>
+        <version>2.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <sourceModifications>
+      <sourceModification>
+        <className>do.not.want.ejb.because.it.is.not.configured</className>
+        <excludes>
+          <exclude>**/dao/**/*.java</exclude>
+          <exclude>**/ejb/**/*.java</exclude>
+        </excludes>
+      </sourceModification>
+      <sourceModification>
+        <className>turn.off.wsee.because.it.is.not.configured</className>
+        <excludes>
+          <exclude>**/wsee/**/*.java</exclude>
+        </excludes>
+      </sourceModification>      
+    </sourceModifications>    
+  </build>
+
+</project>
+

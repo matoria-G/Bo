@@ -1,0 +1,41 @@
+package com.bobean;
+
+public class WebServiceCfgBean extends JobConfigBean {
+	
+	private String entity;
+	public String getEntity() {
+		return entity;
+	}
+	public void setEntity(String entity) {
+		this.entity = entity;
+	}
+	public String getJobCode() {
+		return jobCode;
+	}
+	public void setJobCode(String jobCode) {
+		this.jobCode = jobCode;
+	}
+	public String getServerCode() {
+		return serverCode;
+	}
+	public void setServerCode(String serverCode) {
+		this.serverCode = serverCode;
+	}
+	public String getServerClient() {
+		return serverClient;
+	}
+	public void setServerClient(String serverClient) {
+		this.serverClient = serverClient;
+	}
+	private String jobCode;
+	private String serverCode;
+	private String serverClient;
+	private String systemCode;
+	public String getSystemCode() {
+		return systemCode;
+	}
+	public void setSystemCode(String systemCode) {
+		this.systemCode = systemCode;
+	}
+
+}

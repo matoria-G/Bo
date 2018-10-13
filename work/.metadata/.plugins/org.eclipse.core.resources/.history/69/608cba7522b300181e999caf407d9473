@@ -1,0 +1,31 @@
+package com.bo.constants;
+
+public class ExceptionConstants {
+	
+	public final static String EXCEPTION_STAGE = "100";
+	public final static String SUCCESS = "S";
+	public final static String REJECTED = "R";
+	
+	public final static String XML_MTI_VAL_FAIL = "EXCP0001";
+	public final static String XML_MTI_FAIL = "EXCP0002";
+	public final static String XML_PERSIST_FAIL = "EXCP0003";
+	public final static String UNDEFINED_EXCEPTION = "EXCP9999";
+	
+	public final static String SFMS_PARSE_HEADER_FAIL = "EXCP0004";
+	public final static String SFMS_PERSIST_HEADER_FAIL = "EXCP0005";
+	public final static String SFMS_PARSE_DATABLOCK_FAIL = "EXCP0006";
+	public final static String SFMS_PERSIST_DATABLOCK_FAIL = "EXCP0007";
+	
+	public final static String POSTING_FAILED = "EXCP0008";
+	
+	public final static String SIGNIN_FAILED = "EXCP0009";
+	
+	public static final String NEFT_INVALID_FINID="NFTS01";
+	public static final String NEFT_INVALID_BLOCKCODE="NFTS02";
+	public static final String NEFT_INVALID_PROCCODE="NFTS03";
+	public static final String NEFT_MQ_EXCP="NFTS04";
+	public static final String NEFT_UNDEFINED_EXCP="NFTS99";
+	public static final String INVALID_JUSTFN_CODE="EXCP0010";
+	public static final String EOD_EXCEPTION="EXCP0011";
+	
+}

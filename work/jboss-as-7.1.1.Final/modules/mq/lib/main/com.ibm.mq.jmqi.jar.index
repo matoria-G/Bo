@@ -1,0 +1,15 @@
+
+com/ibm/mq/exits
+com/ibm
+com/ibm/mq/constants
+com
+com/ibm/mq
+META-INF
+com/ibm/mq/jmqi/handles
+com/ibm/mq/jmqi/internal/trace
+META-INF/services
+com/ibm/mq/jmqi/internal/charset
+com/ibm/mq/jmqi/internal
+com/ibm/mq/jmqi/monitoring
+com/ibm/mq/jmqi
+com/ibm/mq/jmqi/samples

@@ -1,0 +1,13 @@
+
+org/glassfish/jersey/servlet
+org/glassfish/jersey/servlet/init
+META-INF/maven
+META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet
+org
+org/glassfish/jersey
+META-INF
+org/glassfish/jersey/servlet/init/internal
+org/glassfish
+META-INF/services
+META-INF/maven/org.glassfish.jersey.containers
+org/glassfish/jersey/servlet/async

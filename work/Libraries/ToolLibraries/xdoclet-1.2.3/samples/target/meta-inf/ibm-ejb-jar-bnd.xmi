@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding 
+    xmi:version="2.0" 
+    xmlns:xmi="http://www.omg.org/XMI" 
+    xmlns:commonbnd="commonbnd.xmi" 
+    xmlns:ejbbnd="ejbbnd.xmi" 
+    xmlns:ejb="ejb.xmi" 
+    xmlns:common="common.xmi" 
+    xmi:id="EJBJarBinding_1"
+>
+
+    <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_1"/>
+
+        <ejbBindings xmi:id="Session_bnd_1" jndiName="Stateful">
+
+            <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Session_Stateful"/>
+
+        </ejbBindings>
+
+        <ejbBindings xmi:id="Session_bnd_2" jndiName="ejb/bank/Teller">
+
+            <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Session_Teller"/>
+
+            <ejbRefBindings xmi:id="EJBRefBnd_1" jndiName="ejb/bank/Account">
+                <bindingEjbRef href="META-INF/ejb-jar.xml#EJBRef_1"/>
+            </ejbRefBindings>
+            <ejbRefBindings xmi:id="EJBRefBnd_2" jndiName="blah/bank/Customer">
+                <bindingEjbRef href="META-INF/ejb-jar.xml#EJBRef_2"/>
+            </ejbRefBindings>
+
+            <resRefBindings xmi:id="ResRefBnd_1" jndiName="">            
+                <bindingResourceRef href="META-INF/ejb-jar.xml#ResRef_1"/>
+            </resRefBindings>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_1"
+
+            jndiName="blah/bank/Customer"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Customer"/>
+
+            <ejbRefBindings xmi:id="EJBRefBnd_3" jndiName="ejb/bank/Account">
+                <bindingEjbRef href="META-INF/ejb-jar.xml#EJBRef_3"/>
+            </ejbRefBindings>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_2"
+
+            jndiName="de.razeman.xdoclet.test.weblogic.ejb.relation.local.SubscriberLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Subscriber"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_3"
+
+            jndiName="airline.LanguageCodeLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_LanguageCode"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_4"
+
+            jndiName="de.razeman.xdoclet.test.weblogic.ejb.relation.local.MagazineLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Magazine"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_5"
+
+            jndiName="ejb/bank/Account"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Account"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_6"
+
+            jndiName="airline.CityLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_City"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_7"
+
+            jndiName="airline.CountryLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Country"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_8"
+
+            jndiName="test/AllTypesEntity"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_AllTypesEntity"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_9"
+
+            jndiName="AddressLocal"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Address"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_10"
+
+            jndiName="EmployeeLocal"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Employee"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="BeanManagedEntity_bnd_1"
+
+            jndiName="ejb/bank/CustomerBMP"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#BeanManagedEntity_CustomerBMP"/>
+
+            <ejbRefBindings xmi:id="EJBRefBnd_4" jndiName="ejb/bank/CustomerBMP">
+                <bindingEjbRef href="META-INF/ejb-jar.xml#EJBRef_4"/>
+            </ejbRefBindings>
+            <ejbRefBindings xmi:id="EJBRefBnd_5" jndiName="ejb/bank/Account">
+                <bindingEjbRef href="META-INF/ejb-jar.xml#EJBRef_5"/>
+            </ejbRefBindings>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_11"
+
+            jndiName="airline.LanguageLocalHome"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_Language"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_12"
+
+            jndiName="blah/File"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_File"/>
+
+        </ejbBindings>
+
+        <ejbBindings
+            xmi:id="ContainerManagedEntity_bnd_13"
+
+            jndiName="EmployeeAddressLocal"
+        >
+
+            <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#ContainerManagedEntity_EmployeeAddress"/>
+
+        </ejbBindings>
+
+        <ejbBindings xmi:type="ejbbnd:MessageDrivenBeanBinding" xmi:id="Message_bnd_1" listenerInputPortName="" >
+            <enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#MessageDriven_1" />
+            <!-- ML FIX. enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#MessageDriven_QueueBean"/-->
+
+        </ejbBindings>
+
+</ejbbnd:EJBJarBinding>

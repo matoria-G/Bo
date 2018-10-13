@@ -1,0 +1,126 @@
+
+<html>
+<head>
+</head>
+<body bgcolor="#ffffff">
+
+<h2>Wsee</h2>
+
+<p>Implemented in class <a href="../api/xdoclet/modules/wsee/WseeTagsHandler.html">xdoclet.modules.wsee.WseeTagsHandler</a>.</p>
+<ul>
+  <li><a href="#block">Block Tags</a>
+  <li><a href="#content">Content Tags</a>
+</ul>
+
+<h3><a name="block">Block Tags:</a></h3>
+
+<h4><a name="forAllPortComponents">forAllPortComponents</a> (block template)</h4>
+<p>Iterates over all classes loaded by javadoc and being a port component.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [abstract]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       If true then accept abstract classes also; otherwise don't.<br></br>
+        Valid Values = {true,false}
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [type]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       For all classes by the type.<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="forAllHandlers">forAllHandlers</a> (block template)</h4>
+<p>Iterates over all handler tags annotating the current class.</p>
+
+<h4><a name="ifHasHandlerTag">ifHasHandlerTag</a> (block template)</h4>
+<p>conditional checking presence of a handler tag</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The name of the parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="ifWsdlPerClass">ifWsdlPerClass</a> (block template)</h4>
+<p>conditional to handle per class wsdl</p>
+
+<h4><a name="ifNotWsdlPerClass">ifNotWsdlPerClass</a> (block template)</h4>
+<p>conditional to handle single wsdl generation</p>
+
+<h3><a name="content">Content templates:</a></h3>
+
+<h4><a name="serviceEndpoint">serviceEndpoint</a> (content template)</h4>
+<p>returns the service endpoint interface name belonging to the current class</p>
+
+<h4><a name="serviceEndpointLink">serviceEndpointLink</a> (content template)</h4>
+<p>returns the service endpoint link pointing to the current class</p>
+
+<h4><a name="namespaceURI">namespaceURI</a> (content template)</h4>
+<p>return the namespace of the current clazz/package</p>
+
+<h4><a name="handlerTagValue">handlerTagValue</a> (content template)</h4>
+<p>extract the value of the current handler tag</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           paramName
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       The name of the parameter<br></br>
+    </td>
+  </tr>
+</table>
+
+<h4><a name="wsdlFilename">wsdlFilename</a> (content template)</h4>
+<p>Constructs a guestimated filename for the wsdl file. It also attempts to decide if the file should be in META-INF or WEB-INF. This should yield a filename that will be correct for use within the webservices.xml file.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [prefixWithPackage]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       Whether to prefix the filename with the package hierarchy.<br></br>
+        Valid Values = {true,false}
+    </td>
+  </tr>
+</table>
+
+<h4><a name="jaxrpcMappingFilename">jaxrpcMappingFilename</a> (content template)</h4>
+<p>Constructs a guestimated filename for the jaxrpc file.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <i>
+           [prefixWithPackage]
+      </i>
+    </td>
+    <td width="75%" valign="top">
+       Whether to prefix the filename with the package hierarchy.<br></br>
+        Valid Values = {true,false}
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

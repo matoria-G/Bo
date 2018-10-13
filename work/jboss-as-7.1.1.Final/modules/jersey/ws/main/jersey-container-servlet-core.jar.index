@@ -1,0 +1,12 @@
+org/glassfish/jersey/servlet/internal/spi
+
+org/glassfish/jersey/servlet
+META-INF/maven
+org/glassfish
+META-INF/maven/org.glassfish.jersey.containers/jersey-container-servlet-core
+org/glassfish/jersey/servlet/spi
+META-INF/maven/org.glassfish.jersey.containers
+org/glassfish/jersey/servlet/internal
+org/glassfish/jersey
+org
+META-INF

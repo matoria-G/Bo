@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	version="2.2">
+
+	<xs:annotation>
+		<xs:documentation>
+			Security Common XML Schema, version 2.1
+			by Frida Mörtsell (frida.mortsell@metamatrix.se).
+			
+			Defines common terms for securities
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:include schemaLocation="ProductBase.xsd"/>
+
+	<xs:complexType name="PermittedTradingTypeType">
+		<xs:sequence>
+			<xs:element name="MoneyMarketInstrument" type="YesNoType"/>
+			<xs:element name="PermittedTradingTypeAM" type="YesNoType"/>
+			<xs:element name="PermittedTradingTypePM" type="YesNoType"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProvisionsRelatingToInterestType">
+		<xs:sequence>
+			<xs:element name="AdditionalInterestInformation" type="AdditionalInterestInformationType" minOccurs="0"/>
+			<xs:element name="BusinessDayConvention" type="OneToFourType" minOccurs="0"/>
+			<xs:element name="DaysPerMonth" type="xs:string" nillable="true"/>
+			<xs:element name="DaysPerYear" type="xs:string" nillable="true"/>
+			<xs:element name="SpecifiedPeriod" type="IntType"/>
+			<xs:element name="InterestRate" type="PerCentType"/>
+			<xs:element name="TypeOfInterest" type="xs:string"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="AdditionalInterestInformationType">
+		<xs:sequence>
+			<xs:element name="InterestRateBase" type="xs:string" minOccurs="0"/>
+			<xs:element name="InterestRateBaseMargin" type="PerCentType" minOccurs="0"/>
+			<xs:element name="AdministrativeDealer" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ConversionOrSubscriptionInfoType">
+		<xs:sequence>
+			<xs:element name="SecuritySort" type="xs:string" minOccurs="0"/>
+			<xs:element name="TypeOfSecurity" type="xs:string"/>
+			<xs:element name="QuantityReceived" type="QuantityDecimalType" minOccurs="0"/>
+			<xs:element name="Price" type="AmountType"/>
+		</xs:sequence>
+		<xs:attribute name="from" type="xs:date" use="required"/>
+		<xs:attribute name="to" type="xs:date" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="OneToFourType">
+		<xs:restriction base="IntType">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

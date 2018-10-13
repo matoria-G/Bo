@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="test.hibernate.Error"
+        table="error"
+    >
+
+        <id
+            name="OID"
+            column="oid"
+            type="java.lang.Long"
+        >
+            <generator class="sequence">
+                <param name="sequence">SequenceName</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Error.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="message"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="error_message"
+            not-null="true"
+        />
+
+        <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+        />
+
+        <property
+            name="errorMode"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="errormode"
+            not-null="true"
+        />
+
+        <property
+            name="type"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="error_type"
+            not-null="true"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Error.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+        <joined-subclass
+            name="test.hibernate.WorkRequestError"
+            table="workreqerror"
+        >
+            <key
+                column="oid"
+            />
+
+        <many-to-one
+            name="workRequest"
+            class="java.lang.String"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            column="workrequestoid"
+        />
+
+        </joined-subclass>
+
+    </class>
+
+</hibernate-mapping>

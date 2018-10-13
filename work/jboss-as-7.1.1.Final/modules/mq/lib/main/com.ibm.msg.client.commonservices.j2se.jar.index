@@ -1,0 +1,16 @@
+
+com/ibm
+com
+com/ibm/msg/client/commonservices/j2se/commandmanager
+com/ibm/msg/client/osgi/commonservices/j2se
+com/ibm/msg/client/commonservices/j2se/workqueue
+com/ibm/msg/client/osgi
+com/ibm/msg
+META-INF
+com/ibm/msg/client/osgi/commonservices
+com/ibm/msg/client/commonservices/j2se
+com/ibm/msg/client/commonservices/j2se/propertystore
+com/ibm/msg/client/commonservices
+com/ibm/msg/client/commonservices/j2se/log
+com/ibm/msg/client
+com/ibm/msg/client/commonservices/j2se/trace

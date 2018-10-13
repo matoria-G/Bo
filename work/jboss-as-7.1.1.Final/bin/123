@@ -1,0 +1,76 @@
+Calling "D:\SIL_FRONT_OFFICE_JBOSS_7\jboss-as-7.1.1.Final\bin\standalone.conf.bat"
+JAVA_HOME is not set. Unexpected results may occur.
+Set JAVA_HOME to the directory of your local JDK to avoid this message.
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: D:\SIL_FRONT_OFFICE_JBOSS_7\jboss-as-7.1.1.Final
+
+  JAVA: java
+
+  JAVA_OPTS: -XX:+TieredCompilation -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.default.config=standalone.xml
+
+===============================================================================
+
+10:54:50,093 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
+Usage: ./standalone.sh [args...]
+where args include:
+    --admin-only                        Set the server's running type to 
+                                        ADMIN_ONLY causing it to open 
+                                        administrative interfaces and accept 
+                                        management requests but not start other 
+                                        runtime services or accept end user 
+                                        requests.
+
+    -b=<value>                          Set system property jboss.bind.address 
+                                        to the given value
+
+    -b <value>                          Set system property jboss.bind.address 
+                                        to the given value
+
+    -b<interface>=<value>               Set system property 
+                                        jboss.bind.address.<interface> to the 
+                                        given value
+
+    -c=<config>                         Name of the server configuration file 
+                                        to use (default is "standalone.xml")
+
+    -c <config>                         Name of the server configuration file 
+                                        to use (default is "standalone.xml")
+
+    -D<name>[=<value>]                  Set a system property
+
+    -h                                  Display this message and exit
+
+    --help                              Display this message and exit
+
+    -P=<url>                            Load system properties from the given 
+                                        url
+
+    -P <url>                            Load system properties from the given 
+                                        url
+
+    --properties=<url>                  Load system properties from the given 
+                                        url
+
+    -S<name>[=<value>]                  Set a security property
+
+    --server-config=<config>            Name of the server configuration file 
+                                        to use (default is "standalone.xml")
+
+    -u=<value>                          Set system property 
+                                        jboss.default.multicast.address to the 
+                                        given value
+
+    -u <value>                          Set system property 
+                                        jboss.default.multicast.address to the 
+                                        given value
+
+    -V                                  Print version and exit
+
+    -v                                  Print version and exit
+
+    --version                           Print version and exit
+
+Press any key to continue . . . 

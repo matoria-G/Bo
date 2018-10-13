@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;ejb&apos; to &apos;com.bo.process.ejb&apos;&#x0D;&#x0A;- Original project: &apos;BOEjb&apos;&#x0D;&#x0A;- Original element: &apos;BOEjb/ejbModule/ejb&apos;&#x0D;&#x0A;- Renamed element: &apos;BOEjb/ejbModule/com.bo.process.ejb&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;ejb&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/ejbModule&lt;ejb" name="com.bo.process.ejb" qualified="false" references="true" stamp="1536382910688" textual="false" version="1.0"/>
+</session>

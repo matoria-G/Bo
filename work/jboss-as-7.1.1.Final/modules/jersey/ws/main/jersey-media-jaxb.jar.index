@@ -1,0 +1,11 @@
+org/glassfish/jersey/jaxb/internal
+
+META-INF/maven/org.glassfish.jersey.media/jersey-media-jaxb
+META-INF/maven
+org/glassfish
+META-INF/services
+org/glassfish/jersey/jaxb
+org/glassfish/jersey
+org
+META-INF
+META-INF/maven/org.glassfish.jersey.media

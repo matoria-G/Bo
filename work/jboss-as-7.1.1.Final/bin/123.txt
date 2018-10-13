@@ -1,0 +1,139 @@
+Calling "D:\important doc\my_study\work\jboss-as-7.1.1.Final\bin\standalone.conf.bat"
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: D:\important doc\my_study\work\jboss-as-7.1.1.Final
+
+  JAVA: C:\Program Files (x86)\Java\jdk1.7.0_45\bin\java
+
+  JAVA_OPTS: -XX:+TieredCompilation -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.default.config=standalone.xml
+
+===============================================================================
+
+02:12:52,589 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
+02:12:52,846 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
+02:12:52,895 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final "Brontes" starting
+02:12:54,074 INFO  [org.xnio] XNIO Version 3.0.3.GA
+02:12:54,074 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+02:12:54,083 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.3.GA
+02:12:54,090 INFO  [org.jboss.remoting] JBoss Remoting version 3.2.3.GA
+02:12:54,106 INFO  [org.jboss.as.logging] JBAS011502: Removing bootstrap log handlers
+02:12:54,140 INFO  [org.jboss.as.connector] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.9.Final)
+02:12:54,153 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 29) JBAS010280: Activating Infinispan subsystem.
+02:12:54,157 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 36) JBAS011940: Activating OSGi Subsystem
+02:12:54,168 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 41) JBAS013101: Activating Security Subsystem
+02:12:54,173 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 45) JBAS015537: Activating WebServices Extension
+02:12:54,188 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.7.Final
+02:12:54,215 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 35) JBAS011800: Activating Naming Subsystem
+02:12:54,220 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
+02:12:54,223 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+02:12:54,371 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 25) JBAS010403: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
+02:12:54,378 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 25) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+02:12:54,520 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-4) JBoss Web Services - Stack CXF Server 4.0.2.GA
+02:12:54,796 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory D:\important doc\my_study\work\jboss-as-7.1.1.Final\standalone\deployments
+02:12:54,930 INFO  [org.jboss.as.remoting] (MSC service thread 1-7) JBAS017100: Listening on /192.168.1.4:4447
+02:12:54,945 INFO  [org.jboss.as.remoting] (MSC service thread 1-8) JBAS017100: Listening on /127.0.0.1:9999
+02:12:54,961 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) Starting Coyote HTTP/1.1 on http--192.168.1.4-28080
+02:12:55,069 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:/jdbc/portal/ANXDB]
+02:12:55,069 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+02:12:55,069 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:/jdbc/portal/TBADS]
+02:12:55,070 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/jbpmDS]
+02:12:55,071 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:/iqh/OracleDataSource]
+02:12:55,071 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:/jdbc/portal/RPTS]
+02:12:55,087 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "BOEAR.ear"
+02:12:55,519 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "BOWeb.war"
+02:12:55,519 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "BOEjb.jar"
+02:12:55,632 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named CommonDispatcher in deployment unit subdeployment "BOEjb.jar" of deployment "BOEAR.ear" are as follows:
+
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+
+02:12:55,741 INFO  [stdout] (MSC service thread 1-3) Initialising scheduler
+02:12:55,770 INFO  [org.quartz.simpl.SimpleThreadPool] (MSC service thread 1-3) Job execution threads will use class loader of thread: MSC service thread 1-3
+02:12:55,784 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-3) Quartz Scheduler v.1.5.2 created.
+02:12:55,787 INFO  [org.quartz.simpl.RAMJobStore] (MSC service thread 1-3) RAMJobStore initialized.
+02:12:55,787 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-3) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+02:12:55,788 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-3) Quartz scheduler version: 1.5.2
+02:12:55,789 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-3) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+02:12:55,847 INFO  [customerlog] (DefaultQuartzScheduler_Worker-9) [ServiceLocator] #()
+02:12:55,860 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /BOWeb
+02:12:55,861 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015951: Admin console listening on http://127.0.0.1:9990
+02:12:55,862 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015874: JBoss AS 7.1.1.Final "Brontes" started in 3540ms - Started 243 of 328 services (79 services are passive or on-demand)
+02:12:56,103 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BOEAR.ear"
+02:12:56,251 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Scheduled Job : QPAYHDLRCALLJOB
+02:13:30,717 INFO  [stdout] (http--192.168.1.4-28080-1) In Constructor
+02:18:01,599 INFO  [stdout] (MSC service thread 1-8) Job Group : '1' Job Name : QPAYHDLRCALLJOB
+02:18:01,600 INFO  [stdout] (MSC service thread 1-8) Un Scheduled Job : QPAYHDLRCALLJOB
+02:18:01,600 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+02:18:01,601 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+02:18:01,602 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+02:18:01,616 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment BOEjb.jar in 167ms
+02:18:01,664 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment BOWeb.war in 216ms
+02:18:01,718 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment BOEAR.ear in 271ms
+02:18:01,720 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "BOEAR.ear"
+02:18:02,031 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "BOWeb.war"
+02:18:02,031 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "BOEjb.jar"
+02:18:02,051 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named CommonDispatcher in deployment unit subdeployment "BOEjb.jar" of deployment "BOEAR.ear" are as follows:
+
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+
+02:18:02,085 INFO  [stdout] (MSC service thread 1-1) Initialising scheduler
+02:18:02,104 INFO  [org.quartz.simpl.SimpleThreadPool] (MSC service thread 1-1) Job execution threads will use class loader of thread: MSC service thread 1-1
+02:18:02,114 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-1) Quartz Scheduler v.1.5.2 created.
+02:18:02,115 INFO  [org.quartz.simpl.RAMJobStore] (MSC service thread 1-1) RAMJobStore initialized.
+02:18:02,115 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-1) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+02:18:02,116 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-1) Quartz scheduler version: 1.5.2
+02:18:02,117 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-1) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+02:18:02,131 INFO  [org.jboss.web] (MSC service thread 1-1) JBAS018210: Registering web context: /BOWeb
+02:18:02,278 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "BOEAR.ear" with deployment "BOEAR.ear"
+02:18:05,036 INFO  [customerlog] (DefaultQuartzScheduler_Worker-5) [ServiceLocator] #()
+02:18:05,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Scheduled Job : QPAYHDLRCALLJOB
+02:18:07,694 INFO  [stdout] (http--192.168.1.4-28080-1) In Constructor
+02:19:17,512 INFO  [stdout] (MSC service thread 1-8) Job Group : '1' Job Name : QPAYHDLRCALLJOB
+02:19:17,512 INFO  [stdout] (MSC service thread 1-8) Un Scheduled Job : QPAYHDLRCALLJOB
+02:19:17,513 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+02:19:17,514 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+02:19:17,518 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-8) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+02:19:17,531 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment BOEjb.jar in 35ms
+02:19:17,556 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment BOWeb.war in 61ms
+02:19:17,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment BOEAR.ear in 147ms
+02:19:17,643 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "BOEAR.ear"
+02:19:17,791 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "BOWeb.war"
+02:19:17,791 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "BOEjb.jar"
+02:19:17,814 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named CommonDispatcher in deployment unit subdeployment "BOEjb.jar" of deployment "BOEAR.ear" are as follows:
+
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcher
+	java:global/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:app/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:module/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+	java:jboss/exported/BOEAR/BOEjb/CommonDispatcher!com.bo.process.ejb.interfaces.CommonDispatcherHome
+
+02:19:17,861 INFO  [stdout] (MSC service thread 1-1) Initialising scheduler
+02:19:17,883 INFO  [org.quartz.simpl.SimpleThreadPool] (MSC service thread 1-1) Job execution threads will use class loader of thread: MSC service thread 1-1
+02:19:17,895 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-1) Quartz Scheduler v.1.5.2 created.
+02:19:17,896 INFO  [org.quartz.simpl.RAMJobStore] (MSC service thread 1-1) RAMJobStore initialized.
+02:19:17,897 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-1) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+02:19:17,897 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-1) Quartz scheduler version: 1.5.2
+02:19:17,898 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-1) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+02:19:17,912 INFO  [org.jboss.web] (MSC service thread 1-1) JBAS018210: Registering web context: /BOWeb
+02:19:18,051 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "BOEAR.ear" with deployment "BOEAR.ear"
+02:19:20,041 INFO  [customerlog] (DefaultQuartzScheduler_Worker-8) [ServiceLocator] #()
+02:19:20,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Scheduled Job : QPAYHDLRCALLJOB
+02:19:25,409 INFO  [stdout] (http--192.168.1.4-28080-1) In Constructor

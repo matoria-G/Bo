@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions 
+    targetNamespace="http://xdoclet.sourceforge.net/wsee/test" 
+    xmlns:tns="http://xdoclet.sourceforge.net/wsee/test" 
+    xmlns="http://schemas.xmlsoap.org/wsdl/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+  <message name="TestSession_testMethod">
+  </message>
+  <message name="TestSession_testMethodResponse">
+  </message>
+
+  <portType name="Test">
+
+  </portType>
+  <portType name="TestSession">
+
+    <operation name="testMethod" >
+      <input message="tns:TestSession_testMethod"/>
+      <output message="tns:TestSession_testMethodResponse"/>
+    </operation>
+
+  </portType>
+
+  <binding name="TestBinding" type="tns:Test">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+
+  </binding>
+  <binding name="TestSessionBinding" type="tns:TestSession">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+
+    <operation name="testMethod">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal" namespace="http://xdoclet.sourceforge.net/wsee/test"/>
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://xdoclet.sourceforge.net/wsee/test"/>
+      </output>
+    </operation>
+
+  </binding>
+
+  <service name="Test">
+    <port name="TestPort" binding="tns:TestBinding">
+      <soap:address location="REPLACE_WITH_ACTUAL_URL"/>
+    </port>
+  </service>
+  <service name="TestSession">
+    <port name="TestSessionPort" binding="tns:TestSessionBinding">
+      <soap:address location="REPLACE_WITH_ACTUAL_URL"/>
+    </port>
+  </service>
+
+</definitions>

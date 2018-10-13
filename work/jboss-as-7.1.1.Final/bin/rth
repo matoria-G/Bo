@@ -1,0 +1,1479 @@
+Calling "D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\bin\standalone.conf.bat"
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final
+
+  JAVA: C:\Program Files (x86)\Java\jdk1.6.0_14\bin\java
+
+  JAVA_OPTS: -XX:+TieredCompilation -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MaxPermSize=256M -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.default.config=standalone.xml
+
+===============================================================================
+
+16:46:10,707 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
+16:46:12,194 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
+16:46:12,279 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final "Brontes" starting
+16:46:17,143 INFO  [org.xnio] XNIO Version 3.0.3.GA
+16:46:17,147 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+16:46:17,166 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.3.GA
+16:46:17,173 INFO  [org.jboss.remoting] JBoss Remoting version 3.2.3.GA
+16:46:17,316 INFO  [org.jboss.as.logging] JBAS011502: Removing bootstrap log handlers
+16:46:17,347 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 43) JBAS013101: Activating Security Subsystem
+16:46:17,351 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 38) JBAS011940: Activating OSGi Subsystem
+16:46:17,386 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 37) JBAS011800: Activating Naming Subsystem
+16:46:17,397 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) JBAS010280: Activating Infinispan subsystem.
+16:46:17,400 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+16:46:17,410 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 47) JBAS015537: Activating WebServices Extension
+16:46:17,508 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+16:46:17,518 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013100: Current PicketBox version=4.0.7.Final
+16:46:17,590 INFO  [org.jboss.as.connector] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.9.Final)
+16:46:18,178 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC00001: Failed to start service jboss.remoting.server.remoting-connector: org.jboss.msc.service.StartException in service jboss.remoting.server.remoting-connector: JBAS017112: Address already in use: bind /127.0.0.1:4447
+	at org.jboss.as.remoting.AbstractStreamServerService.start(AbstractStreamServerService.java:109)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind(Native Method) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:119) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:52) [rt.jar:1.6.0_14]
+	at org.xnio.nio.NioXnioWorker.createTcpServer(NioXnioWorker.java:287)
+	at org.xnio.XnioWorker.createStreamServer(XnioWorker.java:135)
+	at org.jboss.remoting3.remote.RemoteConnectionProvider$ProviderInterface.createServer(RemoteConnectionProvider.java:209)
+	at org.jboss.as.remoting.AbstractStreamServerService.start(AbstractStreamServerService.java:101)
+	... 5 more
+
+16:46:19,332 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) JBAS010403: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
+16:46:19,407 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Starting Coyote HTTP/1.1 on http--127.0.0.1-28080
+16:46:19,653 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 26) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+16:46:20,827 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/jbpmDS]
+16:46:20,827 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:/jdbc/portal/TBADS]
+16:46:20,827 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+16:46:20,828 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/jdbc/portal/ANXDB]
+16:46:20,933 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-1) JBoss Web Services - Stack CXF Server 4.0.2.GA
+16:46:21,713 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory D:\SIL_FRONT_OFFICE_JBOSS_7\WS\jboss-as-7.1.1.Final\standalone\deployments
+16:46:21,714 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC00001: Failed to start service jboss.remoting.server.management: org.jboss.msc.service.StartException in service jboss.remoting.server.management: JBAS017112: Address already in use: bind /127.0.0.1:9999
+	at org.jboss.as.remoting.AbstractStreamServerService.start(AbstractStreamServerService.java:109)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind(Native Method) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:119) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:52) [rt.jar:1.6.0_14]
+	at org.xnio.nio.NioXnioWorker.createTcpServer(NioXnioWorker.java:287)
+	at org.xnio.XnioWorker.createStreamServer(XnioWorker.java:135)
+	at org.jboss.remoting3.remote.RemoteConnectionProvider$ProviderInterface.createServer(RemoteConnectionProvider.java:209)
+	at org.jboss.as.remoting.AbstractStreamServerService.start(AbstractStreamServerService.java:101)
+	... 5 more
+
+16:46:21,743 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC00001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: Address already in use: bind /127.0.0.1:9990
+	at org.jboss.as.server.mgmt.HttpManagementService.start(HttpManagementService.java:210) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind(Native Method) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:119) [rt.jar:1.6.0_14]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59) [rt.jar:1.6.0_14]
+	at org.jboss.sun.net.httpserver.ServerImpl.<init>(ServerImpl.java:144)
+	at org.jboss.sun.net.httpserver.HttpServerImpl.<init>(HttpServerImpl.java:54)
+	at org.jboss.sun.net.httpserver.DefaultHttpServerProvider.createHttpServer(DefaultHttpServerProvider.java:38)
+	at org.jboss.com.sun.net.httpserver.HttpServer.create(HttpServer.java:147)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.create(ManagementHttpServer.java:145) [jboss-as-domain-http-interface-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.server.mgmt.HttpManagementService.start(HttpManagementService.java:177) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	... 5 more
+
+16:46:22,165 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.remoting.server.management: org.jboss.msc.service.StartException in service jboss.remoting.server.management: JBAS017112: Address already in use: bind /127.0.0.1:9999
+      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: Address already in use: bind /127.0.0.1:9990
+      service jboss.remoting.server.remoting-connector: org.jboss.msc.service.StartException in service jboss.remoting.server.remoting-connector: JBAS017112: Address already in use: bind /127.0.0.1:4447
+
+16:46:22,357 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "SILAdmin.ear"
+16:46:28,237 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelValidations.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:28,238 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkCommon.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:28,239 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry lib/SelFrameworkUtility.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/SelFrameworkBO.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:28,241 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/lib/serializer-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:28,322 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "SelWeb.war"
+16:46:28,322 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "SelFrameworkEJB.jar"
+16:46:29,173 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) Class Path entry xercesImpl.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:29,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) Class Path entry xml-apis.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:29,177 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) Class Path entry serializer.jar in "/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/xalan-2.7.1.jar"  does not point to a valid jar for a Class-Path reference.
+16:46:30,656 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.jboss.ironjacamar.jdbcadapters:main") which may be changed or removed in future versions without notice.
+16:46:30,661 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.jboss.ironjacamar.jdbcadapters:main") which may be changed or removed in future versions without notice.
+16:46:30,665 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.ws.xmlschema:main") which may be changed or removed in future versions without notice.
+16:46:30,669 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.ws.xmlschema:main") which may be changed or removed in future versions without notice.
+16:46:30,673 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.cxf:main") which may be changed or removed in future versions without notice.
+16:46:30,676 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.cxf:main") which may be changed or removed in future versions without notice.
+16:46:30,680 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.neethi:main") which may be changed or removed in future versions without notice.
+16:46:30,684 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.SILAdmin.ear" is using a private module ("org.apache.neethi:main") which may be changed or removed in future versions without notice.
+16:46:30,801 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TBACommonDispatcher in deployment unit subdeployment "SelFrameworkEJB.jar" of deployment "SILAdmin.ear" are as follows:
+
+	java:global/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:app/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:module/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:jboss/exported/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcher
+	java:global/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:app/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:module/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+	java:jboss/exported/SILAdmin/SelFrameworkEJB/TBACommonDispatcher!intellect.sel.admin.framework.ejb.TBACommonDispatcherHome
+
+16:46:32,612 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.DefinitionTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.DefinitionTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,622 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.template.InsertTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.InsertTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,633 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.PutTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.PutTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,645 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.AddTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.AddTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,655 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.UseAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.UseAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,666 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.template.GetTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.GetTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,676 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.GetTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.GetTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,687 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.PutListTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.PutListTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,701 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.GetAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.GetAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,715 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.InitDefinitionsTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.InitDefinitionsTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,728 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.ImportAttributeTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.ImportAttributeTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,738 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.tiles.InsertTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.tiles.InsertTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:32,752 WARN  [org.jboss.as.ee] (MSC service thread 1-1) JBAS011006: Not installing optional component org.apache.struts.taglib.template.PutTag due to exception: java.lang.ClassNotFoundException: org.apache.struts.taglib.template.PutTag from [Module "deployment.SILAdmin.ear.SelWeb.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398) [jboss-modules.jar:1.1.1.GA]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120) [jboss-modules.jar:1.1.1.GA]
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_14]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_14]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_14]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_14]
+	at java.lang.Thread.run(Thread.java:619) [rt.jar:1.6.0_14]
+
+16:46:33,395 INFO  [portallog] (MSC service thread 1-5) [ApplicationContextListener] #()
+16:46:33,398 INFO  [portallog] (MSC service thread 1-5) [ApplicationContextListener] #contextInitialized() Begin
+16:46:33,401 INFO  [portallog] (MSC service thread 1-5) [ApplicationWatch] #
+16:46:33,401 INFO  [portallog] (MSC service thread 1-5) [ApplicationWatch] start()
+16:46:36,529 INFO  [org.quartz.simpl.SimpleThreadPool] (MSC service thread 1-5) Job execution threads will use class loader of thread: MSC service thread 1-5
+16:46:36,543 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-5) Quartz Scheduler v.1.5.2 created.
+16:46:36,544 INFO  [org.quartz.simpl.RAMJobStore] (MSC service thread 1-5) RAMJobStore initialized.
+16:46:36,545 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-5) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+16:46:36,546 INFO  [org.quartz.impl.StdSchedulerFactory] (MSC service thread 1-5) Quartz scheduler version: 1.5.2
+16:46:36,546 INFO  [org.quartz.core.QuartzScheduler] (MSC service thread 1-5) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+16:46:36,553 INFO  [portallog] (MSC service thread 1-5) [ApplicationContextListener] #contextInitialized() End
+16:46:36,715 INFO  [org.apache.struts.action.ActionServlet] (MSC service thread 1-5) Loading chain catalog from vfs:/D:/SIL_FRONT_OFFICE_JBOSS_7/WS/jboss-as-7.1.1.Final/bin/content/SILAdmin.ear/SelWeb.war/WEB-INF/lib/struts-core-1.3.8.jar/org/apache/struts/chain/chain-config.xml
+16:46:36,924 WARN  [org.apache.struts.config.impl.ModuleConfigImpl] (MSC service thread 1-5) Overriding ActionForm of name msyssetup
+16:46:37,205 INFO  [org.jboss.web] (MSC service thread 1-5) JBAS018210: Registering web context: /SelWeb
+16:46:37,206 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015954: Admin console is not enabled
+16:46:37,206 ERROR [org.jboss.as] (MSC service thread 1-5) JBAS015875: JBoss AS 7.1.1.Final "Brontes" started (with errors) in 27225ms - Started 645 of 734 services (6 services failed or missing dependencies, 79 services are passive or on-demand)
+16:46:37,320 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "SILAdmin.ear"
+16:46:51,568 INFO  [stdout] (http--127.0.0.1-28080-1) Invalid Session
+16:47:00,041 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+16:47:00,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+16:47:01,916 INFO  [org.apache.struts.chain.ComposableRequestProcessor] (http--127.0.0.1-28080-6) Initializing composable request processor for module prefix ''
+16:47:01,954 INFO  [org.apache.struts.chain.commands.servlet.CreateAction] (http--127.0.0.1-28080-6) Initialize action of type: intellect.sel.web.actions.common.eloginaction
+16:47:01,958 INFO  [portallog] (http--127.0.0.1-28080-6) [eloginaction] #()
+16:47:02,010 INFO  [org.jboss.ejb.client] (http--127.0.0.1-28080-6) JBoss EJB Client version 1.0.5.Final
+16:47:03,478 INFO  [org.apache.struts.chain.commands.servlet.CreateAction] (http--127.0.0.1-28080-6) Initialize action of type: intellect.sel.web.actions.common.eloginauthaction
+16:47:03,483 INFO  [portallog] (http--127.0.0.1-28080-6) [eloginauthaction] #()
+16:47:03,606 INFO  [portallog] (http--127.0.0.1-28080-6) [ApplicationSessionListener] sessionDestroyed ZZfxBwD1XCyg2Z61EOdagcDD.undefined
+16:47:03,625 ERROR [stderr] (http--127.0.0.1-28080-6) java.lang.Exception: N
+16:47:03,626 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.ejb.TBACommonDispatcherBean.processRequest(Unknown Source)
+16:47:03,628 ERROR [stderr] (http--127.0.0.1-28080-6) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+16:47:03,629 ERROR [stderr] (http--127.0.0.1-28080-6) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+16:47:03,630 ERROR [stderr] (http--127.0.0.1-28080-6) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+16:47:03,631 ERROR [stderr] (http--127.0.0.1-28080-6) 	at java.lang.reflect.Method.invoke(Method.java:597)
+16:47:03,632 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptorFactory$ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptorFactory.java:72)
+16:47:03,634 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,635 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+16:47:03,636 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:36)
+16:47:03,638 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,639 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+16:47:03,640 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,641 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.tx.EjbBMTInterceptor.handleInvocation(EjbBMTInterceptor.java:105)
+16:47:03,642 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.tx.BMTInterceptor.processInvocation(BMTInterceptor.java:56)
+16:47:03,644 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,645 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+16:47:03,646 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,647 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+16:47:03,648 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:53)
+16:47:03,650 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,651 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+16:47:03,652 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,653 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.remote.EJBRemoteTransactionPropagatingInterceptor.processInvocation(EJBRemoteTransactionPropagatingInterceptor.java:80)
+16:47:03,659 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,659 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+16:47:03,660 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,661 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59)
+16:47:03,662 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,662 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.component.interceptors.EjbExceptionTransformingInterceptorFactories$1.processInvocation(EjbExceptionTransformingInterceptorFactories.java:65)
+16:47:03,663 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,664 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+16:47:03,664 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,665 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:32)
+16:47:03,666 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,666 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.TCCLInterceptor.processInvocation(TCCLInterceptor.java:45)
+16:47:03,667 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+16:47:03,668 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+16:47:03,668 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:165)
+16:47:03,669 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.ejb3.remote.LocalEjbReceiver.processInvocation(LocalEjbReceiver.java:179)
+16:47:03,669 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:179)
+16:47:03,670 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.TransactionInterceptor.handleInvocation(TransactionInterceptor.java:43)
+16:47:03,671 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:181)
+16:47:03,671 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.ReceiverInterceptor.handleInvocation(ReceiverInterceptor.java:128)
+16:47:03,672 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:181)
+16:47:03,673 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:136)
+16:47:03,673 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:121)
+16:47:03,674 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:104)
+16:47:03,674 ERROR [stderr] (http--127.0.0.1-28080-6) 	at $Proxy11.processRequest(Unknown Source)
+16:47:03,675 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.delegate.BackOfficeProcessManager.delegate(Unknown Source)
+16:47:03,675 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.listeners.ApplicationSessionListener.sessionDestroyed(Unknown Source)
+16:47:03,676 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:690)
+16:47:03,677 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:653)
+16:47:03,677 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.session.StandardSession.invalidate(StandardSession.java:1111)
+16:47:03,678 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.session.StandardSessionFacade.invalidate(StandardSessionFacade.java:150)
+16:47:03,679 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.web.actions.common.eloginauthaction.execute(Unknown Source)
+16:47:03,679 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.chain.commands.servlet.ExecuteAction.execute(ExecuteAction.java:58)
+16:47:03,680 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.chain.commands.AbstractExecuteAction.execute(AbstractExecuteAction.java:67)
+16:47:03,681 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.chain.commands.ActionCommandBase.execute(ActionCommandBase.java:51)
+16:47:03,681 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:190)
+16:47:03,682 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.commons.chain.generic.LookupCommand.execute(LookupCommand.java:304)
+16:47:03,682 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:190)
+16:47:03,683 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.chain.ComposableRequestProcessor.process(ComposableRequestProcessor.java:283)
+16:47:03,684 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1913)
+16:47:03,684 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:462)
+16:47:03,685 ERROR [stderr] (http--127.0.0.1-28080-6) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+16:47:03,685 ERROR [stderr] (http--127.0.0.1-28080-6) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+16:47:03,687 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+16:47:03,688 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:47:03,689 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.ApplicationSecurityFilter.processRequest(Unknown Source)
+16:47:03,689 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.CommonFilter.doFilter(CommonFilter.java:21)
+16:47:03,690 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:280)
+16:47:03,691 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:47:03,691 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.ApplicationContextFilter.processRequest(Unknown Source)
+16:47:03,692 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.CommonFilter.doFilter(CommonFilter.java:21)
+16:47:03,693 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.ApplicationContextFilter.doFilter(Unknown Source)
+16:47:03,693 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:280)
+16:47:03,694 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:47:03,695 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.XSSFilter.doFilter(XSSFilter.java:32)
+16:47:03,695 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:280)
+16:47:03,696 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:47:03,697 ERROR [stderr] (http--127.0.0.1-28080-6) 	at intellect.sel.admin.framework.web.filters.LoadBalancerFilter.doFilter(LoadBalancerFilter.java:30)
+16:47:03,698 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:280)
+16:47:03,698 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:47:03,699 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+16:47:03,699 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+16:47:03,700 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+16:47:03,701 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+16:47:03,701 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+16:47:03,702 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:397)
+16:47:03,703 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+16:47:03,703 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+16:47:03,704 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+16:47:03,704 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:671)
+16:47:03,705 ERROR [stderr] (http--127.0.0.1-28080-6) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:930)
+16:47:03,706 ERROR [stderr] (http--127.0.0.1-28080-6) 	at java.lang.Thread.run(Thread.java:619)
+16:47:03,706 INFO  [portallog] (http--127.0.0.1-28080-6) [ApplicationSessionListener] Logout Failure
+16:47:04,033 ERROR [portallog] (http--127.0.0.1-28080-6) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:04,037 ERROR [portallog] (http--127.0.0.1-28080-6) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:04,041 ERROR [portallog] (http--127.0.0.1-28080-6) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:04,349 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_EVTEXPMONITOR|Exceptions Monitoring Console|11
+16:47:04,349 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_APBSPYMNT|APBS Credit File Monitor|11
+16:47:04,350 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_SODMONC|SOD Monitoring Console|11
+16:47:06,888 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_N02ERRLOG|N02 Error Log|11
+16:47:06,891 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_PYMTMONITOR|Monitor ePay Files|11
+16:47:06,893 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_PYMTNTN|Track ePay Scrolls|11
+16:47:06,895 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_PYMTOWRTNMONC|Track ePay Returns|11
+16:47:06,896 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_N02MSGLOG|N02 Message Log|11
+16:47:06,898 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_RTGSERRLOG|RTGS Error Log|11
+16:47:06,899 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_PYMTEOSMONC|Monitor ePay End of Sessions|11
+16:47:06,900 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/qfluidpageswin.jsp?ProgramId=FP_RTGSPC8LOG|RTGS Pacs8 Message Log|11
+16:47:11,998 INFO  [stdout] (http--127.0.0.1-28080-1) Renderer/operations/mmanuallink.jsp?ProgramId=MMANUALLINK|Manual Linking of Late Returns|15
+16:47:15,789 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:15,794 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:15,798 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:47:16,042 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:47:16,043 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:47:16,043 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:47:16,043 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:47:16,044 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:47:16,044 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:47:16,044 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:47:16,045 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:47:16,045 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:47:16,045 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:47:16,046 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:47:16,046 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:47:16,047 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:47:16,092 INFO  [stdout] (http--127.0.0.1-28080-5) result set50
+16:47:16,092 INFO  [stdout] (http--127.0.0.1-28080-5) result set0
+16:47:16,093 INFO  [stdout] (http--127.0.0.1-28080-5) result set80
+16:47:16,094 INFO  [stdout] (http--127.0.0.1-28080-5) result set150
+16:47:16,094 INFO  [stdout] (http--127.0.0.1-28080-5) result set70
+16:47:16,094 INFO  [stdout] (http--127.0.0.1-28080-5) result set0
+16:47:16,094 INFO  [stdout] (http--127.0.0.1-28080-5) result set60
+16:47:16,095 INFO  [stdout] (http--127.0.0.1-28080-5) result set140
+16:47:16,095 INFO  [stdout] (http--127.0.0.1-28080-5) result set140
+16:47:16,096 INFO  [stdout] (http--127.0.0.1-28080-5) result set80
+16:47:16,096 INFO  [stdout] (http--127.0.0.1-28080-5) result set0
+16:47:16,097 INFO  [stdout] (http--127.0.0.1-28080-5) result set0
+16:47:16,097 INFO  [stdout] (http--127.0.0.1-28080-5) WIDTH770
+16:47:16,102 INFO  [portallog] (http--127.0.0.1-28080-2) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       P.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = P.PART_ID) DESCRIPTION,       DECODE(P.ACTION, 'C', 'Created', 'R', 'Revoked', P.ACTION) ACTION,       (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = P.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,       /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/      /* DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED*/      (CASE ACTION         WHEN 'C' THEN          'No'         WHEN 'R' THEN          'Yes'       END) CERT_REVOKED,       P.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTMPG P WHERE C.CERT_INV_NUM = P.CERT_INV_NUM )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:47:30,028 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+16:47:30,030 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+16:48:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+16:48:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+16:48:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:48:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:49:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+16:49:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+16:49:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+16:49:30,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+16:50:00,035 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:50:00,038 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:50:23,725 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:50:23,727 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:23,727 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:23,727 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:50:23,728 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:50:23,728 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:23,728 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:50:23,729 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:23,729 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:23,729 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:23,733 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:23,733 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:23,734 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:50:23,858 INFO  [portallog] (http--127.0.0.1-28080-3) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) DESCRIPTION,       DECODE(U.ACTION, 'C', 'Created', 'R', 'Revoked', U.ACTION) ACTION,       (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME, /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM   AND U.WEF_DATE < TRUNC(SYSDATE)   AND C.SOFT_DELETE != '1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:50:26,000 INFO  [stdout] (http--127.0.0.1-28080-3) result set50
+16:50:26,000 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:50:26,001 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:50:26,001 INFO  [stdout] (http--127.0.0.1-28080-3) result set150
+16:50:26,002 INFO  [stdout] (http--127.0.0.1-28080-3) result set70
+16:50:26,002 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:50:26,003 INFO  [stdout] (http--127.0.0.1-28080-3) result set60
+16:50:26,003 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:50:26,004 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:50:26,006 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:50:26,008 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:50:26,009 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:50:26,009 INFO  [stdout] (http--127.0.0.1-28080-3) WIDTH770
+16:50:26,014 INFO  [portallog] (http--127.0.0.1-28080-2) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM (  SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) DESCRIPTION,        DECODE(U.ACTION,'C','Created','R','Revoked',U.ACTION)ACTION,        (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,     /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM AND U.WEF_DATE > TRUNC(SYSDATE)  AND C.SOFT_DELETE!='1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:50:29,589 ERROR [portallog] (http--127.0.0.1-28080-2) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:29,595 ERROR [portallog] (http--127.0.0.1-28080-2) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:29,599 ERROR [portallog] (http--127.0.0.1-28080-2) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:29,803 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:50:29,803 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,804 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:29,804 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:50:29,804 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:50:29,805 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,805 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:50:29,805 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:29,806 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:29,806 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:29,807 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,807 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,807 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:50:29,840 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:50:29,845 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,845 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:29,846 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:50:29,847 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:50:29,847 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,848 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:50:29,849 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:29,849 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:50:29,850 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:50:29,852 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,852 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:50:29,852 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:50:29,873 INFO  [portallog] (http--127.0.0.1-28080-3) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       P.WEF_DATE,       (SELECT D.DESCRIPTION          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = P.CONNECTOR_ID) DESCRIPTION,       DECODE(P.ACTION, 'C', 'Created', 'R', 'Revoked', P.ACTION) ACTION,       (SELECT D.CONNECTOR_ID          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = P.CONNECTOR_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,       /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       /* DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED*/      (CASE ACTION         WHEN 'C' THEN          'No'         WHEN 'R' THEN          'Yes'       END) CERT_REVOKED,       P.ACTION STATUS  FROM CERTINVENTORY C, CONNCERTMPG P WHERE C.CERT_INV_NUM = P.CERT_INV_NUM )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:50:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+16:50:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+16:50:39,977 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:39,978 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:39,979 ERROR [portallog] (http--127.0.0.1-28080-1) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:50:40,183 INFO  [stdout] (http--127.0.0.1-28080-1) result set50
+16:50:40,184 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,184 INFO  [stdout] (http--127.0.0.1-28080-1) result set80
+16:50:40,185 INFO  [stdout] (http--127.0.0.1-28080-1) result set150
+16:50:40,186 INFO  [stdout] (http--127.0.0.1-28080-1) result set70
+16:50:40,187 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,187 INFO  [stdout] (http--127.0.0.1-28080-1) result set60
+16:50:40,187 INFO  [stdout] (http--127.0.0.1-28080-1) result set140
+16:50:40,188 INFO  [stdout] (http--127.0.0.1-28080-1) result set140
+16:50:40,188 INFO  [stdout] (http--127.0.0.1-28080-1) result set80
+16:50:40,189 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,189 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,189 INFO  [stdout] (http--127.0.0.1-28080-1) WIDTH770
+16:50:40,210 INFO  [stdout] (http--127.0.0.1-28080-1) result set50
+16:50:40,210 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,211 INFO  [stdout] (http--127.0.0.1-28080-1) result set80
+16:50:40,212 INFO  [stdout] (http--127.0.0.1-28080-1) result set150
+16:50:40,213 INFO  [stdout] (http--127.0.0.1-28080-1) result set70
+16:50:40,214 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,214 INFO  [stdout] (http--127.0.0.1-28080-1) result set60
+16:50:40,214 INFO  [portallog] (http--127.0.0.1-28080-2) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       P.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = P.PART_ID) DESCRIPTION,       DECODE(P.ACTION, 'C', 'Created', 'R', 'Revoked', P.ACTION) ACTION,       (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = P.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,       /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/      /* DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED*/      (CASE ACTION         WHEN 'C' THEN          'No'         WHEN 'R' THEN          'Yes'       END) CERT_REVOKED,       P.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTMPG P WHERE C.CERT_INV_NUM = P.CERT_INV_NUM )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:50:40,214 INFO  [stdout] (http--127.0.0.1-28080-1) result set140
+16:50:40,220 INFO  [stdout] (http--127.0.0.1-28080-1) result set140
+16:50:40,220 INFO  [stdout] (http--127.0.0.1-28080-1) result set80
+16:50:40,221 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,225 INFO  [stdout] (http--127.0.0.1-28080-1) result set0
+16:50:40,226 INFO  [stdout] (http--127.0.0.1-28080-1) WIDTH770
+16:51:00,039 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+16:51:00,052 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+16:51:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+16:51:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+16:51:36,465 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:51:36,466 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:36,467 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:51:36,467 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:51:36,468 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:51:36,469 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:36,470 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:51:36,471 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:51:36,472 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:51:36,472 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:51:36,474 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:36,474 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:36,475 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:51:36,515 INFO  [portallog] (http--127.0.0.1-28080-2) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) DESCRIPTION,       DECODE(U.ACTION, 'C', 'Created', 'R', 'Revoked', U.ACTION) ACTION,       (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME, /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM   AND U.WEF_DATE < TRUNC(SYSDATE)   AND C.SOFT_DELETE != '1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:51:37,703 INFO  [stdout] (http--127.0.0.1-28080-2) result set50
+16:51:37,704 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:37,706 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:51:37,707 INFO  [stdout] (http--127.0.0.1-28080-2) result set150
+16:51:37,710 INFO  [stdout] (http--127.0.0.1-28080-2) result set70
+16:51:37,711 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:37,711 INFO  [stdout] (http--127.0.0.1-28080-2) result set60
+16:51:37,712 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:51:37,712 INFO  [stdout] (http--127.0.0.1-28080-2) result set140
+16:51:37,712 INFO  [portallog] (http--127.0.0.1-28080-3) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM (  SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT ES.NAME FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) DESCRIPTION,        DECODE(U.ACTION,'C','Created','R','Revoked',U.ACTION)ACTION,        (SELECT ES.SYSTEM_ID FROM EXTSYSTEMS ES WHERE ES.SYSTEM_ID = U.PART_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,     /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, PTCPTCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM AND U.WEF_DATE > TRUNC(SYSDATE)  AND C.SOFT_DELETE!='1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:51:37,713 INFO  [stdout] (http--127.0.0.1-28080-2) result set80
+16:51:37,722 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:37,723 INFO  [stdout] (http--127.0.0.1-28080-2) result set0
+16:51:37,731 INFO  [stdout] (http--127.0.0.1-28080-2) WIDTH770
+16:51:42,779 ERROR [portallog] (http--127.0.0.1-28080-3) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:51:42,780 ERROR [portallog] (http--127.0.0.1-28080-3) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:51:42,782 ERROR [portallog] (http--127.0.0.1-28080-3) [ProgramMap] getConfiguration(1): empty configuration : FORM
+16:51:42,951 INFO  [stdout] (http--127.0.0.1-28080-3) result set50
+16:51:42,952 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:42,952 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:51:42,952 INFO  [stdout] (http--127.0.0.1-28080-3) result set150
+16:51:42,953 INFO  [stdout] (http--127.0.0.1-28080-3) result set70
+16:51:42,953 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:42,953 INFO  [stdout] (http--127.0.0.1-28080-3) result set60
+16:51:42,954 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:51:42,954 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:51:42,954 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:51:42,956 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:42,956 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:42,957 INFO  [stdout] (http--127.0.0.1-28080-3) WIDTH770
+16:51:42,991 INFO  [stdout] (http--127.0.0.1-28080-3) result set50
+16:51:42,992 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:42,994 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:51:42,994 INFO  [stdout] (http--127.0.0.1-28080-3) result set150
+16:51:42,995 INFO  [portallog] (http--127.0.0.1-28080-2) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM ( SELECT '0' SLT,       C.CERT_INV_NUM PK,       P.WEF_DATE,       (SELECT D.DESCRIPTION          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = P.CONNECTOR_ID) DESCRIPTION,       DECODE(P.ACTION, 'C', 'Created', 'R', 'Revoked', P.ACTION) ACTION,       (SELECT D.CONNECTOR_ID          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = P.CONNECTOR_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,       /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       /* DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED*/      (CASE ACTION         WHEN 'C' THEN          'No'         WHEN 'R' THEN          'Yes'       END) CERT_REVOKED,       P.ACTION STATUS  FROM CERTINVENTORY C, CONNCERTMPG P WHERE C.CERT_INV_NUM = P.CERT_INV_NUM )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:51:42,995 INFO  [stdout] (http--127.0.0.1-28080-3) result set70
+16:51:43,000 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:43,000 INFO  [stdout] (http--127.0.0.1-28080-3) result set60
+16:51:43,001 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:51:43,007 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:51:43,007 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:51:43,008 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:43,008 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:51:43,016 INFO  [stdout] (http--127.0.0.1-28080-3) WIDTH770
+16:52:00,035 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+16:52:00,038 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+16:52:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+16:52:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+16:53:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:53:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:53:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:53:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:53:46,378 INFO  [stdout] (http--127.0.0.1-28080-3) result set50
+16:53:46,379 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:53:46,379 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:53:46,380 INFO  [stdout] (http--127.0.0.1-28080-3) result set150
+16:53:46,380 INFO  [stdout] (http--127.0.0.1-28080-3) result set70
+16:53:46,381 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:53:46,381 INFO  [stdout] (http--127.0.0.1-28080-3) result set60
+16:53:46,381 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:53:46,382 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:53:46,382 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:53:46,383 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:53:46,384 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:53:46,385 INFO  [stdout] (http--127.0.0.1-28080-3) WIDTH770
+16:53:46,407 INFO  [portallog] (http--127.0.0.1-28080-3) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM (  SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT D.DESCRIPTION          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = U.CONNECTOR_ID) DESCRIPTION,        DECODE(U.ACTION,'C','Created','R','Revoked',U.ACTION)ACTION,        (SELECT D.CONNECTOR_ID          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = U.CONNECTOR_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,     /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, CONNCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM AND U.WEF_DATE < TRUNC(SYSDATE)  AND C.SOFT_DELETE!='1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:54:00,031 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:54:00,033 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:54:24,973 INFO  [stdout] (http--127.0.0.1-28080-3) result set50
+16:54:24,973 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:54:24,973 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:54:24,974 INFO  [stdout] (http--127.0.0.1-28080-3) result set150
+16:54:24,974 INFO  [stdout] (http--127.0.0.1-28080-3) result set70
+16:54:24,974 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:54:24,975 INFO  [stdout] (http--127.0.0.1-28080-3) result set60
+16:54:24,975 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:54:24,975 INFO  [stdout] (http--127.0.0.1-28080-3) result set140
+16:54:24,975 INFO  [stdout] (http--127.0.0.1-28080-3) result set80
+16:54:24,976 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:54:24,977 INFO  [stdout] (http--127.0.0.1-28080-3) result set0
+16:54:24,977 INFO  [stdout] (http--127.0.0.1-28080-3) WIDTH770
+16:54:24,993 INFO  [portallog] (http--127.0.0.1-28080-3) [RecordFinderManager] SELECT * FROM (SELECT SLT, PK, WEF_DATE, DESCRIPTION, ACTION, CODE, CERT_SERIAL, CERT_NOT_BEFORE, CERT_NOT_AFTER, CERT_FILE_NAME, CERT_REVOKED, STATUS ,ROWNUM R FROM (SELECT * FROM (  SELECT '0' SLT,       C.CERT_INV_NUM PK,       U.WEF_DATE,       (SELECT D.DESCRIPTION          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = U.CONNECTOR_ID) DESCRIPTION,        DECODE(U.ACTION,'C','Created','R','Revoked',U.ACTION)ACTION,        (SELECT D.CONNECTOR_ID          FROM CONNECTORS D         WHERE D.CONNECTOR_ID = U.CONNECTOR_ID) CODE,       C.CERT_SERIAL,       TO_CHAR(C.CERT_NOT_BEFORE, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_BEFORE,       TO_CHAR(C.CERT_NOT_AFTER, 'DD/MM/YYYY HH24:MI:SS') CERT_NOT_AFTER,       C.CERT_FILE_NAME,     /*  DECODE(C.CERT_IN_USE, '1', 'Yes', '0', 'No', C.CERT_IN_USE) CERT_IN_USE,*/       DECODE(C.CERT_REVOKED, '1', 'Yes', '0', 'No', C.CERT_REVOKED) CERT_REVOKED,       U.ACTION STATUS  FROM CERTINVENTORY C, CONNCERTCFG U WHERE C.CERT_INV_NUM = U.CERT_INV_NUM AND U.WEF_DATE > TRUNC(SYSDATE)  AND C.SOFT_DELETE!='1' )  ORDER BY (1) ASC ) WHERE ROWNUM <= 60 ) WHERE R > 0
+16:54:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+16:54:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+16:55:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+16:55:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+16:55:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+16:55:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+16:56:00,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+16:56:00,049 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+16:56:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+16:56:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+16:57:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+16:57:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+16:57:30,056 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+16:57:30,057 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+16:58:00,054 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+16:58:00,057 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+16:58:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+16:58:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+16:59:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+16:59:00,033 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+16:59:30,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+16:59:30,033 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+17:00:00,031 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+17:00:00,038 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+17:00:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:00:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:01:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:01:00,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:01:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+17:01:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+17:02:00,041 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+17:02:00,054 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+17:02:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:02:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:03:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:03:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:03:30,028 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+17:03:30,034 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+17:04:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+17:04:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+17:04:30,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+17:04:30,034 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+17:05:00,053 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:05:00,055 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:05:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+17:05:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+17:06:00,040 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:06:00,057 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:06:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:06:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:07:00,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:07:00,054 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:07:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+17:07:30,030 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+17:08:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+17:08:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+17:08:30,031 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:08:30,035 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:09:00,034 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+17:09:00,037 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+17:09:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+17:09:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+17:10:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:10:00,034 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:10:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:10:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:11:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:11:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:11:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:11:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:12:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:12:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:12:30,032 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:12:30,036 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:13:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:13:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:13:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:13:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:14:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:14:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:14:30,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:14:30,034 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:15:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+17:15:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+17:15:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+17:15:30,036 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+17:16:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:16:00,032 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:16:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:16:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:17:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+17:17:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+17:17:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:17:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:18:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:18:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:18:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:18:30,030 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:19:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:19:00,028 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:19:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:19:30,033 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:20:00,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:20:00,050 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:20:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:20:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:21:00,038 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:21:00,046 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:21:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:21:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+17:22:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+17:22:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+17:22:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+17:22:30,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+17:23:00,035 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:23:00,040 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:23:30,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:23:30,033 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:24:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+17:24:00,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+17:24:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+17:24:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+17:25:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+17:25:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+17:25:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+17:25:48,934 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - IO Error: Socket read timed out
+17:25:48,938 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:18:18,531 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:18:18,531 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:18:18,532 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:18:18,733 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:18:18,735 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:18:18,736 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:18:30,010 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:18:30,010 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:18:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:19:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:19:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:19:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:19:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:19:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:19:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:20:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:20:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:20:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:20:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:20:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:20:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:21:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:21:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:21:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:21:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:21:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:21:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:22:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:22:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:22:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:22:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:22:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:22:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:23:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:23:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:23:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:23:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:23:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:23:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:24:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:24:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:24:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:24:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:24:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:24:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:25:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:25:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:25:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:25:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:25:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:25:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:26:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:26:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:26:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:26:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:26:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:26:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:27:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:27:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:27:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:27:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:27:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:27:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:28:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:28:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:28:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:28:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:28:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:28:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:29:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:29:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:29:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:29:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:29:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:29:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:30:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:30:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:30:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:30:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:30:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:30:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:31:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:31:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:31:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:31:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+18:31:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+18:31:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+18:32:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:32:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:32:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:32:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:32:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:32:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:33:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:33:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:33:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:33:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:33:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:33:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:34:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:34:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:34:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:34:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:34:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:34:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:35:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:35:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:35:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:35:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:35:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:35:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:36:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:36:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:36:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:36:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:36:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:36:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:37:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:37:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:37:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:37:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:37:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:37:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:38:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:38:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:38:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:38:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:38:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:38:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:39:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:39:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:39:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:39:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:39:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:39:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:40:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:40:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:40:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:40:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:40:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:40:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:41:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:41:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:41:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:41:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:41:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:41:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:42:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:42:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:42:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:42:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:42:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:42:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:43:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:43:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:43:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:43:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:43:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:43:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:44:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:44:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:44:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:44:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:44:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:44:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:45:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:45:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:45:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:45:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:45:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:45:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:46:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:46:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:46:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:46:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:46:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:46:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:47:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+18:47:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+18:47:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+18:47:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:47:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:47:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:48:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:48:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:48:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:48:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+18:48:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+18:48:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+18:49:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+18:49:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+18:49:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+18:49:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:49:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:49:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:50:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+18:50:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+18:50:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+18:50:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:50:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:50:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:51:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:51:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:51:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:51:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:51:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:51:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:52:00,010 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:52:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:52:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:52:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:52:30,029 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:52:30,032 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:53:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:53:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:53:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:53:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+18:53:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+18:53:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+18:54:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:54:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:54:00,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:54:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:54:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:54:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:55:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+18:55:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+18:55:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+18:55:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:55:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:55:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:56:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:56:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:56:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+18:56:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:56:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:56:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:57:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:57:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:57:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:57:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:57:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:57:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:58:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+18:58:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+18:58:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+18:58:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+18:58:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+18:58:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+18:59:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+18:59:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+18:59:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+18:59:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+18:59:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+18:59:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:00:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:00:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:00:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:00:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:00:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:00:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:01:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:01:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:01:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:01:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:01:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:01:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:02:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:02:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:02:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:02:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:02:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:02:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:03:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:03:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:03:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:03:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:03:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:03:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:04:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+19:04:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+19:04:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+19:04:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:04:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:04:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:05:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+19:05:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+19:05:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+19:05:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+19:05:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+19:05:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+19:06:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+19:06:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+19:06:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+19:06:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - Start
+19:06:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Database Connection Unavailable  - Closed Connection
+19:06:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-3) Running Job Manager - End
+19:07:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:07:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:07:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:07:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:07:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:07:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:08:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:08:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:08:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:08:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:08:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:08:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:09:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:09:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:09:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:09:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:09:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:09:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:10:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:10:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:10:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:10:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:10:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:10:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:11:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:11:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:11:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:11:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:11:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:11:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:12:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:12:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:12:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:12:30,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:12:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:12:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:13:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:13:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:13:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:13:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:13:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:13:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:14:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:14:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:14:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:14:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:14:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:14:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:15:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+19:15:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+19:15:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+19:15:30,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+19:15:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+19:15:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+19:16:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:16:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:16:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:16:30,010 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:16:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:16:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:17:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:17:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:17:00,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:17:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:17:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:17:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:18:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:18:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:18:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:18:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:18:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:18:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:19:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:19:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:19:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:19:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:19:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:19:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:20:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:20:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:20:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:20:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:20:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:20:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:21:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:21:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:21:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:21:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:21:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:21:30,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:22:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:22:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:22:00,028 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:22:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:22:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:22:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:23:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:23:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:23:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:23:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:23:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:23:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:24:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:24:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:24:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:24:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:24:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:24:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:25:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:25:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:25:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:25:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:25:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:25:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+19:26:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:26:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:26:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:26:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:26:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:26:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:27:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:27:00,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:27:00,030 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:27:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:27:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:27:30,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:28:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:28:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:28:00,026 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:28:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:28:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:28:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:29:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:29:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:29:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:29:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:29:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:29:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:30:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:30:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:30:00,027 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:30:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:30:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:30:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:31:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:31:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:31:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:31:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:31:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:31:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:32:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:32:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:32:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:32:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:32:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:32:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:33:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+19:33:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+19:33:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+19:33:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+19:33:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+19:33:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+19:34:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - Start
+19:34:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Database Connection Unavailable  - Closed Connection
+19:34:00,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-0) Running Job Manager - End
+19:34:30,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:34:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:34:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:35:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:35:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:35:00,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:35:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:35:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:35:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:36:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:36:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:36:00,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:36:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:36:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:36:30,025 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:37:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+19:37:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+19:37:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End
+19:37:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:37:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:37:30,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:38:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+19:38:00,015 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+19:38:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+19:38:30,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:38:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:38:30,022 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:39:00,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:39:00,016 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:39:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:39:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:39:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:39:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:40:00,011 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+19:40:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+19:40:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+19:40:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:40:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:40:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:41:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+19:41:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+19:41:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+19:41:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:41:30,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:41:30,024 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:41:48,656 INFO  [portallog] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) [ApplicationSessionListener] sessionDestroyed upxzresLNI8gjK9lU3Ho3-gX.undefined
+19:41:48,683 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) java.lang.Exception: Closed Connection
+19:41:48,685 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at intellect.sel.admin.framework.ejb.TBACommonDispatcherBean.processRequest(Unknown Source)
+19:41:48,687 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+19:41:48,688 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+19:41:48,691 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+19:41:48,693 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at java.lang.reflect.Method.invoke(Method.java:597)
+19:41:48,695 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptorFactory$ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptorFactory.java:72)
+19:41:48,699 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,701 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+19:41:48,703 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:36)
+19:41:48,706 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,708 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+19:41:48,711 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,713 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.tx.EjbBMTInterceptor.handleInvocation(EjbBMTInterceptor.java:105)
+19:41:48,715 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.tx.BMTInterceptor.processInvocation(BMTInterceptor.java:56)
+19:41:48,717 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,719 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+19:41:48,722 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,723 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+19:41:48,726 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:53)
+19:41:48,729 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,731 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+19:41:48,732 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,734 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.remote.EJBRemoteTransactionPropagatingInterceptor.processInvocation(EJBRemoteTransactionPropagatingInterceptor.java:80)
+19:41:48,737 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,739 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+19:41:48,741 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,743 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59)
+19:41:48,745 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,747 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.component.interceptors.EjbExceptionTransformingInterceptorFactories$1.processInvocation(EjbExceptionTransformingInterceptorFactories.java:65)
+19:41:48,748 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,749 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+19:41:48,751 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,752 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:32)
+19:41:48,754 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,755 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.TCCLInterceptor.processInvocation(TCCLInterceptor.java:45)
+19:41:48,756 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288)
+19:41:48,757 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+19:41:48,759 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:165)
+19:41:48,760 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.as.ejb3.remote.LocalEjbReceiver.processInvocation(LocalEjbReceiver.java:179)
+19:41:48,761 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:179)
+19:41:48,762 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.TransactionInterceptor.handleInvocation(TransactionInterceptor.java:43)
+19:41:48,764 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:181)
+19:41:48,765 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.ReceiverInterceptor.handleInvocation(ReceiverInterceptor.java:128)
+19:41:48,766 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:181)
+19:41:48,768 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:136)
+19:41:48,769 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:121)
+19:41:48,770 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:104)
+19:41:48,771 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at $Proxy11.processRequest(Unknown Source)
+19:41:48,772 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at intellect.sel.delegate.BackOfficeProcessManager.delegate(Unknown Source)
+19:41:48,773 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at intellect.sel.admin.framework.web.listeners.ApplicationSessionListener.sessionDestroyed(Unknown Source)
+19:41:48,775 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:690)
+19:41:48,776 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.session.StandardSession.isValid(StandardSession.java:585)
+19:41:48,778 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.session.ManagerBase.processExpires(ManagerBase.java:390)
+19:41:48,779 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.session.ManagerBase.backgroundProcess(ManagerBase.java:375)
+19:41:48,781 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1316)
+19:41:48,782 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1601)
+19:41:48,783 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1610)
+19:41:48,784 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1610)
+19:41:48,786 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1590)
+19:41:48,787 ERROR [stderr] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) 	at java.lang.Thread.run(Thread.java:619)
+19:41:48,788 INFO  [portallog] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) [ApplicationSessionListener] Logout Failure
+19:42:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - Start
+19:42:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Database Connection Unavailable  - Closed Connection
+19:42:00,023 INFO  [stdout] (DefaultQuartzScheduler_Worker-9) Running Job Manager - End
+19:42:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - Start
+19:42:30,013 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Database Connection Unavailable  - Closed Connection
+19:42:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-7) Running Job Manager - End
+21:28:42,526 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+21:28:42,527 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+21:28:42,528 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+21:28:42,653 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - Start
+21:28:45,428 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Database Connection Unavailable  - Closed Connection
+21:28:45,431 INFO  [stdout] (DefaultQuartzScheduler_Worker-8) Running Job Manager - End
+21:29:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - Start
+21:29:00,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Database Connection Unavailable  - Closed Connection
+21:29:00,021 INFO  [stdout] (DefaultQuartzScheduler_Worker-4) Running Job Manager - End
+21:29:30,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - Start
+21:29:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Database Connection Unavailable  - Closed Connection
+21:29:30,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-5) Running Job Manager - End
+21:30:00,018 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - Start
+21:30:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Database Connection Unavailable  - Closed Connection
+21:30:00,019 INFO  [stdout] (DefaultQuartzScheduler_Worker-1) Running Job Manager - End
+21:30:30,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - Start
+21:30:30,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Database Connection Unavailable  - Closed Connection
+21:30:30,020 INFO  [stdout] (DefaultQuartzScheduler_Worker-2) Running Job Manager - End
+21:31:00,012 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - Start
+21:31:00,014 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Database Connection Unavailable  - Closed Connection
+21:31:00,017 INFO  [stdout] (DefaultQuartzScheduler_Worker-6) Running Job Manager - End

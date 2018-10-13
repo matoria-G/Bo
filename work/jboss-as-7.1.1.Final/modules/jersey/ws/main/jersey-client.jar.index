@@ -1,0 +1,13 @@
+
+org/glassfish/jersey/client
+org/glassfish/jersey/client/filter
+META-INF/maven
+org
+org/glassfish/jersey
+META-INF
+org/glassfish/jersey/client/authentication
+org/glassfish/jersey/client/internal
+META-INF/maven/org.glassfish.jersey.core
+org/glassfish/jersey/client/spi
+META-INF/maven/org.glassfish.jersey.core/jersey-client
+org/glassfish

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	version="2.0">
+
+	<xs:annotation>
+		<xs:documentation>
+			Issuer Common XML Schema, version 2.0
+			by Frida Mörtsell (frida.mortsell@metamatrix.se).
+			
+			Defines common terms for issuers
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="CompanyName10" type="xs:string"/>
+
+	<xs:element name="OrganisationIdNumber" type="xs:string"/>
+
+	<xs:complexType name="IssuerReferenceType">
+		<xs:sequence>
+			<xs:element ref="CompanyName10"/>
+			<xs:element ref="OrganisationIdNumber"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

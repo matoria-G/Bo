@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	version="2.3">
+
+	<xs:annotation>
+		<xs:documentation>
+			Corporate Action Common XML Schema, version 2.3
+			by Benny Karlsson (benny.karlsson@ncsdgroup.com).
+			
+			Defines common terms for corporate actions
+			according to VPC's model.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:include schemaLocation="ProductBase.xsd"/>
+
+	<xs:complexType name="PaymentOrderType">
+		<xs:sequence>
+			<xs:group ref="GeneralTermsGroup" minOccurs="0"/>
+			<xs:element name="PerCent" type="PerCentType" minOccurs="0"/>
+			<xs:element name="TotalAmount" type="AmountType" minOccurs="0"/>
+			<xs:element name="PaymentDate" type="xs:date"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="DividendForeignSharesType">
+		<xs:sequence>
+			<xs:element name="CalculationDate" type="xs:date"/>
+			<xs:element name="ExchangeRate" type="MaxDecimalType" minOccurs="0"/>
+			<xs:element name="GrossDividend" type="restrictedAmountMaxType" minOccurs="0"/>
+			<xs:element name="RedemptionForeignTax" type="YesNoType"/>
+			<xs:element name="OriginalCurrency" type="xs:string"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:group name="GeneralTermsGroup">
+		<xs:sequence>
+			<xs:element name="Amount" type="AmountMaxType" minOccurs="0"/>
+			<xs:element name="Quantity" type="QuantityType" minOccurs="0"/>
+			<xs:element name="NominalAmount" type="AmountMaxType" minOccurs="0"/>			
+			<xs:element name="CountryCode" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:complexType name="RequirementsType">
+		<xs:sequence>
+			<xs:element name="RequiredSecurity" type="SecurityRefType" minOccurs="0"/>
+			<xs:element name="AllottedSecurity" type="SecurityRefType" minOccurs="0"/>
+			<xs:element name="AlternativeChoice" type="TwoToNineNoType" minOccurs="0"/>
+			<xs:element name="QuantityAllotted" type="QuantityType"/>
+			<xs:element name="QuantityNeeded" type="QuantityType"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ShortRequirementsType">
+		<xs:sequence>
+			<xs:element name="RequiredSecurity" type="SecurityRefType"/>
+			<xs:element name="QuantityNeeded" type="QuantityType" nillable="true"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ToReceiveType">
+		<xs:sequence>
+			<xs:element name="SecurityToReceive" type="SecurityRefType" minOccurs="0"/>
+			<xs:element name="UnpaidSecurity" type="SecurityRefType" minOccurs="0"/>
+			<xs:element name="PaidSecurity" type="SecurityRefType" minOccurs="0"/>
+			<xs:element name="ReceivedAtAllocation" type="ReceivedAtAllocationType" minOccurs="0"/>			
+			<xs:element name="QuantityReceivedAtSubscr" type="QuantityType" nillable="true"/>
+			<xs:element name="SubscribedAmount" type="restrictedAmountType" nillable="true"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ShortToReceiveType">
+		<xs:sequence>
+			<xs:element name="SecurityToReceive" type="SecurityRefType"/>
+			<xs:element name="QuantityAllotted" type="QuantityType"/>
+			<xs:any namespace="##targetNamespace" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="SecurityRefType">
+		<xs:sequence>
+			<xs:element name="ISIN" type="xs:string"/>
+			<xs:element name="TypeOfSecurity" type="xs:string"/>
+			<xs:element name="SecuritySort" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="PeriodType">
+		<xs:sequence>
+			<xs:element name="From" type="xs:date"/>
+			<xs:element name="To" type="xs:date"/>
+			<xs:element name="ExtraPeriodFrom" type="xs:date" minOccurs="0"/>
+			<xs:element name="ExtraPeriodTo" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ExcludedCountriesType">
+		<xs:sequence>
+			<xs:element name="ListOfCountries" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="StatementsType">
+		<xs:sequence>
+			<xs:element name="Statement" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="lang" type="xs:language" use="required"/>
+							<xs:attribute name="type" type="xs:string" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="CentralizedSaleType">
+		<xs:attribute name="exceedingRights" type="YesNoType" use="required"/>
+		<xs:attribute name="nonExercisedSubscrRights" type="YesNoType" use="optional"/>
+	</xs:complexType>
+
+	<xs:complexType name="ReceivedAtAllocationType">
+		<xs:attribute name="quantity" type="QuantityType" use="optional"/>
+		<xs:attribute name="amount" type="restrictedAmountType" use="optional"/>
+	</xs:complexType>
+
+	<xs:simpleType name="UpDownNoneType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="U"/>
+			<xs:enumeration value="N"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="ingen"/>
+			<xs:enumeration value="none"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="TwoToNineNoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2" /> <!-- 2 -->
+			<xs:enumeration value="3" /> <!-- 3 -->						
+			<xs:enumeration value="4" /> <!-- 4 -->						
+			<xs:enumeration value="5" /> <!-- 5 -->						
+			<xs:enumeration value="6" /> <!-- 6 -->						
+			<xs:enumeration value="7" /> <!-- 7 -->						
+			<xs:enumeration value="8" /> <!-- 8 -->						
+			<xs:enumeration value="9" /> <!-- 9 -->																								
+			<xs:enumeration value="N" /> <!-- For both sv and en -->
+		</xs:restriction>
+	</xs:simpleType>
+
+
+</xs:schema>

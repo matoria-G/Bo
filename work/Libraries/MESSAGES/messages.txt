@@ -1,0 +1,38 @@
+{
+  "User": {
+    "id": "user1",
+    "current location": "12'n34s'",
+    "no of items": "5"
+  },
+  "items": [
+    "1",
+    "2",
+	"3",
+	"4",
+	"5"
+  ]
+}
+
+
+login_vendor
+--------------------------------------------------
+{
+  "User": {
+    "id": "RAJ_VEND",
+    "password": "hello124",
+    "role": "1"
+  }
+}
+-----------------------------------------------------
+{
+  "User": {
+    "id": "raj_sweets",
+    "password": "hello124",
+    "role": "1",
+    "dob" : "12-APR-1998",
+    "email":"sweets.raj@gmail.com",
+    "phone":"9962956561",
+    "name":"raj Sweets"
+  }
+}
+==-------------------------------------

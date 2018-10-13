@@ -1,0 +1,49 @@
+package com.bo.jobs;
+
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.KeySpec;
+import java.sql.*;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESKeySpec;
+import javax.crypto.spec.PBEKeySpec;
+import javax.sql.DataSource;
+
+public class Test {
+
+	public static final byte[] desKey = new byte[]{21, 1, -110, 82, -32, -85, -128, -65};
+	
+public static void main(String[] args) throws SQLException {
+	double la1=12.913;
+	double lo1=80.222;
+	double la2=12.911;
+	double lo2=80.222;
+	System.out.println("distance between two locations is"+(distance(la1,la2,lo1,lo2,0,0)));
+	
+       
+}
+public static int  distance(double lat1, double lat2, double lon1,
+        double lon2, double el1, double el2) {
+
+    final int R = 6371; // Radius of the earth
+
+    double latDistance = Math.toRadians(lat2 - lat1);
+    double lonDistance = Math.toRadians(lon2 - lon1);
+    double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+            + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
+            * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
+    double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    double distance = R * c * 1000; // convert to meters
+
+    double height = el1 - el2;
+
+    distance = Math.pow(distance, 2) + Math.pow(height, 2);
+
+    return (int) Math.ceil(Math.sqrt(distance));
+}
+	
+}

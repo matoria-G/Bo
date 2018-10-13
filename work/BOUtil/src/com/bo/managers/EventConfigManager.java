@@ -1,0 +1,167 @@
+package com.bo.managers;
+
+import java.io.InputStream;
+import java.sql.ResultSet;
+import java.util.HashMap;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import com.bo.bean.HandlerInfoBean;
+import com.bo.database.utils.DBContext;
+import com.bo.database.utils.DBUtil;
+import com.bo.job.core.ContextReference;
+
+public class EventConfigManager {
+	
+	private  static HashMap<String,HashMap> systemEventsMap = new HashMap<String,HashMap>();
+	
+	private EventConfigManager(){
+		
+	}
+	
+	/*public synchronized static void loadServiceConfiguration(String systemCode) throws Exception{ 
+		
+		Document doc = null;		
+		HandlerInfoBean handlerInfoBean = new HandlerInfoBean();
+		HashMap<String,HandlerInfoBean> serviceMap = new HashMap<String,HandlerInfoBean>();
+		
+		try {
+			
+			if(systemEventsMap.get(systemCode)!=null)
+				return;
+						
+			StringBuffer buffer = new StringBuffer("");
+			InputStream fis = ContextReference.getContext().getResourceAsStream("/WEB-INF/config/"+systemCode+"-EventConfig.xml");			
+			InputSource is = new InputSource(fis);
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = dbf.newDocumentBuilder();
+												
+			doc = db.parse(is);		
+			
+			//Load map
+			NodeList requestNodes = doc.getElementsByTagName("ServiceInfo");			  								
+			for(int li=0;li<requestNodes.getLength();li++) {
+				
+				String firstNode = requestNodes.item(li).getFirstChild().getFirstChild().getNodeValue();				
+				String handler = requestNodes.item(li).getFirstChild().getNextSibling().getFirstChild().getNodeValue();
+				String proc = null;
+				if(requestNodes.item(li).getLastChild().getNodeName().equalsIgnoreCase("PROC")) {
+					proc = requestNodes.item(li).getLastChild().getFirstChild().getNodeValue();
+				}
+				
+				handlerInfoBean = new HandlerInfoBean();
+				handlerInfoBean.setHandlerFullName(handler);
+				handlerInfoBean.setProcName(proc);
+				serviceMap.put(firstNode,handlerInfoBean);
+									
+			}
+			
+			systemEventsMap.put(systemCode, serviceMap);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+		
+		
+	}*/
+	
+public synchronized static void loadServiceConfiguration(int entityNum,String channelCode) throws Exception{ 
+		
+		
+		HandlerInfoBean handlerInfoBean = new HandlerInfoBean();
+		HashMap<String,HandlerInfoBean> serviceMap = new HashMap<String,HandlerInfoBean>();
+		DBContext dbContext = null;
+		DBUtil dbUtil = null;
+		ResultSet lrs = null;
+		
+		try {
+			
+			if(systemEventsMap.get(channelCode)!=null)
+				return;
+			
+			dbContext = new DBContext();
+			dbUtil = dbContext.createUtilInstance();
+			dbUtil.setMode(DBUtil.PREPARED);
+			dbUtil.setSql("SELECT E.EVENT_CODE,E.HANDLER_NAME,E.PROC_NAME FROM EVTHANDLERCFG E WHERE E.ENTITY_CODE=? AND E.CHANNEL_CODE=?");			
+			dbUtil.setInt(1,entityNum);
+			dbUtil.setString(2, channelCode);
+			lrs = dbUtil.executeQuery();
+			
+			while (lrs.next()){			
+				
+				String firstNode = lrs.getString("EVENT_CODE");				
+				String handler = lrs.getString("HANDLER_NAME");
+				String proc = lrs.getString("PROC_NAME");							
+				handlerInfoBean = new HandlerInfoBean();
+				handlerInfoBean.setHandlerFullName(handler);
+				handlerInfoBean.setProcName(proc);
+				serviceMap.put(firstNode,handlerInfoBean);
+									
+			}
+			
+			systemEventsMap.put(channelCode, serviceMap);
+			
+		}		
+		catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}finally{
+			if(dbContext!=null){
+				dbContext.close();
+			}
+		}				
+	}
+	
+	/*public static String getNtfnHandler(String systemCode,String eventCode)throws Exception {
+		
+		String handler = "";
+		HashMap serviceMap = null;
+		try {
+			
+			if(systemEventsMap.get(systemCode)==null)
+				loadServiceConfiguration(systemCode);						
+			
+			serviceMap = (HashMap) systemEventsMap.get(systemCode);						
+			handler = (String) serviceMap.get(eventCode);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+		
+		return handler;
+	}*/		
+	
+	public static HandlerInfoBean getNtfnHandlerBean(int entityNumber,String channelCode,String eventCode)throws Exception {
+		
+		String handler = "";
+		HashMap serviceMap = null;
+		HandlerInfoBean handlerInfoBean = null;
+		
+		try {
+			
+			if(systemEventsMap.get(channelCode)==null)
+				loadServiceConfiguration(entityNumber,channelCode);						
+			
+			serviceMap = (HashMap) systemEventsMap.get(channelCode);						
+			handlerInfoBean = (HandlerInfoBean) serviceMap.get(eventCode);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+		
+		return handlerInfoBean;
+	}	
+	
+
+}

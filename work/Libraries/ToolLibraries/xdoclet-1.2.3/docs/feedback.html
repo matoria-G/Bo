@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>XDoclet: Attribute-Oriented Programming - Feedback</title><style type="text/css" media="all">
+          @import url("./style/maven-base.css");
+          
+			    @import url("./style/maven-theme.css");</style><link rel="stylesheet" href="./style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><meta name="author" content="Aslak Hellesoy"></meta><meta name="email" content="aslak.nospam@users.sf.net"></meta><link rel="shortcut icon" href="favicon.ico"></link><link rel="icon" href="favicon.ico"></link></head><body class="composite"><div id="banner"><a href="http://xdoclet.sourceforge.net/" id="organizationLogo"><img alt="XDoclet Team" src="./images/logo.gif"></img></a><a href="http://xdoclet.sourceforge.net/xdoclet/" id="projectLogo"><img alt="XDoclet" src="http://sflogo.sourceforge.net/sflogo.php?group_id=31602&amp;type=5"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">
+                	Last published: 16 April 2005
+                  | Doc for 1.2.3</div><div class="xright">
+        
+        <a href="http://xdoclet.sourceforge.net/xdoclet/" class="externalLink" title="External Link">Home</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://sourceforge.net/projects/xdoclet/" class="externalLink" title="External Link">SourceForge Project</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://xdoclet.sourceforge.net/wiki/" class="externalLink" title="External Link">Wiki</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xdoclet/" class="externalLink" title="External Link">Browse CVS</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://opensource.atlassian.com/projects/xdoclet/secure/CreateIssue!default.jspa" class="externalLink" title="External Link">Create an Issue</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuXDoclet"><h5>XDoclet</h5><ul><li class="none"><a href="index.html">Overview</a></li><li class="none"><a href="status.html">News and Status</a></li><li class="none"><a href="install.html">Download/Installation</a></li><li class="none"><a href="using.html">Using XDoclet</a></li><li class="none"><a href="bp.html">Best Practices</a></li><li class="none"><a href="faq.html">FAQ</a></li><li class="none"><a href="licenses/xdoclet-license.html">License</a></li></ul></div><div id="menuAnt_Task_Reference"><h5>Ant Task Reference</h5><ul><li class="none"><a href="ant/xdoclet/DocletTask.html">&lt;doclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/ejb/EjbDocletTask.html">&lt;ejbdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/hibernate/HibernateDocletTask.html">&lt;hibernatedoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/jdo/JdoDocletTask.html">&lt;jdodoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/jmx/JMXDocletTask.html">&lt;jmxdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/mockobjects/MockObjectDocletTask.html">&lt;mockdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/portlet/PortletDocletTask.html">&lt;portletdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/spring/SpringDocletTask.html">&lt;springdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/apache/tapestry/TapestryDocletTask.html">&lt;tapestrydoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/web/WebDocletTask.html">&lt;webdoclet .. /&gt;</a></li><li class="none"><a href="ant/xdoclet/modules/wsee/WseeDocletTask.html">&lt;wseedoclet .. /&gt;</a></li></ul></div><div id="menuTag_Reference"><h5>Tag Reference</h5><ul><li class="none"><a href="tags/apache-tags.html">apache (@soap @struts @axis @tapestry)</a></li><li class="none"><a href="tags/bea-tags.html">bea (@weblogic)</a></li><li class="none"><a href="tags/borland-tags.html">borland (@bes)</a></li><li class="none"><a href="tags/caucho-tags.html">caucho (@resin)</a></li><li class="none"><a href="tags/ejb-tags.html">ejb (@ejb @dao)</a></li><li class="none"><a href="tags/exolab-tags.html">exolab (@castor)</a></li><li class="none"><a href="tags/hp-tags.html">hp (@hpas)</a></li><li class="none"><a href="tags/hibernate-tags.html">hibernate (@hibernate)</a></li><li class="none"><a href="tags/ibm-tags.html">ibm (@websphere)</a></li><li class="none"><a href="tags/java-tags.html">java (@javabean)</a></li><li class="none"><a href="tags/jboss-tags.html">jboss (@jboss)</a></li><li class="none"><a href="tags/jdo-tags.html">jdo (@jdo)</a></li><li class="none"><a href="tags/jmx-tags.html">jmx (@jmx)</a></li><li class="none"><a href="tags/jsf-tags.html">jsf (@jsf)</a></li><li class="none"><a href="tags/macromedia-tags.html">macromedia (@jrun)</a></li><li class="none"><a href="tags/mockobjects-tags.html">mockobjects (@mock)</a></li><li class="none"><a href="tags/mvcsoft-tags.html">mvcsoft (@mvcsoft)</a></li><li class="none"><a href="tags/mx4j-tags.html">mx4j (@mx4j)</a></li><li class="none"><a href="tags/objectweb-tags.html">objectweb (@jonas)</a></li><li class="none"><a href="tags/oracle-tags.html">oracle (@oc4j)</a></li><li class="none"><a href="tags/orion-tags.html">orion (@orion)</a></li><li class="none"><a href="tags/portlet-tags.html">portlet (@portlet)</a></li><li class="none"><a href="tags/pramati-tags.html">pramati (@pramati)</a></li><li class="none"><a href="tags/spring-tags.html">spring (@spring)</a></li><li class="none"><a href="tags/sun-tags.html">sun (@sunone)</a></li><li class="none"><a href="tags/sybase-tags.html">sybase (@easerver)</a></li><li class="none"><a href="tags/tjdo-tags.html">tjdo (@tjdo)</a></li><li class="none"><a href="tags/web-tags.html">web (@web @jsp)</a></li><li class="none"><a href="tags/webwork-tags.html">webwork (@webwork)</a></li><li class="none"><a href="tags/wsee-tags.html">wsee (@wsee)</a></li><li class="none"><a href="tags/xdoclet-tags.html">xdoclet (@xdoclet @doc @msg)</a></li></ul></div><div id="menuFeature_Documentation"><h5>Feature Documentation</h5><ul><li class="none"><a href="valueobjects.html">Using Value Objects</a></li><li class="none"><a href="envhandling.html">EJB Environment Handling</a></li></ul></div><div id="menuAdvanced"><h5>Advanced</h5><ul><li class="none"><a href="maven-plugin.html">Maven Plug-in</a></li><li class="none"><a href="merge.html">Merge Points</a></li><li class="none"><a href="ide/index.html">IDE Integration</a></li><li class="none"><a href="migration.html">Migration from EJBDoclet</a></li><li class="none"><a href="ant15.html">Ant 1.5 Troubleshooting</a></li></ul></div><div id="menuCommunity"><h5>Community</h5><ul><li class="none"><strong><a href="feedback.html">Feedback</a></strong></li><li class="none"><a href="resources.html">Resources</a></li><li class="none"><a href="tools.html">Tools</a></li></ul></div><div id="menuDevelopment"><h5>Development</h5><ul><li class="none"><a href="development/index.html">Developer Guide</a></li><li class="none"><a href="api/index.html">Javadoc (API)</a></li><li class="none"><a href="templates/index.html">Template Language (*.xdt)</a></li><li class="none"><a href="http://xdoclet.sourceforge.net/xjavadoc/" class="externalLink" title="External Link">XJavaDoc Site</a></li></ul></div><div id="search"><h5>Search XDoclet</h5><form action="http://www.google.com/search" method="get"><a href="http://www.google.com" class="navlink"><img height="32" width="75" alt="Google" src="http://www.google.com/logos/Logo_25wht.gif"></img></a><input name="q" maxlength="255" size="15" type="text" value="" id="q"></input><input name="btnG" type="submit" value="Go" id="btnG"></input><input name="domains" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet"></input><input name="sitesearch" type="hidden" value="http://xdoclet.sourceforge.net/xdoclet" id="search"></input></form></div><div id="menuProject_Documentation"><h5>Project Documentation</h5><ul><li class="none"><a href="index.html">About XDoclet</a></li><li class="collapsed"><a href="project-info.html">Project Info</a></li><li class="collapsed"><a href="maven-reports.html">Project Reports</a></li><li class="none"><a href="http://maven.apache.org/development-process.html" class="externalLink" title="External Link">Development Process</a></li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="./images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="Feedback"></a><h2>Feedback</h2><div class="subsection"><a name="Support"></a><h3>Support</h3><p>
+                    First, you should know that many people ask us about things that aren't really related
+                    to XDoclet. Would you ask your IDE manufacturer why how to specify an EJB finder query?
+                    Hopefully not. You shouldn't ask us either. There are
+                    <a href="http://archives.java.sun.com/ejb-interest.html" class="externalLink" title="External Link">better forums</a> for that.
+                </p><p>
+                    We <a href="mail-lists.html">receive</a> an astonishing amount of support requests, and handling them
+                    can be a big burden. One of the reasons we receive so many requests is that many people don't
+                    <a href="faq.html">bother</a> <a href="using.html">to</a>
+                    <a href="http://www.onjava.com" class="externalLink" title="External Link">figure</a> <a href="http://www.javaworld.com" class="externalLink" title="External Link">out</a>
+                    what their problem relates to. Just because XDoclet can generate for example <a href="http://www.jboss.org" class="externalLink" title="External Link">JBoss</a>
+                    deployment descriptors, it doesn't necessarily mean we can be held responsible for generation of incorrect
+                    code. More importantly, we might not even know how to
+                    <a href="http://www.jboss.org/jive.jsp" class="externalLink" title="External Link">help you with JBoss</a>.
+                </p><p>
+                    If you have successfully managed to run XDoclet and generate files, but you think there
+                    is something wrong with the generated files, there can be many causes for this. Possible causes
+                    are (with decreasing probability):
+                    <ul>
+                        <li>
+                            You have incorrect tags in your Java class. Missing tags, bad parameters, tags in wrong places etc.
+                            Please consult the Tag Reference carefully. Examining the
+                            <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xdoclet/xdoclet/samples/src/" class="externalLink" title="External Link">samples</a> is also helpful.
+                        </li>
+                        <li>
+                            You have incorrect subtasks and parameters in your build script. Please consult the Ant Task Reference
+                            carefully. Examining the samples' build file is also helpful.
+                        </li>
+                        <li>
+                            You have bad classpath settings. Make sure the classpath you pass to the taskdef you're using to define
+                            an XDoclet task in your ant script contains all the jar files in the lib directory, and all the jar files
+                            containing the classes on which your tagged classes depend (struts.jar, ejb.jar, servlet.jar, etc.)
+                        </li>
+                        <li>
+                            You have found a bug (see below).
+                        </li>
+                        </ul>
+                </p></div><div class="subsection"><a name="Issues"></a><h3>Issues</h3><p>
+                    If you believe you found a bug in XDoclet, or you would like to see a new feature implemented, please
+                    follow these guidelines:
+                    <ol>
+                        <li>
+                            Verify that the issue isn't reported before (search for previously posted issues). Chances are
+                            the issue is already reported and fixed in CVS. If it is, please
+                            <a href="install.html">try the CVS version</a> and see if that works for you.
+                        </li>
+                        <li>
+                            Search the <a href="mail-lists.html">mailing lists</a> and see if anything is written about it
+                            (<a href="http://www.geocrawler.com/lists/3/SourceForge/14029/0/" class="externalLink" title="External Link">xdoclet-user on Geocrawler</a>,
+                             <a href="http://www.geocrawler.com/lists/3/SourceForge/14030/0/" class="externalLink" title="External Link">xdoclet-devel on Geocrawler</a>).
+                        </li>
+                        <li>
+                            If you do not find anything, please
+                            <a href="http://opensource.atlassian.com/projects/xdoclet/" class="externalLink" title="External Link">report the issue</a>,
+                            and include a detailed description on how to reproduce it.
+                            Filing improvements (patches) is the preferred way to get bugs fixed quickly.
+                        </li>
+                    </ol>
+                </p></div><div class="subsection"><a name="QUICK_HOWTO:_Reporting_issues_in_JIRA"></a><h3>QUICK HOWTO: Reporting issues in JIRA</h3><p>
+                    Some people find it difficult to log issues (bugs, feature requests, patches) in JIRA. Here is a quick howto:
+                    <ol>
+                        <li>Go to <a href="http://opensource.atlassian.com/projects/xdoclet/" class="externalLink" title="External Link">http://opensource.atlassian.com/projects/xdoclet/</a>.</li>
+                        <li>If you haven't got an account in this JIRA system, create one by following the "Signup" link. Then log in.</li>
+                        <li>Follow the "New Issue" link at the top of the page.</li>
+                        <li>Select the project (XDoclet, XJavaDoc...).</li>
+                        <li>Select the issue type:
+                            <ul>
+                                <li>Bug: You have discovered some incorrect behavior in the software.</li>
+                                <li>New Feature: You'd like to see some new feature.</li>
+                                <li>Task: You want to record "something to do" for the developers.</li>
+                                <li>Improvement: You want to contribute with some code. Maybe a bugfix (also known as patch).</li>
+                            </ul>
+                        </li>
+                        <li>Click the "Next &gt;&gt;" button.</li>
+                        <li>Fill in as much info as you can on this page.</li>
+                        <li>Click the "Create" button.</li>
+                    </ol>
+                </p></div></div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, XDoclet Team</div><div class="clear"><hr></hr></div></div></body></html>

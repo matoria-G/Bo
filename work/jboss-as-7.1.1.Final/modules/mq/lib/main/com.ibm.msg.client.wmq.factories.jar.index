@@ -1,0 +1,14 @@
+
+com/ibm
+com
+com/ibm/msg/client/osgi/wmq/factories
+com/ibm/msg/client/wmq/factories/resources
+com/ibm/msg
+com/ibm/msg/client/osgi
+com/ibm/msg/client/wmq/factories/admin
+META-INF
+com/ibm/msg/client/osgi/wmq
+com/ibm/msg/client/wmq/messages
+com/ibm/msg/client/wmq/factories
+com/ibm/msg/client/wmq
+com/ibm/msg/client

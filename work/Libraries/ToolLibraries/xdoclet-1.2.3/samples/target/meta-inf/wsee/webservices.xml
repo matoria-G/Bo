@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webservices
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/j2ee_web_services_1_1.xsd"
+    version="1.1">
+
+  <webservice-description>
+    <description><![CDATA[A Test Webservice]]></description>
+    <display-name>TestService</display-name>
+    <icon>
+      <small-icon>testservice-large.ico</small-icon>
+      <large-icon>testservice-small.ico</large-icon>
+    </icon>     
+
+    <webservice-description-name>TestService</webservice-description-name>
+
+    <wsdl-file>WEB-INF/test.wsdl</wsdl-file>
+    <jaxrpc-mapping-file>WEB-INF/jaxrpc-mapping.xml</jaxrpc-mapping-file>
+
+    <port-component>
+      <description><![CDATA[Java Bean exposed as a webservice]]></description>
+      <display-name>Test</display-name>
+
+      <icon>
+        <small-icon>test-small.gif</small-icon>
+        <large-icon>test-large.gif</large-icon>
+      </icon>
+
+     	<port-component-name>Test</port-component-name>        
+      <wsdl-port>TestPort</wsdl-port>
+      <service-endpoint-interface>test.wsee.TestBeanService</service-endpoint-interface>
+      <service-impl-bean>
+        <servlet-link>TestService</servlet-link>
+      </service-impl-bean>
+      <handler>
+        <handler-name>TestHandler</handler-name>
+        <handler-class>test.wsee.TestHandler</handler-class>
+        <!-- init paramter should go here -->
+        <soap-header xmlns:local="http://xdoclet.sourcefore.net/wsee/test-handler">local:TestHeader</soap-header>
+        <soap-role>TestRole</soap-role>
+        <!-- init parameters are still lacking -->
+      </handler>
+    </port-component>
+
+    <port-component>
+      <description><![CDATA[Session Bean exposed as a webservice]]></description>
+      <display-name>TestSession</display-name>
+
+      <icon>
+        <small-icon>testsession-small.gif</small-icon>
+        <large-icon>testsession-large.gif</large-icon>
+      </icon>
+
+     	<port-component-name>TestSession</port-component-name>        
+      <wsdl-port>TestSessionPort</wsdl-port>
+      <service-endpoint-interface>test.wsee.TestSession</service-endpoint-interface>
+      <service-impl-bean>
+        <ejb-link>TestSession</ejb-link>
+      </service-impl-bean>
+      <handler>
+        <handler-name>TestHandler</handler-name>
+        <handler-class>test.wsee.TestHandler</handler-class>
+        <!-- init paramter should go here -->
+        <soap-header xmlns:local="http://xdoclet.sourcefore.net/wsee/test-handler">local:TestHeader</soap-header>
+        <soap-role>TestRole</soap-role>
+        <!-- init parameters are still lacking -->
+      </handler>
+    </port-component>
+
+  </webservice-description> 
+
+</webservices>

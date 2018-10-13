@@ -1,0 +1,66 @@
+package com.bo.utils;
+
+import java.util.HashMap;
+import java.util.Properties;
+
+import com.bo.job.core.ContextReference;
+
+public class PropertiesUtil {
+	
+	private static PropertiesUtil propertiesUtil =  null;
+	private HashMap<String, HashMap<String, String>> propertiesMap = new HashMap<String, HashMap<String,String>>();
+	
+	
+	public static PropertiesUtil getInstance() throws Exception{
+		
+		if(propertiesUtil==null){
+			
+			propertiesUtil = new PropertiesUtil();
+		}
+		
+		return propertiesUtil;
+		
+	}
+	
+	public HashMap<String, String> getProperties(String fileCode){
+		
+		if(propertiesMap.get(fileCode)==null){
+			loadProperties(fileCode);
+		}
+		return propertiesMap.get(fileCode);
+	}
+	
+	
+	public void loadProperties(String fileCode) {
+		
+		HashMap<String, String>  propMap = new HashMap<String, String>();
+		String fileName	= "";
+		
+		try {		
+			
+			if(propertiesMap.get(fileCode)!=null){
+				return;
+			}
+				
+			
+			fileName="/WEB-INF/properties/"+fileCode+".properties";
+			Properties properties = new Properties();
+			properties.load(ContextReference.getContext().getResourceAsStream(fileName));
+			
+			for(String key : properties.stringPropertyNames()) 
+			{
+				String value = properties.getProperty(key);
+				propMap.put(key, value);
+				//System.out.println("Key : "+key+" value " + value);
+			}
+						
+			propertiesMap.put(fileCode, propMap);
+			
+		} catch (Exception e) {
+			//e.printStackTrace();
+			System.out.println("Properties File not Found---Checking Cache");
+		}
+		
+	}		
+
+}

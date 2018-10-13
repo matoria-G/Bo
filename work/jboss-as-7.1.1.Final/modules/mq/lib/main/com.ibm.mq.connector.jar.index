@@ -1,0 +1,11 @@
+com/ibm/mq/connector/xa
+
+com/ibm/mq/connector/services
+com/ibm/mq/connector/outbound
+com/ibm
+com/ibm/mq/connector/inbound
+com
+com/ibm/mq/connector
+com/ibm/mq
+META-INF
+com/ibm/mq/connector/services/resources
